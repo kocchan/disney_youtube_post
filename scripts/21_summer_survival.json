@@ -1,0 +1,62 @@
+{
+  "title": "【夏ディズニー】知らないとガチで詰む。猛暑を生き抜く「神持ち物」3選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "Soundtrack Version.mp3",
+    "theme": "summer_survival",
+    "subject": "夏のディズニー持ち物3選",
+    "subject_en": "summer Disney essentials packing guide"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "7月から始まる夏のディズニー。猛暑とびしょ濡れイベントを生き抜くための神持ち物を紹介するから絶対準備して！今年は7月2日からびしょ濡れプログラムもスタートするから、準備なしで行くと本当に詰む。",
+      "image_query": "summer theme park hot sunny blue sky crowd outdoor heat wave",
+      "scrape_query": "夏のディズニー びしょ濡れプログラム 持ち物 猛暑 2026年7月",
+      "image_prompt": "blazing summer sun over a theme park entrance with a crowd fanning themselves under a blue sky",
+      "keywords": ["びしょ濡れプログラム", "準備なしで行くと本当に詰む"]
+    },
+    {
+      "id": 2,
+      "narration": "まずは防水スマホケース。7月からのパレードやトゥーンタウンは、想像の10倍水がかかります。スマホが水没して壊れる前に、100均のものでいいから絶対用意して。",
+      "image_query": "waterproof phone case neck strap pouch water splash protection clear bag",
+      "scrape_query": "防水スマホケース ディズニー パレード 水がかかる 100均 首掛け びしょ濡れ",
+      "image_prompt": "a clear waterproof phone pouch hanging on a neck strap, water droplets splashing around it",
+      "keywords": ["スマホが水没", "防水スマホケース"]
+    },
+    {
+      "id": 3,
+      "narration": "次は真空断熱のマイボトル。パークの自販機で買ったペットボトルは一瞬でぬるくなります。氷だけ詰めて持っていけば、現地で買った飲み物をずっと冷たくキープできます。",
+      "image_query": "insulated stainless steel water bottle ice cold drink summer outdoor",
+      "scrape_query": "マイボトル 保冷 ディズニー 夏 持ち物 氷 冷たい 真空断熱",
+      "image_prompt": "a stainless steel insulated bottle being filled with ice, condensation on the outside in summer heat",
+      "keywords": ["マイボトル", "ずっと冷たくキープ"]
+    },
+    {
+      "id": 4,
+      "narration": "最後は着替えのTシャツとタオル。びしょ濡れプログラムに参加すると服が文字通り絞れるくらい濡れます。パーク内で買うと手痛い出費になるので、持参が鉄則です。",
+      "image_query": "bag t-shirt change clothes sports towel packing summer essentials",
+      "scrape_query": "びしょ濡れプログラム 2026年7月 着替え タオル ディズニー 持ち物 スポーツタオル",
+      "image_prompt": "a backpack open with a spare t-shirt and large sports towel neatly packed inside, summer setting",
+      "keywords": ["絞れるくらい濡れます", "持参が鉄則"]
+    },
+    {
+      "id": 5,
+      "narration": "今年の夏ディズニーは両パークとも過去一で濡れるスポットが満載。涼しく楽しく過ごすために、事前の準備が運命を分けます。特に真昼の行列とパレード周辺は体感温度が40度を超えることも。熱中症だけは絶対に気をつけて。",
+      "image_query": "portable fan cooling parasol umbrella outdoor summer heat crowd",
+      "scrape_query": "夏ディズニー 熱中症 猛暑 体感温度 涼む 対策 2026 両パーク",
+      "image_prompt": "guests using portable fans and parasols in a sweltering summer crowd outdoors",
+      "keywords": ["過去一で濡れる", "準備が運命を分けます"]
+    },
+    {
+      "id": 6,
+      "narration": "前日の荷造りで「あれ忘れた！」って後悔しないように、今すぐこの動画を保存してチェックリストに使ってね！3つ全部揃えてからパークに向かおう。",
+      "image_query": "bag packing checklist hand bookmark save reminder phone screen",
+      "scrape_query": "夏のディズニー 持ち物 チェックリスト 保存 忘れ物 荷造り 前日",
+      "image_prompt": "a hand tapping a save/bookmark icon on a phone screen with a packed bag in the background",
+      "keywords": ["あれ忘れた！", "動画を保存"]
+    }
+  ]
+}

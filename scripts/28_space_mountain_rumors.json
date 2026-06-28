@@ -1,0 +1,98 @@
+{
+  "title": "【極秘流出】総工費705億円のバケモノ…新スペース・マウンテン「ヤバすぎる最新の噂」3選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Escort.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "2027年オープンの新スペースマウンテン。今、海外のガチ勢や建築計画から流出している「ヤバすぎる3つの噂」知ってる？",
+      "image_query": "construction crane steel dome futuristic theme park night",
+      "image_prompt": "massive construction cranes and a hexagonal steel dome frame rising above a futuristic theme park at dusk",
+      "scrape_query": "新スペースマウンテン 建設 鉄骨 ドーム トゥモローランド 2026",
+      "keywords": ["ヤバすぎる3つの噂"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 332,
+        "duration": 10
+      }
+    },
+    {
+      "id": 2,
+      "narration": "噂その1。海外の特定班がレール形状から暴いた「インタミン社製・最新リニア急加速コースター説」。",
+      "image_query": "roller coaster launch track dark tunnel speed thrill",
+      "image_prompt": "a high-speed roller coaster launching through a dark tunnel with magnetic acceleration rails glowing blue",
+      "scrape_query": "インタミン社 コースター LSM リニア 急加速 発進 レール 形状",
+      "keywords": ["特定班", "リニア急加速コースター説"]
+    },
+    {
+      "id": 3,
+      "narration": "カタカタ登るあの「心の準備時間」、もう無いです。電磁石の力で暗闇の宇宙へ強制射出。さらにマニアの間では、走行中に突然レールごと真っ逆さまに落ちる「ドロップトラック（垂直落下）」が仕込まれているという最恐の考察も。",
+      "image_query": "electromagnet magnetic force launch coaster dark space freefall drop",
+      "image_prompt": "abstract visualization of electromagnetic launch force blasting a vehicle into darkness, with a sudden vertical drop illustrated mid-track",
+      "scrape_query": "LSM リニアモーター コースター ドロップトラック 垂直落下 仕掛け 暗闇",
+      "keywords": ["強制射出", "ドロップトラック"]
+    },
+    {
+      "id": 4,
+      "narration": "噂その2。「重厚なショーストーリー」の追加。実は海外で、新名称は「スペース・マウンテン：アースライズ」になると囁かれています。",
+      "image_query": "earth from space orbit glow atmosphere astronaut view",
+      "image_prompt": "a breathtaking view of Earth rising over the moon's horizon from space, glowing blue and white in the darkness",
+      "scrape_query": "スペースマウンテン アースライズ Earthrise 新名称 コンセプト 宇宙 地球",
+      "keywords": ["アースライズ", "ショーストーリー"]
+    },
+    {
+      "id": 5,
+      "narration": "過去に開発担当者が「ただのコースターではなく、感情を揺さぶるストーリーがある」と異例のポロリ。ただ宇宙を走るだけじゃない、地球との繋がりを実感させる、脳を直接ハッキングするような圧倒的没入体験。",
+      "image_query": "developer interview concept art blueprint design emotion immersive",
+      "image_prompt": "a theme park imagineer reviewing glowing concept art blueprints with emotional story elements highlighted, intense creative vision",
+      "scrape_query": "イマジニア インタビュー スペースマウンテン ストーリー 没入 感情 開発担当",
+      "keywords": ["異例のポロリ", "脳を直接ハッキング"]
+    },
+    {
+      "id": 6,
+      "narration": "噂その3。予算のタガが完全に外れた「狂気の総投資額、約705億円」。",
+      "image_query": "gold coins vault money budget huge amount finance",
+      "image_prompt": "a vault bursting open with gold coins and a glowing number 705億 filling the screen, signifying an astronomical budget",
+      "scrape_query": "スペースマウンテン 総工費 705億 予算 投資額 サイレント修正 2025",
+      "keywords": ["705億円", "狂気の総投資額"]
+    },
+    {
+      "id": 7,
+      "narration": "当初560億円と発表されていた予算が、近年サイレントで705億円へ上方修正。あの大規模な「美女と野獣」のアトラクション単体が約320億円なので、その2倍以上。もはや一つのテーマポート丸ごとと同じバグレベルの金額。",
+      "image_query": "theme park large scale attraction building comparison infographic scale",
+      "image_prompt": "a side-by-side comparison infographic showing the scale of two massive theme park attractions, with budget numbers dwarfing each other",
+      "scrape_query": "美女と野獣 魔法のものがたり 320億 スペースマウンテン 705億 比較 規模",
+      "keywords": ["560億円", "2倍以上"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2773,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "建築計画から「2階建て構造」になることも判明。イマジニアが本気を出した、東京限定のオーバースペック宇宙船。このバケモノの骨組みが見られるのは今だけ。",
+      "image_query": "construction steel frame two floor structure futuristic dome skeleton",
+      "image_prompt": "the exposed steel skeleton of a massive two-story dome structure under construction, cranes visible against a dramatic sky",
+      "scrape_query": "新スペースマウンテン 2階建て 鉄骨 骨組み トゥモローランド 建設中 2026",
+      "keywords": ["2階建て構造", "バケモノの骨組み"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3215,
+        "duration": 10
+      }
+    },
+    {
+      "id": 9,
+      "narration": "2027年、このヤバすぎる宇宙船に一緒に乗りたい人に、今すぐこの動画をシェアして教えてあげて！",
+      "image_query": "smartphone share button social media friend send notification",
+      "image_prompt": "a hand tapping the share button on a smartphone, sending a video about a new space rollercoaster to friends via LINE",
+      "scrape_query": "スマートフォン シェア ボタン SNS 動画 送る 友達 LINE",
+      "keywords": ["シェアして"]
+    }
+  ]
+}

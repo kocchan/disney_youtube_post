@@ -1,0 +1,106 @@
+{
+  "title": "ランタンシーンで感動してしまう「計算された秘密」{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Soundtrack Version.mp3",
+    "theme": "rapunzel_lantern",
+    "variant": "main",
+    "subject": "ラプンツェル ランタン",
+    "subject_en": "Rapunzel lantern festival Disney"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "屋内のアトラクションなのに、あの部屋に入った瞬間なぜか涙が出そうになる。あれは感受性の問題じゃなくて、イマジニアが仕込んだ恐ろしいほど計算された秘密が{count}個あるからなんです。",
+      "image_query": "golden lanterns floating night sky magical glow",
+      "image_prompt": "dozens of glowing golden lanterns floating in a dark night sky, magical dreamy atmosphere, cinematic wide shot",
+      "keywords": ["イマジニア", "計算された秘密"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2773,
+        "duration": 12
+      }
+    },
+    {
+      "id": 2,
+      "narration": "まず、屋内アトラクション最大の弱点は「天井と壁」の存在。どれだけ幻想的な演出をしても、コンクリートの壁が目に入った瞬間に夢から覚めてしまう。イマジニアはこれを消すため、壁や天井を限りなく暗く塗り、照明を一切当てない設計にした。「見えないもの」は、存在しないも同然なんです。",
+      "image_query": "dark dramatic theater interior spotlight stage",
+      "image_prompt": "interior of a theatrical performance space with dramatic spotlights and dark ceiling, atmospheric",
+      "keywords": ["天井と壁", "存在しないも同然"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2864,
+        "duration": 14
+      }
+    },
+    {
+      "id": 3,
+      "narration": "次に、ランタンの部屋に入る直前、ボートは極限まで暗い水路を進みます。あれは単なる演出ではなく、あなたの瞳孔を強制的に開かせる計算。暗さに慣れた目が光の洪水に飛び込む瞬間、人間の脳は実際よりも強い感動を受け取るんです。",
+      "image_query": "dark tunnel canal boat dim red light mysterious",
+      "image_prompt": "a narrow dark water tunnel with faint red lighting, a small boat floating through mysterious atmosphere",
+      "keywords": ["瞳孔を強制的に開か", "光の洪水"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 132,
+        "duration": 14
+      }
+    },
+    {
+      "id": 4,
+      "narration": "そして部屋に入ると、ボートは水面の上を進みます。イマジニアはその水面を鏡として使い、上空のランタンを水面にも映り込ませた。天井と床の境界が完全に消え、ランタンに四方八方から包まれているような感覚が生まれる。これが「涙が出そうになる」正体の一つです。",
+      "image_query": "golden lights reflection still water surface night mirror",
+      "image_prompt": "golden lantern lights perfectly reflected in perfectly still dark water, creating a sense of infinite depth",
+      "keywords": ["水面を鏡", "四方八方から包まれ"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 12
+      }
+    },
+    {
+      "id": 5,
+      "narration": "さらに、ランタンの大きさをよく見ると、奥に行くほど少しずつ小さくなっています。これは強制遠近法と呼ばれる建築のテクニック。限られた空間を、どこまでも続く広大な夜空と錯覚させ、感動のスケール感を何倍にも増幅しているんです。",
+      "image_query": "amusement park aerial view miniature forced perspective fantasy",
+      "image_prompt": "aerial tilt-shift miniature style view of a fantasy theme park with forced perspective illusion",
+      "keywords": ["強制遠近法", "錯覚させ"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2940,
+        "duration": 12
+      }
+    },
+    {
+      "id": 6,
+      "narration": "そして最後の秘密が、音楽との完全な同期。ランタンが一斉に輝くあの瞬間、必ず名曲のサビが重なるよう、ボートの速度まで計算されています。映像・音楽・感情が同時に爆発する体験は、人が「計算された感動」と気づかずに涙する、最高の魔法の正体です。",
+      "image_query": "magical night fireworks show dramatic lights stage performance",
+      "image_prompt": "spectacular fireworks and magical light show at night over a fairytale setting, dramatic and emotional",
+      "keywords": ["音楽との完全な同期", "計算された感動"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6796,
+        "duration": 14
+      }
+    },
+    {
+      "id": 7,
+      "narration": "ちなみにこのアトラクション、七月一日から約三週間の長期メンテナンスに入ります。今すぐ行けない方は、再開後にぜひこの秘密を頭に入れてもう一度体験してみてください。きっと見え方が変わるはずです。",
+      "image_query": "calendar schedule maintenance announcement notice",
+      "image_prompt": "a calendar page for July with a notice marker, clean minimal design, soft light background",
+      "keywords": ["七月一日", "長期メンテナンス"]
+    },
+    {
+      "id": 8,
+      "narration": "今日紹介した秘密、{count}個中いくつ知っていましたか？コメントで教えてください。ファンタジースプリングスに一緒に行きたい人には、この動画をシェアしてあげてください。",
+      "image_query": "fairytale castle morning sunrise blue sky magical",
+      "image_prompt": "a beautiful pink and gold fairytale castle at golden hour sunrise with a clear blue sky, wide panoramic",
+      "keywords": ["知っていましたか", "シェアして"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2806,
+        "duration": 12
+      }
+    }
+  ]
+}

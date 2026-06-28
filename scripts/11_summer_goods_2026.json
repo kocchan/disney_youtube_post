@@ -1,0 +1,62 @@
+{
+  "title": "【7月1日発売】ガチで可愛い。ディズニー夏の「新作神グッズ」3選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "rotate",
+    "theme": "summer_goods_2026",
+    "subject": "ディズニー夏グッズ",
+    "subject_en": "Disney summer merchandise"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "7月1日発売のディズニー新作グッズが過去一可愛い。売り切れる前に絶対チェックして！",
+      "image_query": "colorful merchandise display summer products new arrivals shop",
+      "scrape_query": "東京ディズニーリゾート 新作グッズ 2026年7月 夏 発売",
+      "image_prompt": "colorful new merchandise display in a bright summer shop, vibrant products lineup",
+      "keywords": ["7月1日発売", "売り切れる前"]
+    },
+    {
+      "id": 2,
+      "narration": "まずはトイ・ストーリー5グッズ。ウッディ風カチューシャ2,400円。肩に乗せられるくっつきぬいぐるみ2,500円。ボニーの部屋のデザインが最高。",
+      "image_query": "cute plush toy headband accessories colorful character merchandise",
+      "scrape_query": "2026年 ウッディ カチューシャ ディズニーランド グッズ",
+      "image_prompt": "cute character headband and small plush toy on colorful merchandise display",
+      "keywords": ["カチューシャ2,400円", "くっつきぬいぐるみ2,500円"]
+    },
+    {
+      "id": 3,
+      "narration": "次は夏限定のハローハローサマー。チップとデールがパイナップルにかぶりつくスーベニアカップに、夏大活躍の限定Tシャツ3,500円から。",
+      "image_query": "tropical summer souvenir cup pineapple colorful chipmunk merchandise",
+      "scrape_query": "2026年 ディズニーランド チップとデール パイナップル スーベニアカップ",
+      "image_prompt": "tropical summer souvenir cup with chipmunk characters and pineapple design, bright colorful",
+      "keywords": ["スーベニアカップ", "限定Tシャツ3,500円"]
+    },
+    {
+      "id": 4,
+      "narration": "最後は超激レア、Mrs. GREEN APPLEとベイマックスのコラボグッズ。夏イベントのテーマソングを手掛けるミセスとの限定デザインは争奪戦確定。",
+      "image_query": "music artist collaboration limited apparel merchandise white robot character",
+      "scrape_query": "ミセス ベイマックス グッズ 2026",
+      "image_prompt": "music artist collaboration limited edition apparel featuring a friendly white robot character",
+      "keywords": ["ミセスとの限定デザイン", "争奪戦確定"]
+    },
+    {
+      "id": 5,
+      "narration": "これらは全て7月1日水曜日から発売開始。人気グッズは一瞬でお品切れになるから、行く前に必ず公式アプリで在庫をチェックして！",
+      "image_query": "smartphone app inventory check shopping notification screen",
+      "scrape_query": "東京ディズニーリゾート 公式アプリ ディズニーオンラインショップ",
+      "image_prompt": "hand holding smartphone checking inventory on official app, merchandise availability screen",
+      "keywords": ["7月1日水曜日から", "公式アプリで在庫をチェック"]
+    },
+    {
+      "id": 6,
+      "narration": "現地での買い忘れを防ぐために、今すぐこの動画を保存して買い物リストに入れといて！",
+      "image_query": "shopping bag bookmark save hand pointing summer colorful",
+      "scrape_query": "東京ディズニーリゾート グッズ ショップ 買い物 夏 2026",
+      "image_prompt": "colorful shopping bag with bookmark save icon, summer shopping concept",
+      "keywords": ["買い忘れを防ぐ", "動画を保存"]
+    }
+  ]
+}

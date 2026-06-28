@@ -1,0 +1,59 @@
+{
+  "title": "【全員もらえる】意外と知らない！ディズニーの「隠れ無料サービス」{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "swing_swing.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーで全員もらえる、意外と知られていない「隠れ無料サービス」が{count}つあるの、知ってた？",
+      "image_query": "theme park staff guest welcome gift handshake",
+      "image_prompt": "a friendly theme park cast member handing a small souvenir sticker to a happy guest, warm sunlit atmosphere",
+      "scrape_query": "ディズニーランド キャスト シール プレゼント ゲスト",
+      "keywords": ["全員もらえる", "隠れ無料サービス"]
+    },
+    {
+      "id": 2,
+      "narration": "まずは「ファーストライドシール」。そのアトラクションに人生で初めて乗る時、近くのキャストさんに「初めてです」と伝えるだけで、名前や日付が入った限定シールがその場でもらえちゃう！",
+      "image_query": "child amusement park ride excited first time badge sticker",
+      "image_prompt": "a young child proudly wearing a first ride commemorative sticker badge at a theme park, joyful expression",
+      "scrape_query": "ディズニーランド ファーストライドシール 記念 初乗車",
+      "keywords": ["ファーストライドシール", "限定シール"]
+    },
+    {
+      "id": 3,
+      "narration": "次は「バースデーシール」。誕生月じゃなくても「お祝いしたい気持ち」があればいつでももらえる神シール。これを貼って歩くだけで、会うキャストさん全員からお祝いしてもらえる最高の1日になります。",
+      "image_query": "birthday celebration staff customer congratulate happy balloon",
+      "image_prompt": "a smiling theme park staff member cheerfully congratulating a guest wearing a birthday sticker, festive atmosphere",
+      "scrape_query": "ディズニーランド バースデーシール キャスト おめでとう お祝い",
+      "keywords": ["バースデーシール", "神シール"]
+    },
+    {
+      "id": 4,
+      "narration": "最後は「限定記念スタンプ」。パーク内にあるポストから手紙を出すと、なんとその時期のイベント限定の可愛いスタンプを押して、自宅まで届けてくれる。自分へのお土産にも最高のサービス。",
+      "image_query": "vintage red mailbox letter postcard souvenir stamp",
+      "image_prompt": "a colorful event-stamped postcard beside a charming red mailbox in a theme park setting",
+      "scrape_query": "ディズニーランド ポスト 手紙 投函 記念スタンプ",
+      "keywords": ["限定記念スタンプ", "イベント限定"]
+    },
+    {
+      "id": 5,
+      "narration": "どれもお金をかけずに、パークの思い出を一生モノに変えてくれる公式の神対応。知っているのと知らないのとでは、同じ1日でも全然違う体験になります。",
+      "image_query": "theme park staff friendly wave farewell smile outdoor",
+      "image_prompt": "a cheerful theme park cast member waving goodbye to guests with a big smile, bright sunny park background",
+      "scrape_query": "ディズニーランド キャスト 笑顔 見送り サービス 神対応",
+      "keywords": ["一生モノ", "神対応"]
+    },
+    {
+      "id": 6,
+      "narration": "次のインパでキャストさんに話しかけられるように、今のうちにこの動画を保存してメモっといて！{count}つ全部使って、最高の1日にしてね！",
+      "image_query": "smartphone screen bookmark save button notification hand",
+      "image_prompt": "a hand tapping a bookmark icon to save a video on a glowing smartphone screen",
+      "scrape_query": "スマートフォン 動画 保存 ブックマーク メモ",
+      "keywords": ["保存してメモ"]
+    }
+  ]
+}

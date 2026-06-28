@@ -1,0 +1,90 @@
+{
+  "title": "【極秘技術】レールがないディズニーの乗り物…「絶対にぶつからない」変態的な仕組み",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Escort.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "悲報。2026年6月30日から8月末まで長期休止中のプーさんのハニーハント。実はこれ、裏側で「変態的なテクノロジー」が使われてるって知ってた？",
+      "image_query": "theme park attraction closed temporary shutdown notice entrance stamp",
+      "image_prompt": "a beloved honey-pot themed attraction with a shocking red temporary closure stamp across its entrance, fans looking dismayed",
+      "scrape_query": "プーさんのハニーハント 長期休止 2026 6月30日 8月 クローズ 外観",
+      "keywords": ["長期休止中", "変態的なテクノロジー"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3551,
+        "duration": 10
+      }
+    },
+    {
+      "id": 2,
+      "narration": "床にレールがないのに、絶対にぶつからず予測不能に動く魔法の乗り物。これ、実はみんなの家にある「お掃除ロボット」や、Amazonの巨大倉庫で荷物を自動で運ぶ無人ロボットの「超・究極進化系」。",
+      "image_query": "robot vacuum cleaner floor autonomous navigation smart home comparison",
+      "image_prompt": "a side-by-side comparison of a home robot vacuum cleaner and an advanced autonomous guided vehicle in a massive warehouse, showing technological evolution",
+      "scrape_query": "AGV 自動搬送ロボット お掃除ロボット ルンバ Amazon倉庫 比較 無人",
+      "keywords": ["お掃除ロボット", "超・究極進化系"]
+    },
+    {
+      "id": 3,
+      "narration": "じゃあどうやって自分がどこにいるか分かるの？秘密は「床」。実は床一面に、Suicaや交通系ICカードと全く同じ仕組みの「見えない電子タグ」が、何万個も敷き詰められている状態。",
+      "image_query": "RFID tag floor grid IC card touch sensor invisible embedded",
+      "image_prompt": "an X-ray style view of a theme park floor revealing thousands of tiny RFID tags embedded in a grid pattern, glowing like a circuit board",
+      "scrape_query": "RFID 電子タグ 床 埋め込み Suica ICカード 仕組み ディズニー",
+      "keywords": ["Suica", "見えない電子タグ"]
+    },
+    {
+      "id": 4,
+      "narration": "乗り物の裏側が駅の「改札のタッチ部分」みたいになっていて、走りながら床を毎秒スキャン。「あ、今マップのココを走ってる！」って自分の位置をリアルタイムで把握する、天才的な仕組み。",
+      "image_query": "IC card reader scanner tap gate railway station transit touch",
+      "image_prompt": "an animated diagram of a vehicle undercarriage scanning embedded floor tags like a train gate scanner, showing real-time position tracking",
+      "scrape_query": "RFID スキャン 床 乗り物 位置把握 リアルタイム マップ 仕組み",
+      "keywords": ["走りながら床を毎秒スキャン", "リアルタイムで把握"]
+    },
+    {
+      "id": 5,
+      "narration": "そして裏では、巨大なメインコンピューターが全車両の位置を1ミリ単位で監視。Wi-Fiで全台に「お前は右へ行け」「お前はスピンしろ」と同時に指示を出し続ける神の視点。",
+      "image_query": "server computer network control room monitor all vehicles map overhead",
+      "image_prompt": "a high-tech control room with a massive screen showing real-time positions of all ride vehicles on a map, engineers monitoring every millimeter",
+      "scrape_query": "メインコンピューター 全車両 監視 WiFi 指示 制御 リアルタイム ディズニー",
+      "keywords": ["1ミリ単位で監視", "神の視点"]
+    },
+    {
+      "id": 6,
+      "narration": "動力はバッテリー。車輪は前後左右に独立して動くため、レールでは絶対に不可能な「真横へのスライド」や「その場での高速スピン」が実現。",
+      "image_query": "omnidirectional wheel holonomic drive robot sideways spin rotation",
+      "image_prompt": "a close-up diagram of omnidirectional wheels rotating independently in all directions — forward, sideways, and spinning on the spot",
+      "scrape_query": "全方向タイヤ オムニホイール 横移動 その場スピン AGV 独立 バッテリー",
+      "keywords": ["真横へのスライド", "高速スピン"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3563,
+        "duration": 10
+      }
+    },
+    {
+      "id": 7,
+      "narration": "最新の美女と野獣では、この技術と音楽が限界突破レベルで同期。動きと曲を1フレーム単位で合わせることで、ただの機械が「感情」を持ってワルツを踊っているかのような魔法の完成。",
+      "image_query": "ballroom waltz dance elegant synchronized music fairy tale couple",
+      "image_prompt": "a magical ballroom scene with swirling dancers perfectly synchronized to orchestral music, golden light and rose petals filling the air",
+      "scrape_query": "美女と野獣 魔法のものがたり カップ ダンス BGM 同期 1フレーム ワルツ",
+      "keywords": ["限界突破レベルで同期", "ワルツを踊っている"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2940,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "次に乗るとき、足元の極小センサーを想像して脳をバグらせてみて！忘れないように今すぐ保存！",
+      "image_query": "smartphone save bookmark ribbon button tap glow yellow notification",
+      "image_prompt": "a hand tapping the save bookmark ribbon icon on a smartphone screen that turns gold, bookmarking a video about trackless ride technology",
+      "scrape_query": "スマートフォン 保存 ボタン ブックマーク リボン タップ 動画",
+      "keywords": ["足元の極小センサー", "保存"]
+    }
+  ]
+}

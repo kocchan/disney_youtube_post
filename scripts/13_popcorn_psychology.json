@@ -1,0 +1,70 @@
+{
+  "title": "ディズニーのポップコーン売り場が「絶妙な位置」にある本当の理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "rotate",
+    "theme": "popcorn_psychology",
+    "subject": "ディズニーのポップコーンワゴン",
+    "subject_en": "Disney popcorn wagon placement"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーのポップコーンワゴン、置き場所って全部ランダムだと思ってた？実は1台1台、イマジニアが緻密に計算した「完璧な位置」に置かれてる。",
+      "image_query": "colorful popcorn cart vendor theme park crowd summer",
+      "scrape_query": "東京ディズニーランド ポップコーンワゴン 位置 場所 種類",
+      "image_prompt": "colorful popcorn cart with cheerful vendor in a busy theme park walkway",
+      "keywords": ["ランダムだと思ってた", "完璧な位置"]
+    },
+    {
+      "id": 2,
+      "narration": "まず「香りの罠」。バターとキャラメルの香りは、嗅いだ瞬間に脳の食欲中枢を刺激する最強の誘引物質。ワゴンは必ず人の流れる方向の風上に置かれていて、あなたが急に「ポップコーン食べたい」と思う瞬間、すでに香りに誘導されてる。",
+      "image_query": "steam rising from food cart aroma crowd street appetizing",
+      "scrape_query": "ポップコーン 香り 食欲 誘引 嗅覚 マーケティング 心理",
+      "image_prompt": "fragrant steam rising from a golden popcorn machine, people instinctively drawn toward it",
+      "keywords": ["香りの罠", "食欲中枢"]
+    },
+    {
+      "id": 3,
+      "narration": "次はワゴンの「場所の法則」。エリアとエリアの境界付近に必ず置かれているのには理由がある。次のエリアへ移動する前に人が自然と立ち止まる場所に置くことで、「ついでに買う」という行動を引き出す設計。",
+      "image_query": "theme park pathway crossroads transition area walking crowd",
+      "scrape_query": "ディズニーランド エリア 境界 ポップコーン ワゴン 動線 設計",
+      "image_prompt": "theme park intersection between two distinctly themed zones, natural stopping point for guests",
+      "keywords": ["場所の法則", "立ち止まる場所"]
+    },
+    {
+      "id": 4,
+      "narration": "さらにアトラクションの「出口の真横」にある理由。ジェットコースターを降りた直後、脳はアドレナリンとドーパミンで興奮状態にある。この「ハイになった瞬間」が1日の中で最も財布のひもが緩む瞬間で、イマジニアはそこを狙い打ちにしてる。",
+      "image_query": "rollercoaster exit crowd excited laughing theme park",
+      "scrape_query": "アトラクション 出口 ポップコーン 購買 興奮 アドレナリン 消費者心理",
+      "image_prompt": "excited guests exiting a rollercoaster ride, flushed and happy, popcorn stand visible nearby",
+      "keywords": ["出口の真横", "財布のひもが緩む"]
+    },
+    {
+      "id": 5,
+      "narration": "もう一つ天才的なのがフレーバーの配置。メインストリートにはキャラメル、アドベンチャーランドにはカレー、というようにエリアのテーマに合わせたフレーバーが1種類だけ置かれる。これはパーク内の「没入感」を壊さないための演出。",
+      "image_query": "variety popcorn flavors colorful cups display different tastes",
+      "scrape_query": "ディズニーランド ポップコーン フレーバー エリア テーマ カレー キャラメル",
+      "image_prompt": "array of colorful popcorn cups with different themed flavors displayed in a thematic setting",
+      "keywords": ["エリアのテーマに合わせた", "没入感"]
+    },
+    {
+      "id": 6,
+      "narration": "東京ディズニーランドには約30台以上のワゴンが毎日稼働していて、年間販売数は100万個以上とも言われてる。「ただの屋台」に見えて、実はグッズ並みの巨大な収益源。",
+      "image_query": "business revenue chart food vendor theme park income",
+      "scrape_query": "東京ディズニーランド ポップコーン 販売数 売上 年間 台数",
+      "image_prompt": "rows of popcorn carts across a vast theme park, business operation scale visualization",
+      "keywords": ["約30台以上", "100万個以上"]
+    },
+    {
+      "id": 7,
+      "narration": "歩いてるだけで気づかないうちに誘導されて、気づいたらポップコーンを買ってる。それがイマジニアの「完璧な動線設計」の正体。次にパークに行くとき、ぜったいワゴンの位置が気になり出すから、動画を保存して答え合わせしてみて！",
+      "image_query": "theme park crowd walking pathway popcorn vendor golden light",
+      "scrape_query": "東京ディズニーランド ポップコーン ワゴン 動線 場所 全種類",
+      "image_prompt": "theme park guests strolling past a glowing popcorn cart, warm inviting atmosphere",
+      "keywords": ["完璧な動線設計", "動画を保存"]
+    }
+  ]
+}

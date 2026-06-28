@@ -1,0 +1,62 @@
+{
+  "title": "【数時間待ちを回避】ピーターパンで「ガチで空を飛べる」ヤバすぎる仕掛け",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "rotate",
+    "theme": "peterpan_neverflight",
+    "subject": "ピーターパンのネバーランドアドベンチャー",
+    "subject_en": "Peter Pan Neverland Adventure dark ride"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ファンタジースプリングスのピーターパン。あれ、ただの3D映像じゃなくて、ガチで「脳をバグらせてる」って知ってた？ファンタジースプリングスの目玉アトラクションの中でも、このシステムはぶっちぎりで異次元。",
+      "image_query": "fantasy flying boat adventure night sky city view above clouds",
+      "scrape_query": "ピーターパンのネバーランドアドベンチャー ファンタジースプリングス 空飛ぶ 仕掛け 体験",
+      "image_prompt": "magical flying boat sailing above a glittering city at night, stars and clouds surrounding it",
+      "keywords": ["脳をバグらせてる", "異次元"]
+    },
+    {
+      "id": 2,
+      "narration": "映像に合わせて揺れるだけの普通のアトラクションとは次元が違う。なんと、動き回る船の下に「フライトシミュレーター」の機能をそのまま搭載。",
+      "image_query": "motion base platform flight simulator mechanism hydraulic suspension diagram",
+      "scrape_query": "ピーターパンのネバーランドアドベンチャー トラックレス ボート モーションベース フライトシミュレーター 仕組み",
+      "image_prompt": "technical diagram of a motion platform with flight simulator hydraulic base beneath a ride vehicle",
+      "keywords": ["次元が違う", "フライトシミュレーター"]
+    },
+    {
+      "id": 3,
+      "narration": "ティンカーベルの粉を浴びて空へ飛ぶ瞬間。船が後ろに大きく傾き、同時に目の前の巨大スクリーンが下へスクロール。この一瞬に、物理とデジタルが完全に融合した仕掛けが詰め込まれている。",
+      "image_query": "fairy dust sparkle magical flying launch moment sky below scroll",
+      "scrape_query": "ピーターパンのネバーランドアドベンチャー 飛ぶ 瞬間 傾き 映像 スクリーン スクロール",
+      "image_prompt": "shimmering fairy dust sparkling as a boat tilts back and the view of the ground falls away below",
+      "keywords": ["船が後ろに大きく傾き", "物理とデジタルが完全に融合"]
+    },
+    {
+      "id": 4,
+      "narration": "視覚的な「上昇」と、物理的な「傾き」。この2つをミリ単位でシンクロさせることで、三半規管を完全に騙し、本当に空を飛んでいるような無重力感を強制的に作り出すイマジニアの執念。",
+      "image_query": "first person high altitude flying view vertigo sky perspective birds eye",
+      "scrape_query": "ピーターパンのネバーランドアドベンチャー 三半規管 錯覚 無重力 浮遊感 上昇",
+      "image_prompt": "dramatic first-person perspective of flying high above the ground with dizzying altitude, clouds and city below",
+      "keywords": ["三半規管", "イマジニアの執念"]
+    },
+    {
+      "id": 5,
+      "narration": "ちなみにこの超絶没入アトラクション、なんと今年から「シングルライダー」の対象に追加！何時間も待つ長蛇の列をごぼう抜きして、爆速でネバーランドへ行けちゃう最強の裏ワザ。",
+      "image_query": "theme park single rider shortcut queue bypass fast entry app",
+      "scrape_query": "東京ディズニーランド シングルライダー 2026 ピーターパン ファンタジースプリングス 待ち時間",
+      "image_prompt": "smartphone showing a fast single rider entry option for a theme park, bypassing a long queue",
+      "keywords": ["シングルライダー", "最強の裏ワザ"]
+    },
+    {
+      "id": 6,
+      "narration": "今すぐネバーランドに飛び立ちたい人に、この動画をシェアして裏ワザを教えてあげて！シングルライダーは一人でも使えるから、友達と行っても別々に乗ってすぐ合流できるよ。",
+      "image_query": "friends flying night sky silhouette stars share phone screen",
+      "scrape_query": "ファンタジースプリングス ピーターパン 空 夜 ネバーランド シングルライダー 友達",
+      "image_prompt": "silhouettes of friends flying through a star-filled night sky, phone with share icon visible",
+      "keywords": ["動画をシェア", "すぐ合流できる"]
+    }
+  ]
+}

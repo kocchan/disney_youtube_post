@@ -1,0 +1,108 @@
+{
+  "title": "【涙腺崩壊】ディズニーBGMを聴くと「泣きそうになる」本当の理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Soundtrack Version.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "日常でディズニーのBGMを聴いて、無性に泣きそうになったこと、ない？",
+      "image_query": "person headphones study work listening music emotional",
+      "image_prompt": "a person wearing headphones at a desk, eyes glistening with emotion while listening to music, then cutting to a beautiful theme park vista",
+      "scrape_query": "ディズニー BGM 作業用 聴く 泣ける 日常",
+      "keywords": ["泣きそうになった"]
+    },
+    {
+      "id": 2,
+      "narration": "あんなに愛され、心揺さぶられる理由。実はこれ、イマジニアが緻密に仕掛けた「脳へのパブロフの犬」状態。",
+      "image_query": "brain neural pathway emotion psychology concept illustration",
+      "image_prompt": "an abstract illustration of a brain with glowing neural pathways, connecting music notes to emotional memories",
+      "scrape_query": "ディズニーランド シンデレラ城 初見 感動 空撮",
+      "keywords": ["緻密に仕掛けた", "パブロフの犬"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2806,
+        "duration": 10
+      }
+    },
+    {
+      "id": 3,
+      "narration": "視界が開けた瞬間の「絶景」や、甘い「匂い」。脳内ドーパミンが爆発する瞬間に、特定の音楽を強烈にすり込む計算。",
+      "image_query": "theme park guest happy smile parade joy euphoria",
+      "image_prompt": "a couple smiling with pure joy watching a colorful parade, surrounded by music notes and floating confetti",
+      "scrape_query": "ディズニーランド パレード ゲスト 笑顔 感動 チュロス",
+      "keywords": ["ドーパミンが爆発", "音楽を強烈にすり込む"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4083,
+        "duration": 10
+      }
+    },
+    {
+      "id": 4,
+      "narration": "さらにテンポの魔法。朝は心拍数を上げるアップテンポでゲストを奥へ誘導。夜は一転、スローで感傷的なアレンジに。",
+      "image_query": "morning rush fast walk entrance night slow romantic couple stroll",
+      "image_prompt": "split shot: energetic guests rushing into a theme park entrance in the morning vs a couple slowly strolling under warm night lights",
+      "scrape_query": "ディズニーランド 朝 エントランス 早歩き 夜 ワールドバザール カップル",
+      "keywords": ["アップテンポ", "感傷的"]
+    },
+    {
+      "id": 5,
+      "narration": "これは心理学の「ピーク・エンドの法則」。帰り際に強烈な切なさを与え、「絶対にまた来たい」と脳に刻み込むえげつない手法。",
+      "image_query": "graph peak end theory emotional memory psychology chart",
+      "image_prompt": "a simple line graph showing emotional score peaking at the end of an experience, representing the peak-end rule",
+      "scrape_query": "ピーク エンド の法則 心理学 グラフ 感情 記憶",
+      "keywords": ["ピーク・エンドの法則", "えげつない手法"]
+    },
+    {
+      "id": 6,
+      "narration": "ちなみに2026年6月末から、ハニーハントやモンスターズ・インクが相次いで数ヶ月の長期休止に突入。あの周辺のBGMもしばらくお預け。",
+      "image_query": "amusement park ride closed temporary closure notice sign",
+      "image_prompt": "a beloved theme park attraction with a temporary closure notice posted at the entrance, fans looking disappointed",
+      "scrape_query": "プーさんのハニーハント モンスターズインク 長期休止 2026 クローズ",
+      "keywords": ["長期休止", "ハニーハント"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3551,
+        "duration": 10
+      }
+    },
+    {
+      "id": 7,
+      "narration": "でも落ち込まないで。現在25周年で爆盛り上がり中のディズニーシーでは、夜限定の特別な環境演出「スパークリング・ジュビリー・ナイト」が開催中。",
+      "image_query": "theme park night spectacular light water reflection anniversary",
+      "image_prompt": "a breathtaking theme park at night with shimmering water reflections and golden anniversary light effects covering the entire park",
+      "scrape_query": "ディズニーシー 25周年 スパークリングジュビリー 夜景 光 演出",
+      "keywords": ["スパークリング・ジュビリー・ナイト", "25周年"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 12
+      }
+    },
+    {
+      "id": 8,
+      "narration": "25周年限定の特別なBGMと光の完全シンクロ。間違いなく、あなたの涙腺を崩壊させる新たなトラウマ級の感動体験。",
+      "image_query": "fireworks castle night magical light show emotion tears",
+      "image_prompt": "a majestic castle bathed in synchronized light and fireworks at night, a guest's eyes glistening with tears of joy",
+      "scrape_query": "ディズニーランド シンデレラ城 花火 夜 光 感動 泣ける",
+      "keywords": ["涙腺を崩壊", "トラウマ級"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2773,
+        "duration": 12
+      }
+    },
+    {
+      "id": 9,
+      "narration": "この夏だけの「一生記憶に残るBGM演出」を見逃さないように、今すぐこの動画を保存して予定を立てて！",
+      "image_query": "smartphone bookmark save button tap hand screen",
+      "image_prompt": "a hand tapping the save/ribbon icon on a smartphone screen, bookmarking a video about Disney's emotional BGM secrets",
+      "scrape_query": "スマートフォン 動画 保存 リボン ブックマーク タップ",
+      "keywords": ["一生記憶に残る", "保存"]
+    }
+  ]
+}

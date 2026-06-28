@@ -1,0 +1,61 @@
+{
+  "title": "知らなきゃ損！ディズニーランドの設計の秘密4選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "swing_swing.mp3",
+    "theme": "disney_urabanashi",
+    "variant": "vol1"
+  },
+  "scenes": [
+    {
+      "id": 101,
+      "narration": "ディズニーランドの建物や空間には、ゲストが気づかない巧みな設計の秘密が隠されています。今日は思わず誰かに話したくなる4つの仕掛けを紹介します。",
+      "image_query": "fairytale castle blue sky daytime",
+      "scrape_query": "東京ディズニーランド シンデレラ城 昼 全景",
+      "image_prompt": "a grand fairytale castle in bright daylight, majestic, wide shot",
+      "keywords": ["設計の秘密"]
+    },
+    {
+      "id": 2,
+      "narration": "園内のゴミ箱は、およそ30歩ごとに置かれていると言われています。これは食べ歩く人が、ゴミを長く持ちたくない距離を計算した結果なんです。",
+      "image_query": "clean park walkway pavement",
+      "scrape_query": "ディズニーランド ゴミ箱 カラフル",
+      "image_prompt": "a spotless park walkway in bright daylight, clean and tidy",
+      "keywords": ["30歩", "計算した結果"]
+    },
+    {
+      "id": 3,
+      "narration": "パークの中には、時計がほとんど見当たりません。時間を忘れて夢の世界に夢中になってもらうため、あえて減らしていると言われています。",
+      "image_query": "amusement park sunny day",
+      "scrape_query": "東京ディズニーランド 時計 世界観",
+      "image_prompt": "a bright amusement park area on a sunny day, joyful atmosphere",
+      "keywords": ["時計", "時間を忘れて"]
+    },
+    {
+      "id": 4,
+      "narration": "建物の壁がわざと汚れて見えるのは、ウェザリングという技法です。新品をあえて古びさせることで、物語の世界に本物らしさを与えています。",
+      "image_query": "old weathered stone wall texture",
+      "scrape_query": "ディズニーシー 壁 ウェザリング",
+      "image_prompt": "an old weathered stone building wall, rich texture, golden hour",
+      "keywords": ["ウェザリング", "本物らしさ"]
+    },
+    {
+      "id": 5,
+      "narration": "シンデレラ城は、上にいくほど石やレンガを小さく作っています。この強制遠近法という手法で、実際の高さ以上に大きく見せているんです。",
+      "image_query": "tall fairytale castle blue sky",
+      "scrape_query": "東京ディズニーランド シンデレラ城 外観 青空",
+      "image_prompt": "a tall fairytale castle towering against a blue sky, majestic",
+      "keywords": ["強制遠近法", "大きく見せている"]
+    },
+    {
+      "id": 106,
+      "narration": "4つの設計の秘密、何個知っていましたか？知っていた数をコメントで教えてください！あなたのコメントが次の動画のネタになるかもしれません。",
+      "image_query": "people commenting smartphone social media",
+      "scrape_query": "東京ディズニーランド 笑顔 ゲスト 楽しい",
+      "image_prompt": "happy people smiling and using smartphones, social media engagement",
+      "keywords": ["コメントで教えて"]
+    }
+  ]
+}

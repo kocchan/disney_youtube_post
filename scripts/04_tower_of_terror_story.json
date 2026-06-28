@@ -1,0 +1,82 @@
+{
+  "title": "タワー・オブ・テラーで絶対に知ってはいけない運営の裏側",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate",
+    "subject": "タワー・オブ・テラー",
+    "subject_en": "Tower of Terror DisneySea"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "タワー・オブ・テラーでの目的って、なんだと思いますか。まさかホテルの歴史を学ぶためだと純粋に信じていませんよね。実はあれ、仕組まれた罠なのです。",
+      "image_query": "dark haunted hotel exterior night eerie fog",
+      "image_prompt": "a dark towering hotel at night with eerie fog, gothic architecture, ominous cinematic vertical",
+      "keywords": ["仕組まれた罠", "歴史を学ぶためだ"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4837,
+        "duration": 13
+      }
+    },
+    {
+      "id": 2,
+      "narration": "よく考えてください。死人が出た呪われたホテルに、一般人をわざわざ連れ込む理由はなんでしょう。にこやかなキャストたちは、ある目的のためにあなたをここへ送り込んでいるのです。",
+      "image_query": "crowd people walking into dark building ominous corridor",
+      "image_prompt": "people walking into a dark mysterious hotel corridor from behind, surveillance camera angle, eerie",
+      "keywords": ["死人が出た", "送り込んでいるのです"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4632,
+        "duration": 13
+      }
+    },
+    {
+      "id": 3,
+      "narration": "ツアーを主催する保存協会のトップはベアトリス。彼女の父はハイタワーの最大のライバルでした。彼女の真の目的はホテル保存ではなく、呪いの偶像をこの館に永久に封印することです。",
+      "image_query": "mysterious woman portrait 1900s dark vintage dramatic",
+      "image_prompt": "a stern mysterious woman in 1900s formal attire, dramatic portrait with dark shadowy background",
+      "keywords": ["ベアトリス", "永久に封印"]
+    },
+    {
+      "id": 4,
+      "narration": "封印を維持するためには偶像に定期的にエサを与え続けなければなりません。そのエサとは密室に閉じ込められた人間の極限の恐怖と悲鳴です。だからあなたは今日も招かれたのです。",
+      "image_query": "dark room trapped people screaming horror shadows",
+      "image_prompt": "a pitch dark room with a faint glowing idol in the center, terrified silhouettes, horror cinematic",
+      "keywords": ["極限の恐怖と悲鳴", "今日も招かれた"]
+    },
+    {
+      "id": 5,
+      "narration": "エレベーターが何度も不規則に落ちるのは恐怖を最大限に搾り取るための設計です。落下直前のあの写真撮影は、生贄が十分に恐怖しているかを確認するための納品書なのです。",
+      "image_query": "camera flash dark room screaming people dramatic",
+      "image_prompt": "a sudden camera flash in a pitch-dark elevator capturing terrified faces, cinematic horror",
+      "keywords": ["生贄が十分に恐怖", "納品書"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4562,
+        "duration": 13
+      }
+    },
+    {
+      "id": 6,
+      "narration": "キャストが笑顔でエレベーターの扉を閉める理由、もうわかりますよね。自分が生贄になりたくないから、あなたを差し出しているのです。毎日、何百人もの生贄が送り込まれています。",
+      "image_query": "elevator door closing dark sinister smile",
+      "image_prompt": "an elevator door slowly closing with a dark sinister shadow visible from inside, horror cinematic",
+      "keywords": ["生贄になりたくない", "何百人もの生贄"]
+    },
+    {
+      "id": 7,
+      "narration": "次に行くとき、扉を閉めるキャストの目をよく見てください。あの笑顔は絶対に目が笑っていません。あなたが次に生贄として連れて行く相手に、この動画をシェアしてください。",
+      "image_query": "theme park night dark harbor eerie atmosphere",
+      "image_prompt": "a dark atmospheric theme park harbor at night, dramatic eerie lighting, cinematic vertical",
+      "keywords": ["目が笑っていません", "生贄として連れて行く"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 13
+      }
+    }
+  ]
+}

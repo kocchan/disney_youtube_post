@@ -1,0 +1,57 @@
+# パイプライン設定（調整値はここに集約。秘密情報は .env へ）
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  codec: libx264
+  preset: veryfast       # ultrafast..veryslow (速い⇔高圧縮)
+  ken_burns: true        # 画像に軽いズームを付与
+
+tts:
+  provider: gtts         # gtts | say | openai | elevenlabs
+  lang: ja
+  voice: Otoya           # say用の声(男性)。未導入なら男性ボイスに自動フォールバック
+  speed: 1.5             # 再生速度(1.5 = 1.5倍速・音程維持)
+
+image:
+  provider: stock        # stock | scrape
+  allow_scrape: false    # true でも CLI --allow-scrape が無いと scrape は無効
+
+subtitle:
+  font: assets/fonts/NotoSansJP-Bold.ttf
+  font_size: 64
+  color: "#FFFFFF"        # 通常文字
+  highlight_color: "#FFD400"  # 強調キーワード
+  stroke_color: "#000000"     # 縁取り
+  stroke_width: 6
+  max_chars_per_line: 13      # この文字数で改行(1080px幅・font64に最適化)
+  bottom_margin: 320          # 画面下端からの余白(px)  ※position=bottom の時のみ使用
+  position: center            # center | bottom
+
+letterbox:
+  enabled: true
+  top_bar: 450        # 上の黒帯の高さ(px) — タイトルが収まる領域(1.5倍・スマホ見切れ対策)
+  bottom_bar: 200     # 下の黒帯の高さ(px)
+
+title_overlay:
+  enabled: true
+  font_size: 80
+  color: "#FFD400"            # 文字色(黄)
+  stroke_color: "#000000"     # 縁取り色
+  stroke_width: 8
+  bg_alpha: 180               # 背景帯の透明度(0〜255)
+  padding: 30                 # 上下の余白(px)
+  max_chars: 14               # この文字数で折り返す
+
+sfx:
+  enabled: true
+  volume_db: -12.5            # シーン切り替えスウッシュ音の音量(3/4音量)
+  caption_enabled: true       # テロップ出現時のポン音・ドン音
+  caption_volume_db: -16.5    # テロップ音の音量(3/4音量)
+
+bgm:
+  enabled: true
+  selection: rotate       # rotate(3曲を順につなぐ) | random | <ファイルパス>
+  narration_gain_db: 1.9  # ナレーション音量(1.25倍)
+  bgm_gain_db: -21.0      # BGMを下げる量

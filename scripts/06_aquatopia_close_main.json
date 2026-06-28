@@ -1,0 +1,99 @@
+{
+  "title": "アクアトピアに隠された「水底の錯覚トリック」{count}選【9月終了】",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate",
+    "theme": "aquatopia_close",
+    "variant": "main",
+    "subject": "アクアトピア",
+    "subject_en": "Aquatopia Tokyo DisneySea water ride"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "今年9月14日で永久クローズするアクアトピア。あの予測不能な水面を暴走するスリル、実はイマジニアが仕込んだ恐ろしい錯覚トリックが{count}個隠されていたことをご存知ですか。",
+      "image_query": "water ride amusement park splash outdoor adventure",
+      "image_prompt": "an outdoor water ride vehicle splashing through dark water at a theme park, dramatic and thrilling",
+      "keywords": ["永久クローズ", "錯覚トリック"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2108,
+        "duration": 12
+      }
+    },
+    {
+      "id": 2,
+      "narration": "深く暗い水に放り込まれたようなあの感覚。でも実際の水深はたったの15センチ。足首ほどの浅さなのに、なぜあんなに「落ちたら大変」と感じるのか。その答えが「底を暗く塗る」という仕掛けにあります。",
+      "image_query": "dark water ride night outdoor theme park atmospheric",
+      "image_prompt": "an outdoor water ride at night with dark atmospheric water, moody and mysterious lighting",
+      "scrape_query": "アクアトピア 夜 水面 東京ディズニーシー",
+      "keywords": ["たったの15センチ", "底を暗く塗る"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 132,
+        "duration": 14
+      }
+    },
+    {
+      "id": 3,
+      "narration": "プールの底を真っ黒に塗りつぶすと、光を吸収して底が見えなくなる。人間の脳は底が見えない水を自動的に「深い」と判断するため、たった15センチの水でも底なし沼のような恐怖が生まれます。",
+      "image_query": "black paint dark ocean floor deep sea darkness",
+      "image_prompt": "close-up of black painted surface or deep dark ocean floor, absorbing all light, eerie and bottomless",
+      "scrape_query": "黒い海底 ダークプール 黒いペンキ 深い水",
+      "keywords": ["底が見えない", "底なし沼のような恐怖"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4943,
+        "duration": 12
+      }
+    },
+    {
+      "id": 4,
+      "narration": "さらに底を暗くすることで水面が完璧な鏡になる。空や岩場の景色が水に映り込み、どこが水面でどこが底かわからなくなる。この鏡の錯覚が「深さへの恐怖」をリアルに増幅しているんです。",
+      "image_query": "dark water surface mirror reflection theme park night ride",
+      "image_prompt": "dark still water surface perfectly reflecting surrounding rocks and sky, mirror-like, atmospheric theme park setting",
+      "scrape_query": "アクアトピア 水面 反射 東京ディズニーシー ポートディスカバリー",
+      "keywords": ["鏡の錯覚", "深さへの恐怖"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2921,
+        "duration": 12
+      }
+    },
+    {
+      "id": 5,
+      "narration": "もし底が透き通っていたら？ただのコンクリートの上を車輪で走っているのが丸見えになって、スリルは完全にゼロ。浅い水を深く見せることで体験の価値を何十倍にも引き上げる、完璧すぎる計算です。",
+      "image_query": "businessman calculating strategy planning whiteboard",
+      "image_prompt": "a professional businessman calculating strategy on a whiteboard or with charts, confident and analytical expression",
+      "scrape_query": "ビジネスマン 計算 戦略 プランニング",
+      "keywords": ["スリルは完全にゼロ", "完璧すぎる計算"]
+    },
+    {
+      "id": 6,
+      "narration": "そんなアクアトピアが、2026年9月14日をもって永久クローズ。7月2日からは最後の夏限定びしょ濡れバージョンが始まります。終わる前にこの錯覚を頭に入れて、もう一度乗ってみてください。",
+      "image_query": "theme park attraction closed farewell announcement sign",
+      "image_prompt": "a theme park ride closure announcement or farewell sign, bittersweet and nostalgic atmosphere",
+      "scrape_query": "アクアトピア 閉鎖 2026 クローズ 終了 東京ディズニーシー",
+      "keywords": ["9月14日", "びしょ濡れバージョン"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 1976,
+        "duration": 12
+      }
+    },
+    {
+      "id": 7,
+      "narration": "今日紹介した錯覚のトリック、{count}個中いくつ知っていましたか？コメントで教えてください。最後に一緒にびしょ濡れになりたい人に、この動画をシェアして誘ってあげてください。",
+      "image_query": "discovery bay harbor sea night lights theme park",
+      "image_prompt": "a futuristic harbour at night with glowing lights reflected in calm water, cinematic wide shot",
+      "keywords": ["知っていましたか", "シェアして誘って"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4585,
+        "duration": 12
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "【脳の錯覚】ホーンテッドマンション「最初の部屋」に隠されたヤバすぎる洗脳トリック",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "Escort.mp3",
+    "theme": "haunted_mansion",
+    "subject": "ホーンテッドマンション",
+    "subject_en": "Haunted Mansion attraction"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ホーンテッドマンションの最初にある「伸びる部屋」。あれ、実はただの脅かし要素じゃないって知ってた？",
+      "image_query": "old mansion portrait painting stretching elongating dark vintage",
+      "scrape_query": "ホーンテッドマンション 伸びる部屋 肖像画 東京ディズニーランド",
+      "image_prompt": "dark vintage portrait paintings on a mansion wall stretching vertically, eerie atmosphere",
+      "keywords": ["伸びる部屋", "脅かし要素じゃない"]
+    },
+    {
+      "id": 2,
+      "narration": "元祖アメリカのパークでは、線路の下をくぐるための「本物のエレベーター」。でも東京にはその必要がないから、実は床ではなく「天井」が上がってる。",
+      "image_query": "haunted mansion disneyland anaheim usa exterior night gothic",
+      "scrape_query": "アメリカ ディズニーランド ホーンテッドマンション エレベーター 構造",
+      "image_prompt": "cross-section diagram of an underground elevator shaft beneath railway tracks, technical illustration",
+      "keywords": ["本物のエレベーター", "天井"]
+    },
+    {
+      "id": 3,
+      "narration": "じゃあなぜ東京でもわざわざ部屋を伸ばすのか。本当の狙いは、ゲストの「方向感覚の完全な破壊」。",
+      "image_query": "octagon room disorientation dark hidden exit diagram",
+      "scrape_query": "ホーンテッドマンション 八角形の部屋 天井 方向感覚",
+      "image_prompt": "octagonal dark room viewed from above with hidden exit, disorientation concept illustration",
+      "keywords": ["方向感覚", "完全な破壊"]
+    },
+    {
+      "id": 4,
+      "narration": "窓もドアもない八角形の部屋。急に真っ暗になり、雷のフラッシュ。そして明かりがつくと、入ってきた場所とは「全く別の壁」が突然開く。",
+      "image_query": "dark room ceiling rising lightning flash horror hidden wall",
+      "scrape_query": "ホーンテッドマンション 天井 暗転 雷 演出 壁 ドア",
+      "image_prompt": "pitch dark room with ceiling rising and lightning flash revealing a hidden door in the wall, horror atmosphere",
+      "keywords": ["八角形の部屋", "全く別の壁"]
+    },
+    {
+      "id": 5,
+      "narration": "方向感覚を完全にバグらせ、脳から日常の安心感を奪い取る。これこそが、ゲストを霊界に引きずり込むイマジニアの完璧な心理操作。",
+      "image_query": "smart person thinking planning serious focused professional",
+      "scrape_query": "仕事ができる人 考えている ビジネス 戦略",
+      "image_prompt": "a sharp focused professional deeply thinking and planning, dramatic lighting",
+      "keywords": ["日常の安心感を奪い取る", "完璧な心理操作"]
+    },
+    {
+      "id": 6,
+      "narration": "ちなみにこの本当に怖い「通常バージョン」、なんと8月4日から長期休止に突入。秋からのナイトメアー仕様に切り替わるから、通常版はもう年内見納め！",
+      "image_query": "theme park attraction closure notice sign halloween decoration night",
+      "scrape_query": "ディズニーランド ホーンテッドマンション 8月4日 長期休止 通常バージョン",
+      "image_prompt": "haunted mansion exterior at night with halloween decoration and warning closure sign",
+      "keywords": ["8月4日から長期休止", "年内見納め"]
+    },
+    {
+      "id": 7,
+      "narration": "年内最後のガチホラー体験。忘れないように今のうちに動画を保存して、早めに乗りに行って！",
+      "image_query": "spooky old mansion exterior night fog atmospheric dark gothic",
+      "scrape_query": "東京ディズニーランド ホーンテッドマンション 外観 夜 不気味 霧",
+      "image_prompt": "spooky old gothic mansion in night fog, atmospheric horror setting",
+      "keywords": ["ガチホラー体験", "動画を保存"]
+    }
+  ]
+}

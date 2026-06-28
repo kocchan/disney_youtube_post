@@ -1,0 +1,70 @@
+{
+  "title": "【鳥肌モノ】ベイマックスの夏パレードに「ミセス」が選ばれた本当の理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "追いかけっこキャッハー.mp3",
+    "theme": "baymax_cooldown",
+    "subject": "ベイマックスのミッション・クールダウン",
+    "subject_en": "Baymax Mission Cooldown parade"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "7月2日から始まるベイマックスの夏パレード「ミッション・クールダウン」。テーマ音楽にMrs. GREEN APPLEが選ばれた本当の理由、実はめちゃくちゃ深い。",
+      "image_query": "water splash parade float summer festival crowd joy",
+      "scrape_query": "ベイマックスのミッション・クールダウン パレード 水 夏 2026",
+      "image_prompt": "colorful parade float with water spraying at excited summer crowd, vibrant festival atmosphere",
+      "keywords": ["7月2日から", "本当の理由"]
+    },
+    {
+      "id": 2,
+      "narration": "単なる人気バンドの起用じゃない。そもそもベイマックスは、人々の傷ついた心と体を守ることを使命とした「ケア・ロボット」として設計されている。",
+      "image_query": "white robot caring hug embrace gentle healthcare warmth",
+      "scrape_query": "ベイマックス ケアロボット ヒロ 映画 抱擁 癒し 優しさ",
+      "image_prompt": "gentle white healthcare robot embracing a person, soft warm lighting, caring atmosphere",
+      "keywords": ["傷ついた心", "ケア・ロボット"]
+    },
+    {
+      "id": 3,
+      "narration": "そしてミセスの楽曲「Carrying Happiness」が持つテーマ。それは「人々に幸福を運ぶこと」。この両者の「誰かを救い、癒やす」という本質が完全に一致。",
+      "image_query": "music band album artwork uplifting pop colorful happiness",
+      "scrape_query": "Mrs. GREEN APPLE Carrying Happiness 楽曲 ディズニー コラボ 2026",
+      "image_prompt": "vibrant music album artwork with uplifting colorful design, happiness and positivity theme",
+      "keywords": ["Carrying Happiness", "完全に一致"]
+    },
+    {
+      "id": 4,
+      "narration": "さらに恐ろしいのが、イマジニアが仕込んだ「音楽心理学」の話。このパレードの本当の目的は、夏の猛暑で限界まで低下したゲストの「エナジーレベル」を強制的に上昇させること。",
+      "image_query": "summer heat exhausted crowd park visitors suddenly smiling energized",
+      "scrape_query": "東京ディズニーランド 夏 パレード ゲスト 笑顔 元気 暑さ 水",
+      "image_prompt": "summer park visitors going from exhausted to energized and smiling, dramatic transformation",
+      "keywords": ["音楽心理学", "エナジーレベル"]
+    },
+    {
+      "id": 5,
+      "narration": "冷たい水を浴びる物理的な爽快感に、ミセスの圧倒的にポジティブな重低音ビートをプラス。脳内にドーパミンを大量分泌させ、精神的にも限界まで元気にさせる完璧な計算。",
+      "image_query": "water splash music beat crowd energy excited euphoric summer",
+      "scrape_query": "ベイマックスのミッション・クールダウン 水しぶき 音楽 興奮 テンション 夏",
+      "image_prompt": "crowd exploding with joy as water splashes during energetic music, peak summer excitement",
+      "keywords": ["ドーパミン", "完璧な計算"]
+    },
+    {
+      "id": 6,
+      "narration": "この心も体もリフレッシュされる最強パレードは7月2日木曜日からスタート。ミセスの曲に合わせて、みんなで最高の夏を始めよう！",
+      "image_query": "calendar july summer event start announcement colorful",
+      "scrape_query": "ベイマックスのミッション・クールダウン 7月2日 2026 開始 スタート 日程",
+      "image_prompt": "summer event calendar with July 2nd highlighted, colorful parade announcement visual",
+      "keywords": ["最強パレード", "7月2日木曜日から"]
+    },
+    {
+      "id": 7,
+      "narration": "この夏、絶対にハズせないびしょ濡れ体験。忘れないように今すぐ動画を保存して、インパの予定を立ててみて！",
+      "image_query": "summer save bookmark phone hand pointing water splash background",
+      "scrape_query": "東京ディズニーランド ベイマックス 夏 パレード 外観 びしょ濡れ",
+      "image_prompt": "hand pointing at bookmark save icon with summer water splash background, vibrant",
+      "keywords": ["びしょ濡れ体験", "動画を保存"]
+    }
+  ]
+}

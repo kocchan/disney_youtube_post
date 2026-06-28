@@ -1,0 +1,70 @@
+{
+  "title": "【監視されてる】モンスターズ・インク最後の「ロズ」が服装を知っている怖い理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "追いかけっこキャッハー.mp3",
+    "theme": "monsters_inc_roz",
+    "subject": "モンスターズ・インク ライド＆ゴーシーク！",
+    "subject_en": "Monsters Inc dark ride finale character"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "モンスターズ・インクの最後。ロズに「3台目のメガネのお兄さん」って服装を当てられて、ビビったことない？まだ体験してない人、あれ相当ビビるから心の準備しといて。",
+      "image_query": "dark ride theater end scene monster character speaking audience surprised",
+      "scrape_query": "モンスターズ・インク ライド＆ゴーシーク ロズ 服装 当てる 最後",
+      "image_prompt": "guests on a dark ride reacting in surprise as a monster character calls them out personally at the finale",
+      "keywords": ["服装を当てられて", "心の準備"]
+    },
+    {
+      "id": 2,
+      "narration": "最新のAIカメラ？それとも顔認識センサー？実はどれも大間違い。あれは最新技術なんかじゃないし、ディズニーが開発した特別なセンサーでもない。",
+      "image_query": "ai facial recognition system rejected crossed out no technology",
+      "scrape_query": "モンスターズ・インク ロズ AI カメラ 顔認識 技術 仕組み 誤解",
+      "image_prompt": "futuristic AI facial recognition diagram with a large red X through it, debunking myth",
+      "keywords": ["大間違い", "最新技術なんかじゃない"]
+    },
+    {
+      "id": 3,
+      "narration": "本当の正体。それは裏のモニタールームに潜む「人間のキャストさん」。隠しカメラの映像をリアルタイムで確認しながら、カメラ越しにゲストを監視する、ガチの目視確認。",
+      "image_query": "dark monitor room surveillance multiple screens silhouette operator watching",
+      "scrape_query": "モンスターズ・インク ロズ モニタールーム キャスト 裏側 カメラ リアルタイム",
+      "image_prompt": "dim backstage monitor room with multiple surveillance screens and a silhouette of an operator watching carefully",
+      "keywords": ["モニタールーム", "ガチの目視確認"]
+    },
+    {
+      "id": 4,
+      "narration": "キャストさんはモニターを見ながら、一瞬でゲストの特徴を把握。そして無数にある「録音されたセリフのボタン」の中から、ぴったりなものを神速でプッシュ。",
+      "image_query": "control panel many buttons choices recording studio operator quick",
+      "scrape_query": "モンスターズ・インク ロズ セリフ ボタン キャスト オペレーション 録音 種類",
+      "image_prompt": "control panel with countless labeled buttons in a backstage broadcast room, operator hand poised to press",
+      "keywords": ["録音されたセリフのボタン", "神速でプッシュ"]
+    },
+    {
+      "id": 5,
+      "narration": "AIには出せない絶妙な間とツッコミ。あえてアナログな人間の「神業オペレーション」を残すことで、モンスターの世界とのリアルな会話を生み出す究極の魔法。",
+      "image_query": "guest laughing delighted surprise character interaction theme park warm moment",
+      "scrape_query": "モンスターズ・インク ロズ ゲスト やり取り 笑い 驚き 人間 アナログ 魔法",
+      "image_prompt": "guests burst into laughter as a character makes a perfectly timed personal comment, genuine magical moment",
+      "keywords": ["神業オペレーション", "究極の魔法"]
+    },
+    {
+      "id": 6,
+      "narration": "でも気をつけて！なんと7月1日から1ヶ月間、長期休止に突入。8月の再開まで約1ヶ月待つ必要があるから、7月の夏休み前半はロズにイジってもらえません！",
+      "image_query": "calendar july warning closure urgent red mark announcement",
+      "scrape_query": "モンスターズ・インク ライド＆ゴーシーク 2026年 7月 休止 再開 期間",
+      "image_prompt": "calendar showing July with a large urgent warning notice, closure announcement highlighted in red",
+      "keywords": ["7月1日から1ヶ月間", "長期休止に突入"]
+    },
+    {
+      "id": 7,
+      "narration": "8月の再開後、ロズに当ててもらえるようにド派手な服を着ていく準備！目立つカチューシャやアイテムをつけて行くと当てられやすいから、忘れないように動画を保存しといて！",
+      "image_query": "colorful headband accessories outfit bright standout save bookmark hand",
+      "scrape_query": "東京ディズニーランド モンスターズ・インク カチューシャ グッズ 目立つ 服装",
+      "image_prompt": "bright colorful character headband and standout outfit accessories displayed with a save icon",
+      "keywords": ["ド派手な服", "動画を保存"]
+    }
+  ]
+}

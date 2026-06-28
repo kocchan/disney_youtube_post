@@ -1,0 +1,70 @@
+{
+  "title": "【祝25周年】Eパレが絶対に色褪せない理由と、ヤバすぎる「夏の速報」",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "swing_swing.mp3",
+    "theme": "eparade_25th",
+    "subject": "エレクトリカルパレード",
+    "subject_en": "Tokyo Disneyland Electrical Parade"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "今年で25周年。エレクトリカルパレードが昔から全く古く見えない本当の理由、知ってる？",
+      "image_query": "colorful led parade float night dark",
+      "scrape_query": "東京ディズニーランド エレクトリカルパレード 夜",
+      "image_prompt": "a colorful illuminated parade float approaching in the dark, magical night atmosphere",
+      "keywords": ["古く見えない", "本当の理由"]
+    },
+    {
+      "id": 2,
+      "narration": "25年前のパレードが今でも最強なのは、思い出補正じゃない。イマジニアの異常な執念による、完全なステルス・アップデートの賜物。",
+      "image_query": "engineer thinking problem solving brainstorm serious",
+      "scrape_query": "エンジニア 設計 悩む 考える 男性",
+      "image_prompt": "a thoughtful engineer or designer looking serious while analyzing a complex problem",
+      "keywords": ["異常な執念", "ステルス・アップデート"]
+    },
+    {
+      "id": 3,
+      "narration": "豆電球から最新のLEDへ。ただ明るくしただけじゃなく、音楽の1音1音に合わせて光を制御する、変態的で緻密なプログラミング。",
+      "image_query": "colorful led lights music rhythm closeup dramatic",
+      "scrape_query": "エレクトリカルパレード フロート LED 光 音楽 ジーニー アリス",
+      "image_prompt": "intricate colorful LED lights synchronized to music, vibrant patterns closeup",
+      "keywords": ["変態的で緻密", "光を制御"]
+    },
+    {
+      "id": 4,
+      "narration": "さらにヤバいのが音の魔法。前後のフロートの音楽が混ざらないよう、なんとGPSと連動。パークのどこにいても、再生タイミングをミリ秒単位で自動調整。",
+      "image_query": "gps map satellite signal location pin network",
+      "scrape_query": "GPS 位置情報 音楽 連動 スマートフォン 信号",
+      "image_prompt": "GPS satellite signal connecting to smartphone showing synchronized music location pins",
+      "keywords": ["GPSと連動", "ミリ秒単位"]
+    },
+    {
+      "id": 5,
+      "narration": "そして25周年の今、絶対に忘れないでほしいのが限定特典。7月12日までの期間中、パーク内で位置情報をオンにして東京ディズニーリゾート・アプリを利用すると、25周年記念メッセージ入りのスペシャル画像がダウンロード可能。これ、絶対ゲットして。",
+      "image_query": "smartphone app location map download screen hand",
+      "scrape_query": "東京ディズニーリゾート アプリ 位置情報 25周年 記念 スペシャル画像",
+      "image_prompt": "hand holding smartphone with location-enabled app, download notification screen",
+      "keywords": ["位置情報をオンにして", "25周年記念メッセージ"]
+    },
+    {
+      "id": 6,
+      "narration": "さらに歴史的大ニュース。なんと7月2日からは、夏季イベント連動でEパレまさかのびしょ濡れバージョンがスタート。夜の光と水のコラボ、これ絶対ヤバい。",
+      "image_query": "water splash night lights festival entertainment",
+      "scrape_query": "ディズニーびしょ濡れEパレ 水 夏 エレクトリカルパレード",
+      "image_prompt": "colorful lights with water splashing at night, summer festival atmosphere",
+      "keywords": ["歴史的大ニュース", "びしょ濡れバージョン"]
+    },
+    {
+      "id": 7,
+      "narration": "限定画像が終わる7月12日までに絶対行かなきゃ損！夏の夜の完璧なインパ計画を立てるために、この動画を保存して見返せるようにしといて！",
+      "image_query": "castle night sky summer fireworks bokeh",
+      "scrape_query": "ディズニーびしょ濡れ 夏 パレード 夜 エレクトリカルパレード 水",
+      "image_prompt": "a majestic fairytale castle lit up at night with summer evening atmosphere",
+      "keywords": ["絶対行かなきゃ損", "保存して"]
+    }
+  ]
+}

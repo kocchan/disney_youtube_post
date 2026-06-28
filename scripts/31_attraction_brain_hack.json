@@ -1,0 +1,95 @@
+{
+  "title": "【閲覧注意】アトラクションに隠された「脳をハッキングする罠」TOP3",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Escort.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーのアトラクション、ただ楽しく乗ってるだけだと思ってない？実はあなたの脳、完全にハッキングされてます。えげつない罠TOP3。",
+      "image_query": "theme park ride guests laughing surveillance camera filter eerie",
+      "image_prompt": "joyful theme park guests on a ride suddenly overlaid with a surveillance camera glitch filter, making the fun look like a psychological experiment",
+      "scrape_query": "ディズニーランド アトラクション ゲスト 笑顔 監視 心理学 罠",
+      "keywords": ["ハッキングされてます", "えげつない罠"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 1976,
+        "duration": 8
+      }
+    },
+    {
+      "id": 2,
+      "narration": "第3位、カリブの海賊。ここに入った瞬間、独特な「匂い」がするよね。実は普通のプールみたいな塩素ではなく「臭素（ブロミン）」を使用。",
+      "image_query": "dark water tunnel boat ride smoke fog pirate atmosphere",
+      "image_prompt": "a dark atmospheric boat ride through a misty tunnel with red torchlight, evoking a swashbuckling pirate adventure below deck",
+      "scrape_query": "カリブの海賊 入口 暗闇 ボート 匂い 独特 水路",
+      "keywords": ["臭素（ブロミン）", "カリブの海賊"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 132,
+        "duration": 10
+      }
+    },
+    {
+      "id": 3,
+      "narration": "これ、暗闇でも目が痛くならないための工夫であると同時に、匂いと記憶を強烈に結びつける「プルースト効果」。あの匂いを嗅ぐだけで「ディズニーに来た！」と脳を強制的にバグらせる洗脳の匂い。",
+      "image_query": "brain memory scent smell trigger flashback hippocampus neuroscience",
+      "image_prompt": "an illustrated human brain with scent molecules connecting to vivid memory flashbacks, representing the Proust Effect of smell and memory",
+      "scrape_query": "プルースト効果 匂い 記憶 脳 海馬 嗅覚 感情 ディズニー",
+      "keywords": ["プルースト効果", "洗脳の匂い"]
+    },
+    {
+      "id": 4,
+      "narration": "第2位、ホーンテッドマンションの最初の「伸びる部屋」。あれはただの演出じゃない。外の世界の光と音を完全に遮断し、暗闇に目を慣らさせるための「感覚遮断室」。",
+      "image_query": "elevator room dark descend portrait stretch horror stretch room",
+      "image_prompt": "an eerie elevator room in a haunted mansion with stretching portrait paintings on the walls, guests trapped in complete darkness",
+      "scrape_query": "ホーンテッドマンション 伸びる部屋 ストレッチングルーム 暗闇 閉じ込め 演出",
+      "keywords": ["伸びる部屋", "感覚遮断室"]
+    },
+    {
+      "id": 5,
+      "narration": "ゲストから空間の認識を奪い、「ここにはもう逃げ場がない」と本能レベルで絶望させる、イマジニアの完璧なホラー設計。",
+      "image_query": "dark room no exit door closed trapped escape horror claustrophobia",
+      "image_prompt": "a person in a pitch-dark room as the doors close and lock, no escape visible, triggering primal fear — a perfect psychological horror design",
+      "scrape_query": "ホーンテッドマンション 扉 閉まる 出口なし 閉じ込め 恐怖 心理学",
+      "keywords": ["逃げ場がない", "本能レベルで絶望"]
+    },
+    {
+      "id": 6,
+      "narration": "そして第1位。実は2026年6月30日から8月末まで、約2ヶ月もの「長期休止」に入ってしまうプーさんのハニーハント。",
+      "image_query": "theme park attraction closed maintenance notice sign entrance shutdown",
+      "image_prompt": "a beloved theme park attraction entrance with a large temporary closure notice stamped across it, fans looking disappointed",
+      "scrape_query": "プーさんのハニーハント 長期休止 2026 クローズ 6月30日 8月",
+      "keywords": ["長期休止", "プーさんのハニーハント"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3551,
+        "duration": 10
+      }
+    },
+    {
+      "id": 7,
+      "narration": "レールがない予測不能な動き。これ、大人から「次にどう動くか」というコントロール感を完全に奪い、強制的に「幼児退行」させる心理学の罠。だから誰もが無防備に笑ってしまう。",
+      "image_query": "trackless ride vehicle spinning unpredictable movement laughter joy child",
+      "image_prompt": "a trackless ride vehicle spinning unexpectedly in different directions, guests of all ages laughing uncontrollably with childlike abandon",
+      "scrape_query": "プーさんのハニーハント ハニーポット LPS 予測不能 動き レールなし 幼児退行",
+      "keywords": ["予測不能な動き", "幼児退行"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3563,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "ハニーハントが長期間乗れなくなる前に、この「幼児退行」を味わいに行きたい人！忘れないように今すぐ保存して！",
+      "image_query": "smartphone save button ribbon bookmark tap glow notification",
+      "image_prompt": "a hand tapping a glowing yellow save bookmark ribbon on a smartphone screen, saving a video about Pooh's Hunny Hunt closing soon",
+      "scrape_query": "スマートフォン 保存 リボン ブックマーク タップ 動画",
+      "keywords": ["幼児退行", "保存"]
+    }
+  ]
+}

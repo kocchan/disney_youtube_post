@@ -1,0 +1,92 @@
+{
+  "title": "ディズニーランドの知られざる裏設定{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "swing_swing.mp3",
+    "theme": "disney_urabanashi"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "実はディズニーランドには、ゲストが気づかないように仕掛けられた工夫が山ほどあります。今日は思わず誰かに話したくなる裏設定を、{count}個一気に紹介します。",
+      "image_query": "fairytale castle fireworks night",
+      "scrape_query": "東京ディズニーランド シンデレラ城 正面 全景",
+      "image_prompt": "a grand fairytale castle at night with fireworks, cinematic, dramatic",
+      "keywords": ["裏設定"]
+    },
+    {
+      "id": 2,
+      "narration": "園内のゴミ箱は、およそ30歩ごとに置かれていると言われています。これは食べ歩く人が、ゴミを長く持ちたくない距離を計算した結果なんです。",
+      "image_query": "colorful trash bin park",
+      "scrape_query": "ディズニーランド ゴミ箱",
+      "image_prompt": "a spotless park walkway in bright daylight, clean and tidy",
+      "keywords": ["30歩", "計算した結果"]
+    },
+    {
+      "id": 3,
+      "narration": "パークの中には、時計がほとんど見当たりません。時間を忘れて夢の世界に夢中になってもらうため、あえて減らしていると言われています。",
+      "image_query": "amusement park sunny day",
+      "scrape_query": "東京ディズニーランド 時計 世界観",
+      "image_prompt": "a bright amusement park area on a sunny day, joyful atmosphere",
+      "keywords": ["時計", "時間を忘れて"]
+    },
+    {
+      "id": 4,
+      "narration": "建物の壁がわざと汚れて見えるのは、ウェザリングという技法です。新品をあえて古びさせることで、物語の世界に本物らしさを与えています。",
+      "image_query": "old weathered stone wall texture",
+      "scrape_query": "ディズニーランド 壁 わざと汚す",
+      "image_prompt": "an old weathered stone building wall, rich texture, golden hour",
+      "keywords": ["ウェザリング", "本物らしさ"]
+    },
+    {
+      "id": 5,
+      "narration": "シンデレラ城は、上にいくほど石やレンガを小さく作っています。この強制遠近法という手法で、実際の高さ以上に大きく見せているんです。",
+      "image_query": "tall fairytale castle blue sky",
+      "scrape_query": "東京ディズニーランド シンデレラ城 外観 青空",
+      "image_prompt": "a tall fairytale castle towering against a blue sky, majestic",
+      "keywords": ["強制遠近法", "大きく見せている"]
+    },
+    {
+      "id": 6,
+      "narration": "園内のBGMは、エリアの境界でぴったり切り替わるよう設計されています。隣の音楽が混ざらないことで、それぞれの世界観が途切れないんです。",
+      "image_query": "vintage street lamps evening",
+      "scrape_query": "ディズニーランド エリア境界",
+      "image_prompt": "vintage european street with warm lamps in the evening, atmospheric",
+      "keywords": ["BGM", "世界観"]
+    },
+    {
+      "id": 7,
+      "narration": "ふと香るポップコーンやキャラメルの匂いも、実は機械で意図的に漂わせていると言われています。嗅覚から食欲と楽しさを刺激しているんです。",
+      "image_query": "fresh caramel popcorn closeup",
+      "scrape_query": "ディズニーランド ポップコーンワゴン",
+      "image_prompt": "fresh caramel popcorn in warm light, appetizing closeup",
+      "keywords": ["匂い", "意図的"]
+    },
+    {
+      "id": 8,
+      "narration": "東京ディズニーリゾートでは、ガムを販売していません。地面に捨てられて景観や靴を汚すのを防ぐための、徹底したこだわりなんです。",
+      "image_query": "chewing gum sticky closeup",
+      "scrape_query": "ガム 路上",
+      "image_prompt": "clean pavement with shoes walking, tidy ground, daytime",
+      "keywords": ["ガム", "こだわり"]
+    },
+    {
+      "id": 9,
+      "narration": "ゲストの視線は、色づかいや明るさによって、自然に次の見どころへ導かれています。気づかないうちに、迷わず歩けるよう設計されているんです。",
+      "image_query": "pathway leading to landmark",
+      "scrape_query": "東京ディズニーランド 通路 アトラクション 誘導 カラフル",
+      "image_prompt": "a pathway leading toward a distant landmark, inviting composition",
+      "keywords": ["視線", "導かれて"]
+    },
+    {
+      "id": 10,
+      "narration": "皆さんは、{count}個中何個知っていましたか？知っていた数をぜひコメントで教えてください！あなたのコメントが次の動画のネタになるかもしれません。",
+      "image_query": "people commenting smartphone social media",
+      "scrape_query": "東京ディズニーランド 笑顔 ゲスト 楽しい",
+      "image_prompt": "happy people smiling and using smartphones, social media engagement",
+      "keywords": ["何個知っていましたか", "コメントで教えて"]
+    }
+  ]
+}

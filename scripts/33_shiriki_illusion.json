@@ -1,0 +1,95 @@
+{
+  "title": "【種明かし】タワテラの「シリキが消える」イリュージョンの異常な仕組み",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "swing_swing.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "悲報。今年の9月末から約1ヶ月間、タワー・オブ・テラーが長期休止に突入。乗れなくなる前に、あの「最強のイリュージョン」の正体を暴きます。",
+      "image_query": "haunted tower hotel dark night horror attraction closed maintenance",
+      "image_prompt": "a towering haunted hotel at night with a shocking red maintenance closure stamp overlaid on its entrance, eerie atmosphere",
+      "scrape_query": "タワー・オブ・テラー 外観 長期休止 2026 9月 メンテナンス 夜",
+      "keywords": ["最強のイリュージョン", "長期休止に突入"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6796,
+        "duration": 10
+      }
+    },
+    {
+      "id": 2,
+      "narration": "書斎の台座の上にいるシリキ・ウトゥンドゥ。あいつが一瞬で星になってフッと消え去るあの不気味な現象。",
+      "image_query": "dark library study room idol figure pedestal mysterious glow",
+      "image_prompt": "a dimly lit antique study room with an eerie idol figure on a pedestal, green eyes glowing in the darkness before suddenly vanishing",
+      "scrape_query": "タワー・オブ・テラー 書斎 プレショー シリキ ウトゥンドゥ 台座 消える",
+      "keywords": ["シリキ・ウトゥンドゥ", "消え去る"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4943,
+        "duration": 10
+      }
+    },
+    {
+      "id": 3,
+      "narration": "実はあれ、映像やホログラムじゃない。イマジニアが莫大な予算で作った「本物のロボット（アニマトロニクス）」。",
+      "image_query": "animatronic robot mechanical puppet realistic figure backstage reveal",
+      "image_prompt": "a close-up reveal of a sophisticated animatronic figure on a pedestal, its mechanical inner workings visible beneath a realistic surface",
+      "scrape_query": "アニマトロニクス 人形 ロボット 本物 リアル 機械 裏側 ホログラムじゃない",
+      "keywords": ["映像やホログラムじゃない", "本物のロボット（アニマトロニクス）"]
+    },
+    {
+      "id": 4,
+      "narration": "仕組みは超シンプルかつ凶悪。消える瞬間、人形自体が台座の中へ向かって「超高速で落下」しているだけ。",
+      "image_query": "elevator drop shaft descend mechanical trap door rapid fall",
+      "image_prompt": "a cross-section diagram of a pedestal with a trap door that opens and a figure drops at extreme speed into the darkness below",
+      "scrape_query": "台座 落下 仕掛け トラップドア 超高速 シリキ 種明かし 仕組み",
+      "keywords": ["超シンプルかつ凶悪", "超高速で落下"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4837,
+        "duration": 10
+      }
+    },
+    {
+      "id": 5,
+      "narration": "でも、落ちる瞬間が見えないのはなぜか？秘密は「光」。消える直前、人形の表面に映像（プロジェクションマッピング）をピタリと投影。",
+      "image_query": "projection mapping surface figure light beam precise overlay",
+      "image_prompt": "a precise beam of projection light hitting the surface of a small figure perfectly, creating a bright visual mask just before it disappears",
+      "scrape_query": "プロジェクションマッピング 人形 表面 投影 消える 直前 タイミング",
+      "keywords": ["落ちる瞬間が見えない", "プロジェクションマッピング"]
+    },
+    {
+      "id": 6,
+      "narration": "物理的に落下したコンマ1秒の間に、プロジェクターの映像を「緑の星」として空中に散らす。人間の目は急な光の変化に弱く、この「残像効果」によって完全に脳が騙される計算。",
+      "image_query": "afterimage visual illusion green light scatter flash blink eyes trick",
+      "image_prompt": "green star particles scattered in the air as a sudden flash of light tricks the human eye, illustrating the afterimage optical illusion",
+      "scrape_query": "残像効果 視覚 錯覚 緑 星 光 瞬間 脳 騙される",
+      "keywords": ["残像効果", "脳が騙される"]
+    },
+    {
+      "id": 7,
+      "narration": "アナログな超高速落下と、最新の光のイリュージョンの完璧なシンクロ。これを毎日何百回も1ミリの狂いもなく繰り返す、ディズニーの異常な技術力。",
+      "image_query": "mechanical precision synchronize light dark horror show repeat performance",
+      "image_prompt": "a dramatic split-screen: one side shows mechanical gears dropping in perfect precision, the other shows green light scattering in darkness",
+      "scrape_query": "タワー・オブ・テラー 技術 精密 シンクロ アナログ 光 繰り返し 毎日",
+      "keywords": ["1ミリの狂いもなく", "異常な技術力"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 5055,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "9月末から長期間乗れなくなっちゃう前に、次行くときは一番前で台座をガン見してみて！忘れないように今すぐ保存！",
+      "image_query": "smartphone save bookmark ribbon button tap notification glow",
+      "image_prompt": "a hand tapping the ribbon save button on a smartphone screen, bookmarking a video about the Tower of Terror illusion before its closure",
+      "scrape_query": "スマートフォン 保存 リボン ブックマーク タップ 動画",
+      "keywords": ["台座をガン見", "保存"]
+    }
+  ]
+}

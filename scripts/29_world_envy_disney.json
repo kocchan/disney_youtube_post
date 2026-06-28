@@ -1,0 +1,100 @@
+{
+  "title": "【絶望と羨望】外国人が殺到！世界のマニアが「日本のディズニー」にガチ嫉妬する異常な理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Escort.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "いま、日本のディズニーに外国人が過去最高レベルで殺到している理由、知ってる？世界中のマニアがガチで嫉妬する異常事態。",
+      "image_query": "theme park crowded international tourists entrance excitement",
+      "image_prompt": "a massive crowd of international tourists flooding through a theme park entrance, faces full of excitement and wonder",
+      "scrape_query": "東京ディズニーリゾート インバウンド 外国人 観光客 混雑 2026",
+      "keywords": ["過去最高レベルで殺到", "ガチで嫉妬"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2806,
+        "duration": 10
+      }
+    },
+    {
+      "id": 2,
+      "narration": "実は現在、海外パークではコスト削減が進行中。フロリダ版「アナ雪」や「七人のこびとのマイントレイン」など、キャラの顔に映像を投影するだけの「のっぺりしたロボット」が急増。ピントがズレて「ホラー状態」になり、海外掲示板で度々大炎上。",
+      "image_query": "animatronic robot face projection screen character failure glitch",
+      "image_prompt": "an animatronic figure with a projected face that appears blurry and misaligned, creating an uncanny horror-like effect",
+      "scrape_query": "フロリダ ディズニー アニマトロニクス 映像投影 顔 ズレ ホラー 炎上"  ,
+      "keywords": ["ホラー状態", "大炎上"]
+    },
+    {
+      "id": 3,
+      "narration": "でも、日本は違う。映像投影に逃げず、皮膚の下に極小の物理モーターを無数に仕込む「完全物理のアニマトロニクス」。人間が抱く「不気味の谷現象」を突破し、脳に本物と錯覚させる変態技術。",
+      "image_query": "robot face skin muscle motor micro actuator realistic human",
+      "image_prompt": "a cross-section diagram of a hyper-realistic animatronic face with hundreds of tiny motors beneath synthetic skin, achieving human-like expressions",
+      "scrape_query": "東京 アニマトロニクス 物理モーター 皮膚 精巧 アナ エルサ ファンタジースプリングス",
+      "keywords": ["不気味の谷現象", "変態技術"]
+    },
+    {
+      "id": 4,
+      "narration": "さらに海外勢を絶望させたのが、ピーターパンのアトラクション。これ、実は足元に航空機のパイロット訓練と同じ「6自由度（6 DOF）モーションベース」が積まれたバケモノ。",
+      "image_query": "flight simulator cockpit pilot training motion platform hydraulic",
+      "image_prompt": "a high-tech flight simulator motion platform with hydraulic legs tilting in all six directions, used in pilot training",
+      "scrape_query": "ピーターパン ネバーランドアドベンチャー 6DOF モーションベース 足元 機械",
+      "keywords": ["6自由度", "バケモノ"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2940,
+        "duration": 10
+      }
+    },
+    {
+      "id": 5,
+      "narration": "6 DOFとは、全6方向の動きを完全再現するチート級の重力コントロール装置。これを「コースを実際に移動しながら」ライドの上で独立して動かす、世界の常識を覆すオーバースペック。",
+      "image_query": "six degree freedom motion diagram arrow direction xyz axis movement",
+      "image_prompt": "a 3D diagram showing six arrows representing all axes of motion: forward-back, left-right, up-down, pitch, roll, yaw",
+      "scrape_query": "6自由度 6DOF モーション 軸 前後 左右 上下 回転 図解",
+      "keywords": ["チート級の重力コントロール装置", "オーバースペック"]
+    },
+    {
+      "id": 6,
+      "narration": "目の前の3D映像の急降下に合わせ、1ミリの狂いもなく足元のライドが傾く。視覚と重力を完全にシンクロさせ、人間の三半規管をハッキング。脳が「本当に空を飛んでいる」と完全に錯覚。",
+      "image_query": "immersive screen flying sensation tilt sync gravity visual ride",
+      "image_prompt": "a rider in a tilting vehicle perfectly synchronized with a massive 3D screen showing aerial flight, creating total sensory immersion",
+      "scrape_query": "ソアリン 映像 シンクロ 傾き 三半規管 浮遊感 飛んでいる 感覚",
+      "keywords": ["三半規管をハッキング", "本当に空を飛んでいる"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4967,
+        "duration": 10
+      }
+    },
+    {
+      "id": 7,
+      "narration": "飛ぶ前には、水面の微細な「波の揺れ」まで忠実に再現。この莫大な開発費と維持費を出せるオリエンタルランドの資金力に、世界中のオタクが白旗状態。",
+      "image_query": "boat water surface gentle waves ripple harbor ship dock",
+      "image_prompt": "a close-up of gentle water ripples beneath a fantastical sailing ship in a theme park harbor, perfectly recreated motion",
+      "scrape_query": "TDS ゴンドラ 水面 波 揺れ アメリカンウォーターフロント 船 港",
+      "keywords": ["波の揺れ", "白旗状態"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4539,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "当たり前のように乗っているそのアトラクション、実は世界一のオーバースペック。次に乗るときは「顔の筋肉」と「浮遊感」に全集中してみて！忘れないように今すぐ保存！",
+      "image_query": "smartphone save bookmark button tap hand notification glow",
+      "image_prompt": "a hand tapping a glowing save bookmark icon on a smartphone screen, saving a video about the world's most overspec theme park",
+      "scrape_query": "スマートフォン 保存 リボン ブックマーク タップ 動画",
+      "keywords": ["世界一のオーバースペック", "保存"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 12
+      }
+    }
+  ]
+}

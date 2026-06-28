@@ -1,0 +1,70 @@
+{
+  "title": "【出現率1%】スター・ツアーズの「激レアSSR演出」3選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "rotate",
+    "theme": "startours_ssr",
+    "subject": "スター・ツアーズ",
+    "subject_en": "Star Tours attraction"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "スター・ツアーズで、出現率たった1%の激レアSSRルート引いたことある？",
+      "image_query": "spaceship cockpit futuristic screen glowing display",
+      "scrape_query": "東京ディズニーランド スター・ツアーズ アトラクション 外観",
+      "image_prompt": "futuristic spaceship cockpit with glowing screens and slot-machine style display, dramatic",
+      "keywords": ["出現率たった1%", "激レアSSRルート"]
+    },
+    {
+      "id": 2,
+      "narration": "まずは惑星ナブー。水中を潜っていると、なんとあのジャー・ジャー・ビンクスに機体が激突。見れたら超ラッキーな神ハプニング。",
+      "image_query": "underwater creature collision surprise funny underwater world",
+      "scrape_query": "スター・ウォーズ 惑星 ナブー 水中",
+      "image_prompt": "underwater scene with unexpected creature collision, colorful alien ocean environment",
+      "keywords": ["ジャー・ジャー・ビンクス", "機体が激突"]
+    },
+    {
+      "id": 3,
+      "narration": "次はホログラム通信。普段はレイア姫やアクバー提督だけど、極稀にヨーダが登場。マスターからの直接メッセージはテンション爆上がり。",
+      "image_query": "hologram blue light communication alien figure dramatic",
+      "scrape_query": "スター・ウォーズ レイア姫 ホログラム 通信",
+      "image_prompt": "blue holographic alien figure communicating in dramatic sci-fi setting",
+      "keywords": ["ホログラム通信", "ヨーダ"]
+    },
+    {
+      "id": 4,
+      "narration": "極め付けは到着シーン。普通はぶつかってガラスが割れるけど、レアパターンだと機体は無傷。代わりに怒った整備員にペンキをぶちまけられるドタバタなオチ。",
+      "image_query": "robot mechanic paint splatter chaos funny workshop",
+      "scrape_query": "スター・ウォーズ ガラス 割れる クラッシュ 衝突",
+      "image_prompt": "comical robot mechanic throwing paint in a chaotic hangar scene",
+      "keywords": ["機体は無傷", "ペンキをぶちまけ"]
+    },
+    {
+      "id": 5,
+      "narration": "出現率は約100回に1回。イマジニアが仕掛けたこの意図的な低確率ガチャが、人間のコンプリート欲を刺激する完璧な罠。",
+      "image_query": "slot machine roulette spinning probability chance glowing",
+      "scrape_query": "イマジニア ディズニー 設計 研究者 デザイナー",
+      "image_prompt": "glowing slot machine reels spinning with various destination symbols, dramatic light",
+      "keywords": ["約100回に1回", "コンプリート欲"]
+    },
+    {
+      "id": 6,
+      "narration": "ちなみに今やってるグローグー確定の特別バージョンは6月30日で終了。つまり7月からは、この1%の激レア演出を狙う完全ランダムが本格復活！",
+      "image_query": "countdown timer limited edition ending special announcement",
+      "scrape_query": "グローグー スター・ウォーズ スター・ツアーズ",
+      "image_prompt": "countdown timer display showing limited time ending, dramatic glow effect",
+      "keywords": ["6月30日で終了", "完全ランダム"]
+    },
+    {
+      "id": 7,
+      "narration": "7月からのスタツアガチャに備えて、どの演出が出たか答え合わせできるように動画を保存しといて！",
+      "image_query": "bookmark save hand pointing smartphone screen night",
+      "scrape_query": "東京ディズニーランド スター・ツアーズ 外観 入口",
+      "image_prompt": "hand pointing at a save or bookmark button on a glowing screen, cinematic",
+      "keywords": ["答え合わせ", "動画を保存"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# 秘密情報・認証
+.env
+client_secret.json
+token*.json
+*.pickle
+*_credentials.json
+
+# 仮想環境
+.venv/
+venv/
+
+# 生成物・出力（動画・画像キャッシュ）
+output/
+assets/work/
+
+# 大容量素材（ローカル保管）
+assets/video/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db

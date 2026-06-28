@@ -1,0 +1,105 @@
+{
+  "title": "【閲覧注意】みんなが一度は疑問に思う「ディズニーの謎」恐ろしすぎる回答TOP3",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Escort.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "みんな一回は気になったことあるよね？「なんであんなに並べるの？」「なんで虫がいないの？」。これ、全部イマジニアのえげつない計算。",
+      "image_query": "theme park crowd mystery question mark curious guests wonder",
+      "image_prompt": "a curious guest in a theme park looking around in wonder, question marks floating in the air representing unanswered mysteries",
+      "scrape_query": "ディズニーランド 疑問 なぜ 謎 並ぶ 虫 混雑",
+      "keywords": ["えげつない計算", "虫がいないの"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2806,
+        "duration": 10
+      }
+    },
+    {
+      "id": 2,
+      "narration": "第3位。「水と緑が多いのに、なんで蚊に刺されないの？」。",
+      "image_query": "lush garden waterfall greenery fountain tropical plants outdoor",
+      "image_prompt": "a lush tropical garden with waterfalls and dense greenery in a theme park, suspiciously free of mosquitoes despite the humid environment",
+      "scrape_query": "ファンタジースプリングス 水辺 緑 植物 清潔 自然 ディズニーシー",
+      "keywords": ["蚊に刺されないの"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 1702,
+        "duration": 8
+      }
+    },
+    {
+      "id": 3,
+      "narration": "実はパーク中の植物に、虫が本能的に嫌がる「液状ニンニク」や特殊なハーブをブレンドした成分を秘密裏に散布。さらに水たまりを作らせない徹底的な水流管理。景観を守る、見えない防虫バリア。",
+      "image_query": "garden sprinkler hidden pest control plant spray organic",
+      "image_prompt": "a close-up of plant leaves with a fine mist of invisible pest-repelling spray, a hidden sprinkler blending into the garden scenery",
+      "scrape_query": "ディズニーランド 防虫 ニンニク ハーブ 散布 植物 スプリンクラー 排水",
+      "keywords": ["液状ニンニク", "防虫バリア"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6409,
+        "duration": 10
+      }
+    },
+    {
+      "id": 4,
+      "narration": "第2位。「なんで120分待ちでもイライラしないの？」。",
+      "image_query": "queue line waiting crowd theme park attraction line zigzag",
+      "image_prompt": "an aerial view of a long zigzagging queue line for a popular theme park attraction, guests waiting patiently",
+      "scrape_query": "ファンタジースプリングス アナ雪 フローズンジャーニー 待ち列 Qライン 120分",
+      "keywords": ["120分待ちでも", "イライラしないの"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2940,
+        "duration": 10
+      }
+    },
+    {
+      "id": 5,
+      "narration": "列の先が見えないように、あえて壁や曲がり角を多用する空間設計。角を曲がるたびに景色を変え、「もうすぐ乗れるかも」と脳を錯覚させ続ける終わりのないドーパミン。",
+      "image_query": "corridor hallway turn corner surprise reveal anticipation excitement",
+      "image_prompt": "a themed queue hallway curving around a corner, each bend revealing new props and decorations, keeping guests engaged and hopeful",
+      "scrape_query": "ディズニー Qライン 待ち列 曲がり角 プロップス 演出 設計",
+      "keywords": ["脳を錯覚", "終わりのないドーパミン"]
+    },
+    {
+      "id": 6,
+      "narration": "第1位。現在25周年で爆上がり中のディズニーシーでも、全員が引っかかってる罠。「なんで帰り際にお土産を爆買いしちゃうの？」。",
+      "image_query": "souvenir shop theme park merchandise crowd shopping bags rush",
+      "image_prompt": "guests excitedly grabbing merchandise from a glittering souvenir shop at a theme park anniversary celebration, shopping bags everywhere",
+      "scrape_query": "ディズニーシー 25周年 スパークリングジュビリー グッズ お土産 爆買い エンポーリオ",
+      "keywords": ["25周年", "お土産を爆買いしちゃうの"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 12
+      }
+    },
+    {
+      "id": 7,
+      "narration": "心理学の「テンション・リダクション効果」。一日中遊んで緊張の糸が切れた無防備な瞬間に、巨大ショップのど真ん中を強制的に歩かせる動線。財布の紐をバグらせる、イマジニアの魔法のゲート。",
+      "image_query": "exit pathway shop merchandise entrance forced walk through store",
+      "image_prompt": "a map view showing guests being funneled through a large gift shop at a theme park exit, arrows tracing the mandatory shopping path",
+      "scrape_query": "ディズニー 退場 動線 ワールドバザール メディテレーニアンハーバー 出口 ショップ",
+      "keywords": ["テンション・リダクション効果", "魔法のゲート"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6317,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "次行くとき、絶対にこの魔法のゲートで爆買いしちゃう友達に、今すぐシェアして教えてあげて！",
+      "image_query": "smartphone share button social media LINE friends send notification",
+      "image_prompt": "a hand tapping the share button on a smartphone, sharing a video about Disney's psychological shopping traps with friends",
+      "scrape_query": "スマートフォン シェア ボタン SNS LINE 友達 送る 動画",
+      "keywords": ["シェアして"]
+    }
+  ]
+}

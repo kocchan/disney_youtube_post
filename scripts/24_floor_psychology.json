@@ -1,0 +1,113 @@
+{
+  "title": "【閲覧注意】ディズニーの地面が「赤や緑」に変えられた、恐ろしすぎる理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "swing_swing.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーの地面、ぶっちゃけ「派手すぎ」って思ったことない？",
+      "image_query": "colorful patterned pavement closeup theme park",
+      "image_prompt": "extreme closeup of colorful patterned pavement tiles in a theme park, vivid reds and greens",
+      "scrape_query": "ディズニーランド 地面 赤 緑 カラフル 色",
+      "keywords": ["派手すぎ"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2806,
+        "duration": 8
+      }
+    },
+    {
+      "id": 2,
+      "narration": "実はこれ、ただのオシャレじゃない。ゲストの脳をハッキングする、イマジニアの恐ろしい計算。",
+      "image_query": "overhead view different color floor boundary line contrast",
+      "image_prompt": "top-down view of pavement with a sharp color boundary between two different colored zones",
+      "scrape_query": "ディズニーランド ワールドバザール 地面 色 境界線 エリア",
+      "keywords": ["脳をハッキング", "恐ろしい計算"]
+    },
+    {
+      "id": 3,
+      "narration": "例えば、シンデレラ城前の赤っぽい地面。これ、太陽の光が反射したとき、人間の顔が「一番血色よく、健康的に見える」特殊な染料。",
+      "image_query": "red brick walkway sunlight warm tone people smiling outdoor",
+      "image_prompt": "warm sunlit red-toned pavement in front of a fairytale castle, people walking with healthy glowing skin tones",
+      "scrape_query": "ディズニーランド シンデレラ城前 地面 赤 写真 夏",
+      "keywords": ["赤っぽい地面", "血色よく"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2966,
+        "duration": 12
+      }
+    },
+    {
+      "id": 4,
+      "narration": "補正ナシでも、誰もが最高にポップで楽しそうな表情に写る魔法。インスタやTikTokで映える写真が撮れる場所は、すべて計算通りに設計されていた。",
+      "image_query": "person selfie smartphone smile happy outdoor bright",
+      "image_prompt": "a person taking a selfie with a huge smile, vibrant colors, no filter needed, outdoors in bright light",
+      "scrape_query": "ディズニーランド 自撮り 写真 映え 顔色 セルフィー",
+      "keywords": ["映える", "計算通り"]
+    },
+    {
+      "id": 5,
+      "narration": "逆に、いま大激変中のトゥモローランド。エリアに入った瞬間、地面が「無機質なグレーや青」に変わる。",
+      "image_query": "futuristic area construction site renovation boundary wall",
+      "image_prompt": "a futuristic themed area with grey-blue pavement and construction hoardings, cool and metallic atmosphere",
+      "scrape_query": "トゥモローランド リニューアル 工事 仮囲い バズライトイヤー 2026",
+      "keywords": ["大激変中", "無機質なグレー"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 3215,
+        "duration": 10
+      }
+    },
+    {
+      "id": 6,
+      "narration": "人間は、足元の「色」が変わるだけで、脳が「別の世界に来た」と錯覚する性質がある。潜在意識レベルで、強制的に「未来の世界」へ没入させる罠。",
+      "image_query": "person stepping threshold different floor surface zone change",
+      "image_prompt": "a person's feet stepping across a sharp boundary between two distinct floor materials, symbolizing entering a new world",
+      "scrape_query": "ディズニーランド エリア 地面 色 変わる 足元 境界線",
+      "keywords": ["別の世界", "未来の世界"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6409,
+        "duration": 12
+      }
+    },
+    {
+      "id": 7,
+      "narration": "さらに、疲れて下を向いたゲストを、視覚的な違和感でハッと顔を上げさせる効果も。地面から目線を上げた先には、必ずアトラクションや見どころが来るように設計されている。",
+      "image_query": "tired person walking looking down suddenly look up surprise attraction",
+      "image_prompt": "a person walking with head down, then suddenly looking up to see an impressive attraction in front of them",
+      "scrape_query": "ディズニーランド ゲスト 歩く アトラクション 視線 誘導",
+      "keywords": ["ハッと顔を上げ"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6369,
+        "duration": 12
+      }
+    },
+    {
+      "id": 8,
+      "narration": "景色だけじゃなく、足元まで1センチ単位でコントロールするディズニーリゾート。知れば知るほど、次のインパが楽しみになります。",
+      "image_query": "night cityscape park lights pavement reflection beautiful",
+      "image_prompt": "a beautifully lit theme park at night with glowing pavement reflections and warm streetlights",
+      "scrape_query": "ディズニーランド 夜景 地面 ライトアップ 街灯 反射",
+      "keywords": ["1センチ単位"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 12
+      }
+    },
+    {
+      "id": 9,
+      "narration": "次にパークに行くとき、この「境界線」を見失わないように、今すぐこの動画を保存しておいて！",
+      "image_query": "phone screen save bookmark notification hand tap",
+      "image_prompt": "a hand tapping the save button on a smartphone screen, bookmarking a video about theme park secrets",
+      "scrape_query": "スマートフォン 動画 保存 ブックマーク コレクション",
+      "keywords": ["境界線", "保存"]
+    }
+  ]
+}

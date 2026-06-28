@@ -1,0 +1,80 @@
+{
+  "title": "【夏ディズニー】バテる前に見て！猛暑を乗り切る「涼しいレストラン」選びの裏ワザ",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "追いかけっこキャッハー.mp3",
+    "theme": "summer_restaurant",
+    "subject": "夏のディズニー レストラン立ち回り",
+    "subject_en": "summer Disney restaurant tips heat survival"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "夏のディズニー、お昼時にレストランを探すとどこも大行列でガチでバテます。そうなる前に、涼しく過ごせる避難先を覚えておいて！今年の夏は特に危険。ちゃんとした避難先を知っているかどうかで、楽しさが180度変わる。",
+      "image_query": "summer theme park exhausted guest sitting heat crowd hot sun outdoor",
+      "scrape_query": "夏のディズニー 熱中症 行列 バテる ランチ 休憩 2026",
+      "image_prompt": "exhausted guests sitting on a bench in sweltering summer heat at an outdoor amusement park",
+      "keywords": [
+        "ガチでバテます",
+        "涼しく過ごせる避難先"
+      ]
+    },
+    {
+      "id": 2,
+      "narration": "まずはランドの「プラザパビリオン・レストラン」。座席数が多くて回転が早く、日陰のテラス席や涼しい店内席を確保しやすい穴場スポット。",
+      "image_query": "large restaurant interior cool indoor spacious seating shaded terrace",
+      "scrape_query": "ディズニーランド プラザレストラン",
+      "image_prompt": "a spacious air-conditioned restaurant interior with plenty of seats and a shaded outdoor terrace section",
+      "keywords": [
+        "プラザパビリオン・レストラン",
+        "穴場スポット"
+      ]
+    },
+    {
+      "id": 3,
+      "narration": "続いてシーの「カスバ・フードコート」。アラビアンコーストの奥にあり、広大な屋内席はエアコンがしっかり効いていて、涼むには最高のオアシスです。",
+      "image_query": "indoor food court cool air conditioning wide seating shade oasis",
+      "scrape_query": "カスバ フードコート ディズニーシー アラビアンコースト エアコン 涼しい 屋内",
+      "image_prompt": "a wide indoor food court with exotic arched decor and air conditioning, guests relaxing in the cool shade",
+      "keywords": [
+        "カスバ・フードコート",
+        "エアコンがしっかり効いていて"
+      ]
+    },
+    {
+      "id": 4,
+      "narration": "そして最大の裏ワザは「10時半までのモバイルオーダー」。お昼時の12前後は注文するだけで30分以上並ぶことも。朝のうちに時間を指定して予約しておけば、並ばずにすぐ受け取れます。",
+      "image_query": "smartphone app mobile order food pickup restaurant skip queue fast",
+      "scrape_query": "東京ディズニーリゾート モバイルオーダー 裏ワザ 10時半 混雑 昼 並ぶ",
+      "image_prompt": "a hand holding a smartphone with a food order app showing pickup time selection, bypassing a long queue",
+      "keywords": [
+        "モバイルオーダー",
+        "30分以上並ぶ"
+      ]
+    },
+    {
+      "id": 5,
+      "narration": "夏のインパは「喉が渇く前」「疲れる前」に涼しいお店に入るのが鉄則。こまめな休憩を挟むことが、最後まで体力を残すコツです。熱中症になったら救護室に運ばれて、その日のパークが台無しになる。体のシグナルを見逃さないで。",
+      "image_query": "cool indoor shade water glass hydration rest summer heat exhaustion recovery",
+      "scrape_query": "夏のインパ 休憩 涼しい 店内 熱中症 水分補給 体力 信号",
+      "image_prompt": "a guest resting comfortably in a cool indoor space, drinking cold water after being in summer heat",
+      "keywords": [
+        "こまめな休憩",
+        "体のシグナルを見逃さないで"
+      ]
+    },
+    {
+      "id": 6,
+      "narration": "現地で「どこ行けばいい？」って迷って熱中症にならないように、今すぐこの動画を保存して避難先をメモっといて！",
+      "image_query": "food icon bookmark save hand phone summer park reminder checklist",
+      "scrape_query": "夏のディズニー 避難先 保存 レストラン 熱中症対策 メモ",
+      "image_prompt": "a hand tapping a save icon on a phone with a colorful summer park food backdrop",
+      "keywords": [
+        "動画を保存",
+        "迷って熱中症に"
+      ]
+    }
+  ]
+}

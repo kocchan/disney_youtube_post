@@ -1,0 +1,61 @@
+{
+  "title": "知らなきゃ損！ディズニーランドの仕掛け4選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "swing_swing.mp3",
+    "theme": "disney_urabanashi",
+    "variant": "vol2"
+  },
+  "scenes": [
+    {
+      "id": 201,
+      "narration": "ディズニーランドでは、音や匂い、視線まで、すべてが計算されています。今日は気づかないうちに体験していた、驚きの仕掛けを4つ紹介します。",
+      "image_query": "amusement park magical night atmosphere",
+      "scrape_query": "東京ディズニーランド 夜 雰囲気 幻想的",
+      "image_prompt": "a magical amusement park at night, glowing lights, dreamy atmosphere",
+      "keywords": ["仕掛け"]
+    },
+    {
+      "id": 6,
+      "narration": "園内のBGMは、エリアの境界でぴったり切り替わるよう設計されています。隣の音楽が混ざらないことで、それぞれの世界観が途切れないんです。",
+      "image_query": "vintage street lamps evening",
+      "scrape_query": "東京ディズニーランド ワールドバザール 街並み 雰囲気",
+      "image_prompt": "vintage european street with warm lamps in the evening, atmospheric",
+      "keywords": ["BGM", "世界観"]
+    },
+    {
+      "id": 7,
+      "narration": "ふと香るポップコーンやキャラメルの匂いも、実は機械で意図的に漂わせていると言われています。嗅覚から食欲と楽しさを刺激しているんです。",
+      "image_query": "fresh caramel popcorn closeup",
+      "scrape_query": "ディズニーランド ポップコーン バケツ カラフル",
+      "image_prompt": "fresh caramel popcorn in warm light, appetizing closeup",
+      "keywords": ["匂い", "意図的"]
+    },
+    {
+      "id": 8,
+      "narration": "東京ディズニーリゾートでは、ガムを販売していません。地面に捨てられて景観や靴を汚すのを防ぐための、徹底したこだわりなんです。",
+      "image_query": "clean pavement shoes walking",
+      "scrape_query": "東京ディズニーランド 地面 きれい パーク 清潔",
+      "image_prompt": "clean pavement with shoes walking, tidy ground, daytime",
+      "keywords": ["ガム", "こだわり"]
+    },
+    {
+      "id": 9,
+      "narration": "ゲストの視線は、色づかいや明るさによって、自然に次の見どころへ導かれています。気づかないうちに、迷わず歩けるよう設計されているんです。",
+      "image_query": "pathway leading to landmark",
+      "scrape_query": "東京ディズニーランド 通路 アトラクション 誘導 カラフル",
+      "image_prompt": "a pathway leading toward a distant landmark, inviting composition",
+      "keywords": ["視線", "導かれて"]
+    },
+    {
+      "id": 210,
+      "narration": "4つの仕掛け、何個知っていましたか？知っていた数をコメントで教えてください！あなたのコメントが次の動画のネタになるかもしれません。",
+      "image_query": "people commenting smartphone social media",
+      "scrape_query": "東京ディズニーランド 笑顔 ゲスト 楽しい",
+      "image_prompt": "happy people smiling and using smartphones, social media engagement",
+      "keywords": ["コメントで教えて"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# 動画パイプライン依存
+moviepy==2.1.2
+Pillow>=10.0
+gTTS>=2.5
+requests>=2.31
+ddgs>=0.1
+PyYAML>=6.0
+python-dotenv>=1.0
+
+# YouTube アップロード
+google-api-python-client>=2.100.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.2.0

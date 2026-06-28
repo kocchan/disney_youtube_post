@@ -1,0 +1,95 @@
+{
+  "title": "【鳥肌】ディズニーのBGMが「絶対に混ざらない」異常な理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Escort.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーで、違うエリアのBGMが「混ざって聞こえた」こと、一度もないよね？",
+      "image_query": "theme park guest walking area boundary path outdoor",
+      "image_prompt": "a guest's POV walking through a themed area boundary, transitioning from a western town to a jungle atmosphere",
+      "scrape_query": "ディズニーランド ウエスタンランド アドベンチャーランド 境界線 エリア 歩く",
+      "keywords": ["混ざって聞こえた"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 830,
+        "duration": 8
+      }
+    },
+    {
+      "id": 2,
+      "narration": "実はこれ、偶然じゃない。ゲストの脳を完全にハッキングする「音のエアロック」というイマジニアの変態的な計算。",
+      "image_query": "hidden speaker camouflaged rock plant garden design",
+      "image_prompt": "a cleverly disguised speaker hidden inside a fake rock surrounded by plants in a theme park, close-up reveal",
+      "scrape_query": "ディズニーランド スピーカー 隠し場所 イマジニア 音響 設計",
+      "keywords": ["音のエアロック", "変態的な計算"]
+    },
+    {
+      "id": 3,
+      "narration": "普通のテーマパークなら、曲と曲がぶつかって不協和音になる境界線。一瞬でも「あ、音が変わった」と気づいた瞬間に、非日常の魔法が解けてしまう。",
+      "image_query": "sound wave collision noise interference diagram graphic",
+      "image_prompt": "two contrasting sound waves colliding and creating chaos, representing audio zones clashing at a theme park boundary",
+      "scrape_query": "テーマパーク BGM 音楽 ゾーニング 不協和音 比較",
+      "keywords": ["不協和音", "非日常の魔法"]
+    },
+    {
+      "id": 4,
+      "narration": "でもディズニーは、エリアの境目に「滝の音」や「鳥の鳴き声」など、自然の環境音を大音量で流すスピーカーを配置。",
+      "image_query": "waterfall nature sound jungle bird tropical outdoor",
+      "image_prompt": "a lush waterfall surrounded by tropical plants in a theme park, with hidden speakers blending into the natural scenery",
+      "scrape_query": "ディズニーランド スプラッシュマウンテン 滝 水しぶき アドベンチャーランド 鳥",
+      "keywords": ["滝の音", "環境音"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4027,
+        "duration": 12
+      }
+    },
+    {
+      "id": 5,
+      "narration": "人間の脳は自然の音をノイズとして処理しない性質。だから、全く違うジャンルの曲に切り替わっても、違和感ゼロで別の世界へ強制没入。",
+      "image_query": "person ear listening music notes immersive sound brain",
+      "image_prompt": "a close-up of a person's ear with musical notes flowing in, symbolizing seamless audio immersion and brain response",
+      "scrape_query": "ディズニーランド BGM 没入感 音楽 エリア 切り替わり 脳",
+      "keywords": ["違和感ゼロ", "強制没入"]
+    },
+    {
+      "id": 6,
+      "narration": "ちなみに2026年7月から9月中旬まで、この新ショー「Reach for the Stars」の影響で、なんと夜のファンタジーランドが入場規制。",
+      "image_query": "fairytale castle night projection show fireworks spectacular",
+      "image_prompt": "a majestic fairytale castle at night with a stunning light projection show, colorful beams painting the walls",
+      "scrape_query": "ディズニーランド ファンタジーランド 夜間規制 キャッスルプロジェクション 2026",
+      "keywords": ["夜のファンタジーランド", "入場規制"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2773,
+        "duration": 12
+      }
+    },
+    {
+      "id": 7,
+      "narration": "普段通らない迂回ルートを歩かされる今だからこそ、この「音の境界線の魔法」にじっくり気づける大チャンス。",
+      "image_query": "tourist map theme park route detour direction arrow",
+      "image_prompt": "a guest studying a theme park map, tracing an alternate route around a restricted area",
+      "scrape_query": "ディズニーランド マップ 迂回 ルート ファンタジーランド 規制 確認",
+      "keywords": ["迂回ルート", "音の境界線の魔法"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 5886,
+        "duration": 10
+      }
+    },
+    {
+      "id": 8,
+      "narration": "次にパークへ行くとき、境界線で耳をすませてみて。エリアをまたぐ瞬間に滝や鳥の声が聞こえたら、それがイマジニアの仕掛けた罠のサイン。忘れないように今すぐ保存！",
+      "image_query": "smartphone screen save bookmark tap hand notification",
+      "image_prompt": "a hand tapping a save/bookmark icon on a glowing smartphone screen, saving a theme park secrets video",
+      "scrape_query": "スマートフォン 動画 保存 ブックマーク コレクション タップ",
+      "keywords": ["耳をすませて", "保存"]
+    }
+  ]
+}

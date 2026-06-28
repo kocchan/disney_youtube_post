@@ -1,0 +1,70 @@
+{
+  "title": "【完全洗脳】パルパルーザのパレードに隠された「ヤバすぎる心理操作」",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "追いかけっこキャッハー.mp3",
+    "theme": "palpalooza_psychology",
+    "subject": "パルパルーザ",
+    "subject_en": "Pal-A-Palooza parade psychology"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "みんな熱狂してるパルパルーザのパレード。実はあれ、私たちが「完全に洗脳されてる」って知ってた？あの熱狂は自然に生まれたものじゃない。全部計算通り。",
+      "image_query": "crowd dancing parade float excited energy festival happy",
+      "scrape_query": "パルパルーザ パレード 熱狂 東京ディズニーランド ゲスト 踊る 2026",
+      "image_prompt": "theme park crowd completely swept up in a colorful parade, dancing and cheering with total abandon",
+      "keywords": ["完全に洗脳されてる", "計算通り"]
+    },
+    {
+      "id": 2,
+      "narration": "パレード「イッツ・ア・スウィーツフルタイム！」。あのポップな音楽、ただ楽しいだけじゃない。曲のテンポ（BPM）が、人間が興奮した時の心拍数と完全に一致。",
+      "image_query": "heartbeat pulse monitor BPM music beat rhythm dance sync",
+      "scrape_query": "パルパルーザ イッツ・ア・スウィーツフルタイム BPM 音楽 心拍数 テンポ",
+      "image_prompt": "heartbeat monitor with a pulsing BPM graph syncing perfectly to an energetic music beat visualization",
+      "keywords": ["BPM", "心拍数と完全に一致"]
+    },
+    {
+      "id": 3,
+      "narration": "さらにフロートが停止するショーモード。ダンサーはあえて「恥ずかしがっている大人」をターゲットに視線を合わせる。心理学の「ミラーリング」で、無意識に体を動かさせるプロの技術。",
+      "image_query": "dancer eye contact audience mirror psychology performance crowd",
+      "scrape_query": "パルパルーザ ダンサー ゲスト 視線 ミラーリング ショーモード 心理 大人",
+      "image_prompt": "performer making direct eye contact with a hesitant adult in the crowd, drawing them into the dance",
+      "keywords": ["ミラーリング", "無意識に体を動かさせる"]
+    },
+    {
+      "id": 4,
+      "narration": "極め付けは「匂い」。ワールドバザールやパレード周辺には、「スメライザー」と呼ばれる特殊な装置を設置。甘〜いお菓子の香りを意図的に放出し、ゲストの脳を直接刺激。",
+      "image_query": "aroma diffuser hidden device sweet candy scent invisible cloud",
+      "scrape_query": "東京ディズニーランド スメライザー 匂い ワールドバザール 香り 装置 甘い",
+      "image_prompt": "invisible sweet aroma clouds wafting from a hidden scent diffuser device near a theme park pathway",
+      "keywords": ["スメライザー", "脳を直接刺激"]
+    },
+    {
+      "id": 5,
+      "narration": "踊って疲れた体に、甘い匂い。パレードが終わる頃には、全員がヴァネロペの限定スウィーツを食べたくてたまらなくなる。これぞイマジニアの完璧すぎる購買心理学。",
+      "image_query": "colorful sweets desserts people eating parade street happy delicious",
+      "scrape_query": "パルパルーザ ヴァネロペ スウィーツ 限定 グッズ 食べる 購買 パレード後",
+      "image_prompt": "excited guests eating colorful themed sweets and desserts right after a parade, irresistibly delighted",
+      "keywords": ["食べたくてたまらなくなる", "購買心理学"]
+    },
+    {
+      "id": 6,
+      "narration": "でも超緊急事態！このスウィーツだらけの最高なパレード、なんとあと3日、6月30日で完全に終了しちゃいます。",
+      "image_query": "countdown calendar urgent warning 3 days last chance red",
+      "scrape_query": "パルパルーザ ヴァネロペのスウィーツポップワールド 6月30日 終了 2026 最終",
+      "image_prompt": "urgent countdown calendar showing 3 days remaining with a bold red last-chance warning",
+      "keywords": ["超緊急事態", "6月30日で完全に終了"]
+    },
+    {
+      "id": 7,
+      "narration": "終わっちゃう前に！今すぐこの動画をシェアして、今週末一緒にパルパルーザで洗脳される友達を誘ってみて！今週末がラストチャンス。次の週にはもう間に合わない。",
+      "image_query": "friends sharing phone sweet candy colorful last chance weekend",
+      "scrape_query": "パルパルーザ 最終日 6月30日 友達 誘う 今週末 東京ディズニーランド",
+      "image_prompt": "friends urgently sharing a phone screen with colorful sweets in the background, last weekend energy",
+      "keywords": ["動画をシェア", "ラストチャンス"]
+    }
+  ]
+}

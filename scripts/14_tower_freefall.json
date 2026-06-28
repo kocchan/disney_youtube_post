@@ -1,0 +1,62 @@
+{
+  "title": "【脳の錯覚】タワテラがただの「フリーフォール」ではないヤバすぎる理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "Soundtrack Version.mp3",
+    "theme": "tower_freefall",
+    "subject": "タワー・オブ・テラー",
+    "subject_en": "Tower of Terror attraction"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "みんな大好きタワテラ。あれ、実は「落ちてない」って知ってた？ほとんどの人が信じてないけど、これ本当に本当の話。",
+      "image_query": "old hotel tower dramatic exterior dark sky vertical drop",
+      "scrape_query": "東京ディズニーシー タワー・オブ・テラー 外観 夜 ホテルハイタワー 夕暮れ",
+      "image_prompt": "dramatic old gothic hotel tower at dusk, ominous and imposing against a stormy sky",
+      "keywords": ["実は「落ちてない」", "本当の話"]
+    },
+    {
+      "id": 2,
+      "narration": "普通の絶叫マシンは重力に任せたただの「フリーフォール」。でもタワテラは違う。巨大なモーターを使って、重力よりも「速く」下に向かって引きずり下ろされているんです。自然に落ちるより大きな力で、強制的に引き落とされている。",
+      "image_query": "elevator shaft cable pulley motor mechanism diagram vertical",
+      "scrape_query": "タワー・オブ・テラー エレベーター 落下 仕組み モーター ケーブル 構造 内部",
+      "image_prompt": "technical diagram of an elevator shaft with motor and cable system pulling downward faster than gravity",
+      "keywords": ["重力よりも「速く」", "引きずり下ろされ"]
+    },
+    {
+      "id": 3,
+      "narration": "だからこそ起きる、体がフワッと浮くあの無重力感。本来の自由落下では体は浮かない。モーターで速度を出すからこそ、乗客が宙に浮くという現象が生まれる。ただ落ちるだけじゃなく、落ちる速度まで完全にコントロールするイマジニアの変態的な計算。",
+      "image_query": "weightless person floating zero gravity sensation body lift",
+      "scrape_query": "タワー・オブ・テラー 浮く 無重力 乗客 叫ぶ 落下 東京ディズニーシー",
+      "image_prompt": "person experiencing weightlessness, body gently floating upward, zero gravity sensation",
+      "keywords": ["無重力感", "変態的な計算"]
+    },
+    {
+      "id": 4,
+      "narration": "さらにヤバいのが「鏡の部屋」。落ちる直前に自分に手を振らせることで、脳に無意識の「安心感」を抱かせる。その直後に奈落へ突き落とす、悪魔の心理操作。安心から恐怖への一瞬の落差こそが、タワテラが最凶と言われる本当の理由。",
+      "image_query": "mirror room green light reflection ghostly disappear horror corridor",
+      "scrape_query": "タワー・オブ・テラー 鏡 落ちる前 演出 鏡の部屋 東京ディズニーシー",
+      "image_prompt": "eerie mirror corridor with ghostly green light, reflections fading into darkness",
+      "keywords": ["安心感", "悪魔の心理操作"]
+    },
+    {
+      "id": 5,
+      "narration": "そんな恐怖のタワテラだけど、なんと今年9月28日から11月5日まで長期休止。今年のハロウィン期間を丸ごと跨ぐから、「ハロウィン期間」は絶対に体験できないんです！コスチュームで乗るのも今年は無理。",
+      "image_query": "calendar october halloween warning closure sign cross",
+      "scrape_query": "タワー・オブ・テラー 休止 2026 ハロウィン 9月28日 東京ディズニーシー メンテナンス",
+      "image_prompt": "calendar with October Halloween period crossed out with a warning sign, urgent closure notice",
+      "keywords": ["9月28日から11月5日", "ハロウィン期間"]
+    },
+    {
+      "id": 6,
+      "narration": "秋になってから「乗れなかった！」と後悔しないように、今すぐ動画を保存して夏のうちに乗りに行っちゃって！タワテラの恐怖を制覇できる今年のラストチャンスは9月27日まで。",
+      "image_query": "spooky idol dark smile background save bookmark hand pointing",
+      "scrape_query": "タワー・オブ・テラー 休止 2026 メンテナンス 東京ディズニーシー 案内 お知らせ",
+      "image_prompt": "mysterious ancient idol statue with sinister expression, dark dramatic lighting, save icon overlay",
+      "keywords": ["動画を保存", "9月27日まで"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "【素通り厳禁】ディズニーシーの要塞に「世界中を繋ぐ秘密結社」のアジトが隠されていた",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "Soundtrack Version.mp3",
+    "theme": "sea_fortress",
+    "subject": "フォートレス・エクスプロレーション",
+    "subject_en": "Fortress Exploration secret society"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "みんな普通に素通りしてるこの要塞。実は、世界中のディズニーパークを繋ぐ「ヤバい秘密結社」のアジトって知ってた？このネタ、知ってるだけでパーク体験が10倍深くなる。",
+      "image_query": "ancient stone fortress harbor galleon ship dramatic sky imposing",
+      "scrape_query": "フォートレス・エクスプロレーション 外観 ガレオン船 東京ディズニーシー 要塞",
+      "image_prompt": "massive ancient stone fortress overlooking a harbor with a tall-masted galleon ship, dramatic sky",
+      "keywords": ["秘密結社", "パーク体験が10倍深くなる"]
+    },
+    {
+      "id": 2,
+      "narration": "迷路のような要塞の奥深くにある隠し部屋。ここは「S.E.A.（海の探険家協会）」。世界中の探険家・冒険家・発明家が集う、ガチの秘密結社の本部として設定されている。",
+      "image_query": "secret society room dark portrait paintings wall hidden chamber candles",
+      "scrape_query": "S.E.A. 秘密結社 エクスプローラーズホール 隠し部屋 東京ディズニーシー 探険家",
+      "image_prompt": "dimly lit secret room deep inside a stone fortress, walls covered in portrait paintings of explorers and adventurers",
+      "keywords": ["隠し部屋", "ガチの秘密結社の本部"]
+    },
+    {
+      "id": 3,
+      "narration": "よく見ると、タワテラの「ハイタワー三世」やソアリンの飛行家「カメリア・ファルコ」の肖像画もある。しかも全員S.E.A.の正式メンバー。アトラクションの垣根を超えて世界観を繋ぐ、イマジニアの壮大な裏設定。",
+      "image_query": "portrait gallery vintage paintings explorer adventurer wall museum zoom",
+      "scrape_query": "S.E.A. ハイタワー三世 カメリア・ファルコ 肖像画 メンバー フォートレス 壁",
+      "image_prompt": "a gallery wall of oil portrait paintings featuring mysterious explorers and adventurers from different eras",
+      "keywords": ["S.E.A.の正式メンバー", "壮大な裏設定"]
+    },
+    {
+      "id": 4,
+      "narration": "そして、私たちもこの秘密結社の一員になれる入隊テストが「ザ・レオナルドチャレンジ」。ダ・ヴィンチが遺した地図を片手に要塞の謎を解き明かす、知る人ぞ知る神アトラクション。クリアした人だけが、S.E.A.の正式メンバーとして認定される。",
+      "image_query": "treasure map puzzle mechanism hidden gear discovery adventure challenge",
+      "scrape_query": "ザ・レオナルドチャレンジ 地図 謎解き 仕掛け 要塞 東京ディズニーシー ダ・ヴィンチ",
+      "image_prompt": "antique treasure map with a magnifying glass, intricate puzzle mechanisms and gear levers in a stone room",
+      "keywords": ["入隊テスト", "知る人ぞ知る神アトラクション"]
+    },
+    {
+      "id": 5,
+      "narration": "でも気をつけて！この入隊テスト、なんと明々後日の7月1日から9月14日まで長期休止に突入。夏休みの期間まるごとが対象で、今年の夏はS.E.A.に入隊できません！",
+      "image_query": "calendar summer warning closure urgent red cross announcement",
+      "scrape_query": "ザ・レオナルドチャレンジ 2026年 7月1日 9月14日 休止 期間 夏休み",
+      "image_prompt": "calendar showing summer months with a large urgent red warning notice blocking the entire vacation period",
+      "keywords": ["7月1日から9月14日", "長期休止に突入"]
+    },
+    {
+      "id": 6,
+      "narration": "秋の再開は9月15日以降。絶対テストに挑戦できるように、今のうちに動画を保存してアジトの場所を頭に入れておいて！フォートレス・エクスプロレーションの奥にある秘密の部屋が目印。",
+      "image_query": "adventure coat of arms emblem secret society crest save bookmark",
+      "scrape_query": "フォートレス・エクスプロレーション S.E.A. 紋章 秋 再開 9月 場所",
+      "image_prompt": "ornate adventure society coat of arms emblem on stone wall with a glowing save icon overlay",
+      "keywords": ["動画を保存", "秘密の部屋が目印"]
+    }
+  ]
+}

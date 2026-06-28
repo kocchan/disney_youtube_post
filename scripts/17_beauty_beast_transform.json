@@ -1,0 +1,70 @@
+{
+  "title": "【2時間待ち回避】美女と野獣「一瞬の変身」に隠された異常な執念",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "rotate",
+    "theme": "beauty_beast_transform",
+    "subject": "美女と野獣「魔法のものがたり」",
+    "subject_en": "Beauty and the Beast trackless dark ride"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "美女と野獣のあの一瞬の変身シーン。あれ、映像じゃなくて「本物の魔法」って知ってた？まだ知らなかった人、これ知ってから乗るとマジで鳥肌が立つから。",
+      "image_query": "magical transformation moment bright light dramatic ballroom castle",
+      "scrape_query": "美女と野獣 魔法のものがたり 変身 クライマックス 東京ディズニーランド",
+      "image_prompt": "a breathtaking magical transformation moment bathed in brilliant light inside an enchanted ballroom",
+      "keywords": ["本物の魔法", "鳥肌が立つ"]
+    },
+    {
+      "id": 2,
+      "narration": "空中に浮かび上がり、光に包まれながら王子に戻る野獣。CGや映像で誤魔化すのではなく、イマジニアは目の前での「物理的な変身」という異常な手段を選択。",
+      "image_query": "creature figure hovering glowing light beam dramatic floating dark",
+      "scrape_query": "美女と野獣 野獣 王子 変身 光 仕掛け リアル 目の前",
+      "image_prompt": "a large creature figure surrounded by brilliant light beams levitating dramatically in a dark theatrical space",
+      "keywords": ["物理的な変身", "異常な手段"]
+    },
+    {
+      "id": 3,
+      "narration": "あの光の中。実は、野獣と王子の「2体の超精密なロボット」が隠されている。強烈な光と煙の錯覚を利用し、空中で超高速で入れ替わるガチの手品。",
+      "image_query": "two robots back to back hidden mechanism backstage swap illusion",
+      "scrape_query": "美女と野獣 変身 ロボット 舞台裏 仕掛け 2体 アニマトロニクス",
+      "image_prompt": "two animatronic figures positioned back to back in a backstage mechanism, ready for rapid swap illusion",
+      "keywords": ["2体の超精密なロボット", "ガチの手品"]
+    },
+    {
+      "id": 4,
+      "narration": "さらにヤバいのが、私たちの乗る魔法のカップ。レールがないからこそ、あの変身が「最も美しく、仕掛けが絶対に見えない完璧な角度」へゲストを強制的に誘導。",
+      "image_query": "trackless ride vehicle top view maze pathway guided angle floor",
+      "scrape_query": "美女と野獣 魔法のカップ トラックレス レールなし 仕組み 誘導 角度",
+      "image_prompt": "overhead view of trackless ride vehicles navigating a maze-like floor pattern, guided to perfect viewing angles",
+      "keywords": ["完璧な角度", "強制的に誘導"]
+    },
+    {
+      "id": 5,
+      "narration": "最新技術と、昔ながらの舞台装置の融合。目の前で本当に魔法が起きたと脳を錯覚させる、ディズニー史上最高のマスターピース。アナログとデジタルが完璧に融合した、このアトラクションだけにしか存在しない唯一無二の体験。",
+      "image_query": "ballroom dancing couple elegant chandelier magical golden light",
+      "scrape_query": "美女と野獣 ボールルーム ベル 王子 フィナーレ 感動 踊る",
+      "image_prompt": "elegant couple dancing in a grand ballroom with golden chandeliers, magical fairytale atmosphere",
+      "keywords": ["ディズニー史上最高のマスターピース", "唯一無二の体験"]
+    },
+    {
+      "id": 6,
+      "narration": "ちなみにこの超人気アトラクション、なんと今年からこっそり「シングルライダー」に対応。2時間待ちの長蛇の列を横目に、爆速で乗れちゃう最強の裏ワザ。",
+      "image_query": "theme park single rider fast lane queue shortcut app screen",
+      "scrape_query": "東京ディズニーランド シングルライダー 2026 美女と野獣 対応 裏技 待ち時間",
+      "image_prompt": "smartphone screen showing a fast-pass single rider option for a popular theme park attraction",
+      "keywords": ["シングルライダー", "最強の裏ワザ"]
+    },
+    {
+      "id": 7,
+      "narration": "次のインパで絶対使うために、今すぐ動画を保存して一緒にいく友達にシェアして教えてあげて！シングルライダーは1人でも使えるから、一人インパの人も必見。",
+      "image_query": "friends sharing phone screen save bookmark theme park entrance",
+      "scrape_query": "東京ディズニーランド 美女と野獣 城 外観 インパ 友達 シングルライダー",
+      "image_prompt": "friends excitedly sharing a phone screen near a fairytale castle entrance, save icon visible",
+      "keywords": ["動画を保存", "一人インパの人も必見"]
+    }
+  ]
+}

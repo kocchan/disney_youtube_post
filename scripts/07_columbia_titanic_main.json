@@ -1,0 +1,94 @@
+{
+  "title": "コロンビア号が「永遠に出航しない」{count}つの真実【TDS25周年】",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate",
+    "theme": "columbia_titanic",
+    "variant": "main"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーシーのシンボル、S.S.コロンビア号。この巨大な船が永遠に出航しない本当の理由、知ってますか。実はイマジニアが仕込んだ、恐ろしいほど深い歴史的な秘密が{count}個あるんです。",
+      "image_query": "large vintage ocean liner ship docked harbor sunset dramatic",
+      "image_prompt": "a massive vintage ocean liner docked at a grand harbour at sunset, viewed from below, dramatic and imposing",
+      "keywords": ["イマジニア", "歴史的な秘密"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 5302,
+        "duration": 12
+      }
+    },
+    {
+      "id": 2,
+      "narration": "いつ行っても処女航海の祝賀ムードが漂うコロンビア号。でもこれはただのハッピーな設定じゃない。ディズニーが意図的に仕込んだ「永遠に続く出発直前」には、最も残酷で優しいタイムカプセルが隠されていました。",
+      "image_query": "vintage ship departure celebration banner harbor 1900s",
+      "image_prompt": "a festive 1910s-era ocean liner departure celebration with bunting banners and cheering crowds at a grand harbour",
+      "keywords": ["処女航海", "タイムカプセル"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4539,
+        "duration": 14
+      }
+    },
+    {
+      "id": 3,
+      "narration": "アメリカンウォーターフロントの時代設定は1912年。その年、現実世界で史上最悪の海難事故が起きています。タイタニック号の沈没です。出発地はニューヨーク港、乗客数は当時世界最大。",
+      "image_query": "1910s newspaper vintage historic headline disaster maritime",
+      "image_prompt": "a vintage 1912 newspaper with dramatic historic headline about a maritime disaster, sepia tone, close-up",
+      "keywords": ["1912年", "タイタニック号の沈没"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6369,
+        "duration": 12
+      }
+    },
+    {
+      "id": 4,
+      "narration": "コロンビア号とタイタニック号を並べると、1912年・ニューヨーク港出発・世界最大の豪華客船という要素が完全に一致。偶然ではなく、イマジニアが意図的に史実とリンクさせた設計なんです。",
+      "image_query": "two vintage ocean liners comparison side by side black white historic",
+      "image_prompt": "two grand vintage ocean liners from the early 1900s shown side by side in dramatic black and white, historic feel",
+      "keywords": ["完全に一致", "史実とリンク"]
+    },
+    {
+      "id": 5,
+      "narration": "だからイマジニアは、コロンビア号の時間を「出航直前」で永遠に固定した。もし出航させれば、タイタニックと同じ悲劇を暗示してしまう。船を港に留め続けることが、静かな追悼になっているんです。",
+      "image_query": "vintage ship docked at night still water quiet melancholy",
+      "image_prompt": "a large vintage ocean liner moored silently at a quiet night harbour, reflections in still water, melancholic atmosphere",
+      "keywords": ["出航直前", "静かな追悼"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6822,
+        "duration": 12
+      }
+    },
+    {
+      "id": 6,
+      "narration": "現在ディズニーシーは25周年「スパークリング・ジュビリー」で超お祭り騒ぎ。でもこの歴史を知ってからコロンビア号を見上げると、華やかな祭りの中でちょっとだけ切なくなります。",
+      "image_query": "anniversary celebration sparkle jubilee festival night lights colorful",
+      "image_prompt": "a spectacular anniversary celebration at night with sparkling lights, fireworks and festive atmosphere at a themed port",
+      "scrape_query": "ディズニーシー スパークリングジュビリー 25周年",
+      "keywords": ["スパークリング・ジュビリー", "切なく"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4585,
+        "duration": 12
+      }
+    },
+    {
+      "id": 7,
+      "narration": "紹介した{count}つの真実、ディズニーシーに行く前に絶対忘れないように保存しておいて。コロンビア号の前で、この話を思い出してほしい。",
+      "image_query": "mediterranean harbour scenic view blue sky water",
+      "image_prompt": "a beautiful scenic harbour view with blue sky and calm water, cinematic wide shot of a themed seaside port",
+      "scrape_query": "SSコロンビア号 東京ディズニーシー アメリカンウォーターフロント",
+      "keywords": ["保存しておいて"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 6317,
+        "duration": 12
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "【脳の錯覚】ビッグサンダー・マウンテンが「全然速くない」のに怖いヤバい理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "scrape",
+    "bgm": "swing_swing.mp3",
+    "theme": "bigthunder_psychology",
+    "subject": "ビッグサンダー・マウンテン",
+    "subject_en": "Big Thunder Mountain psychology"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "みんな大好きなビッグサンダー・マウンテン。実は最高時速「たったの40キロ」って知ってた？一般道と同じスピードで、あの恐怖を生み出しているって意味わかる？",
+      "image_query": "wild west mine train rollercoaster red rock canyon dramatic",
+      "scrape_query": "ビッグサンダー・マウンテン 最高時速 40キロ 岩山 スリル 東京ディズニーランド",
+      "image_prompt": "dramatic mine train rollercoaster rushing through red rock canyon formations in a wild west setting",
+      "keywords": ["たったの40キロ", "一般道と同じスピード"]
+    },
+    {
+      "id": 2,
+      "narration": "40キロといえば、街中を走る車と同じくらいのスピード。全然速くないのに、あんなにスリルがあるのは、イマジニアの「脳のハッキング」のおかげ。",
+      "image_query": "car driving slow city street speedometer comparison slow speed",
+      "scrape_query": "ビッグサンダー・マウンテン スピード 錯覚 心理 仕掛け 怖い 理由",
+      "image_prompt": "car dashboard speedometer showing 40km, compared with a thrilling rollercoaster visual",
+      "keywords": ["全然速くないのに", "脳のハッキング"]
+    },
+    {
+      "id": 3,
+      "narration": "最大の魔法は「運動視差」。コースのすぐ横に岩山やトンネルを配置することで、景色が猛スピードで後ろに流れるように錯覚させる視覚トリック。",
+      "image_query": "pov first person rock wall close fast blur tunnel speed illusion",
+      "scrape_query": "ビッグサンダー・マウンテン 運動視差 トンネル 岩 視覚トリック POV 主観",
+      "image_prompt": "first-person POV of rocky canyon walls rushing past at extreme closeness, creating illusion of speed",
+      "keywords": ["運動視差", "視覚トリック"]
+    },
+    {
+      "id": 4,
+      "narration": "さらにヤバいのが「音と振動」。意図的に激しい金属音とガタガタ揺れる振動を響かせ、脳に「列車が暴走している」という恐怖を強制的に植え付ける仕掛け。",
+      "image_query": "train wheel metal track vibration sparks grinding close dramatic",
+      "scrape_query": "ビッグサンダー・マウンテン 振動 金属音 車輪 列車 恐怖 音 ガタガタ",
+      "image_prompt": "extreme close-up of metal train wheels grinding on tracks with sparks and intense vibration",
+      "keywords": ["音と振動", "暴走している"]
+    },
+    {
+      "id": 5,
+      "narration": "ただスピードを出すより、人間の錯覚を利用した方が圧倒的に怖い。物理法則と心理学を極めた、ディズニーの完璧な計算。だからこそビッグサンダーは、老若男女に愛されるディズニーで最も完成度の高い絶叫マシンとも言える。",
+      "image_query": "guests hands up screaming excited rollercoaster joy all ages",
+      "scrape_query": "ビッグサンダー・マウンテン ゲスト 叫ぶ 楽しい 人気 老若男女 完成度",
+      "image_prompt": "guests of all ages with hands raised screaming with joy on a mine train rollercoaster",
+      "keywords": ["完璧な計算", "最も完成度の高い"]
+    },
+    {
+      "id": 6,
+      "narration": "そしてディズニーランドから超緊急の注意喚起！なんと7月1日から9月14日まで、毎日20時30分以降は「ファンタジーランド」が完全に入場規制で入れなくなります！",
+      "image_query": "fantasy land night warning closure restricted zone urgent announcement",
+      "scrape_query": "東京ディズニーランド ファンタジーランド 夜間入場規制 2026年7月 20時30分 9月14日",
+      "image_prompt": "fairytale castle at night with a large urgent warning notice blocking entry after a certain hour",
+      "keywords": ["7月1日から9月14日", "ファンタジーランド"]
+    },
+    {
+      "id": 7,
+      "narration": "夜に美女と野獣に乗ろうとしてる人は大パニック確定！夏の夜のインパ計画が崩れないように、今すぐ動画を保存して予定を組み直して！",
+      "image_query": "castle night sky summer save bookmark hand urgent planning",
+      "scrape_query": "東京ディズニーランド シンデレラ城 夜 夏 ファンタジーランド 入場規制 対策",
+      "image_prompt": "illuminated fairytale castle at night with an urgent bookmark save icon, summer evening atmosphere",
+      "keywords": ["大パニック確定", "動画を保存"]
+    }
+  ]
+}

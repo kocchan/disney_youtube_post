@@ -1,0 +1,103 @@
+{
+  "title": "【狂気】脳が操られる…ディズニーBGM「異常な中毒性」ランキングTOP3",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "Soundtrack Version.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "知らなかった！ディズニーの神BGM、実は人間の脳を強制的に操る「イマジニアの罠」。異常な中毒性ランキングTOP3。",
+      "image_query": "theme park night spectacular dramatic light fireworks volcano",
+      "image_prompt": "a dramatic theme park night scene with glowing volcanic light and fireworks, ominous and breathtaking",
+      "scrape_query": "ディズニーシー プロメテウス火山 夜 赤 煙 幻想的",
+      "keywords": ["イマジニアの罠", "中毒性ランキング"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 5055,
+        "duration": 10
+      }
+    },
+    {
+      "id": 2,
+      "narration": "第3位、ディズニーシーのエントランス「アクアスフィア・プラザ」。",
+      "image_query": "theme park entrance giant globe sphere water fountain",
+      "image_prompt": "a magnificent giant globe fountain at a theme park entrance, water cascading down with guests in awe",
+      "scrape_query": "ディズニーシー アクアスフィア 地球儀 エントランス 噴水",
+      "keywords": ["第3位", "アクアスフィア・プラザ"]
+    },
+    {
+      "id": 3,
+      "narration": "冨田勲氏によるこの名曲。実は、地球儀から落ちる「水の音」すらもパーカッションとして機能するよう、周波数まで計算され尽くした変態的シンフォニー。",
+      "image_query": "water splash fountain percussion music frequency wave sound",
+      "image_prompt": "water droplets falling in perfect rhythm with music notes, abstract visualization of frequency and sound design",
+      "scrape_query": "ディズニーシー アクアスフィア 水 音 BGM 冨田勲",
+      "keywords": ["水の音", "変態的シンフォニー"]
+    },
+    {
+      "id": 4,
+      "narration": "第2位、シンドバッドの「コンパス・オブ・ユア・ハート」。",
+      "image_query": "adventure voyage ship sailing ocean fantasy character",
+      "image_prompt": "a fantastical sailing voyage through colorful storybook scenes, a charming adventurer steering his ship",
+      "scrape_query": "ディズニーシー シンドバッド 冒険旅行 チャンドゥ アラビアンコースト",
+      "keywords": ["第2位", "コンパス・オブ・ユア・ハート"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 5473,
+        "duration": 10
+      }
+    },
+    {
+      "id": 5,
+      "narration": "巨匠アラン・メンケンによる神曲。サビの反復と絶妙な転調で、人間のドーパミンを強制的に分泌させる「泣かせのアルゴリズム」。",
+      "image_query": "brain dopamine music emotion neuroscience glow illustration",
+      "image_prompt": "an illustrated human brain with glowing dopamine particles releasing in sync with music, abstract and emotional",
+      "scrape_query": "脳 ドーパミン 音楽 感動 神経 分泌 心理学",
+      "keywords": ["ドーパミン", "泣かせのアルゴリズム"]
+    },
+    {
+      "id": 6,
+      "narration": "そして第1位。いよいよ今週、2026年7月2日からスタートする完全新作ナイトエンタメ「Reach for the Stars」。",
+      "image_query": "castle night light show projection spectacular fantasy",
+      "image_prompt": "a fairytale castle bathed in a stunning new projection mapping light show, stars and beams of light painting the sky",
+      "scrape_query": "ディズニーランド シンデレラ城 キャッスルプロジェクション Reach for the Stars 2026 夜",
+      "keywords": ["第1位", "Reach for the Stars"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 2773,
+        "duration": 12
+      }
+    },
+    {
+      "id": 7,
+      "narration": "最先端の空間オーディオ技術。ゲストの「記憶のトリガー」となる歴代の名曲を、全方位から容赦なく浴びせる凶悪な立体音響。",
+      "image_query": "surround sound speaker system 360 audio immersive concert",
+      "image_prompt": "an abstract visualization of 360-degree sound waves surrounding a person, music notes spiraling from all directions",
+      "scrape_query": "ディズニーランド スピーカー 立体音響 空間オーディオ ファンタジーランド 夜",
+      "keywords": ["記憶のトリガー", "立体音響"]
+    },
+    {
+      "id": 8,
+      "narration": "ちなみに同日7月2日からは、「カントリーベア・シアター」の夏の特別バージョンも復活。こっちは生の楽器と錯覚させる、極上のアナログ音響マジック。",
+      "image_query": "country western show acoustic music performance rustic theater",
+      "image_prompt": "animatronic bears performing a lively country music show on a rustic wooden stage, audience laughing and clapping",
+      "scrape_query": "カントリーベアシアター 夏 バケーション ジャンボリー 2026",
+      "keywords": ["カントリーベア・シアター", "アナログ音響マジック"],
+      "local_clip": {
+        "source": "assets/video/tokyo_disney_resort_intro.mp4",
+        "start": 4286,
+        "duration": 10
+      }
+    },
+    {
+      "id": 9,
+      "narration": "今週以降パークに行く人、絶対にこの「音響の魔法」を意識してみて！忘れないように今すぐ保存！",
+      "image_query": "smartphone ribbon bookmark save button tap yellow glow",
+      "image_prompt": "a hand tapping a glowing yellow ribbon save button on a smartphone screen, saving a theme park BGM secrets video",
+      "scrape_query": "スマートフォン 保存 リボン ブックマーク タップ 動画",
+      "keywords": ["音響の魔法", "保存"]
+    }
+  ]
+}
