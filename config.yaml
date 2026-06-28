@@ -54,4 +54,4 @@ bgm:
   enabled: true
   selection: rotate       # rotate(3曲を順につなぐ) | random | <ファイルパス>
   narration_gain_db: 1.9  # ナレーション音量(1.25倍)
-  bgm_gain_db: -21.0      # BGMを下げる量
+  bgm_gain_db: -24.0      # BGMを下げる量
