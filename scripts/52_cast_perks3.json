@@ -1,0 +1,74 @@
+{
+  "title": "ずるすぎる…一般人は絶対入れないキャストの「秘密の特典」{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "いつも笑顔で魔法をかけてくれるディズニーのキャストさん。実は、彼らだけが利用できる「ずるすぎる裏特典」が{count}つあるのを知っていますか?",
+      "image_query": "friendly staff waving smiling theme park",
+      "image_prompt": "a friendly theme park staff member smiling and waving, cheerful atmosphere",
+      "keywords": ["ずるすぎる裏特典"]
+    },
+    {
+      "id": 2,
+      "narration": "一般人は立ち入り禁止のバックステージ。そこには、ファンが嫉妬で狂いそうになる秘密の施設が隠されているんです。",
+      "image_query": "restricted backstage door employee only sign",
+      "image_prompt": "a restricted backstage door with an employee-only sign, mysterious atmosphere",
+      "keywords": ["立ち入り禁止のバックステージ", "嫉妬で狂いそうになる"]
+    },
+    {
+      "id": 3,
+      "narration": "1つ目は、超激安の「専用食堂」。パークの裏側にはいくつかの食堂があって、普通の定食やラーメン、カレーなどが「ワンコイン以下」の破格で食べられます。",
+      "image_query": "cafeteria tray meal ramen curry set",
+      "image_prompt": "a cafeteria tray with a ramen and curry meal set, casual dining atmosphere",
+      "keywords": ["専用食堂", "ワンコイン以下"]
+    },
+    {
+      "id": 4,
+      "narration": "しかも味も激ウマで、季節限定メニューまであるという充実っぷりなんです。",
+      "image_query": "delicious meal set tray colorful food",
+      "image_prompt": "a delicious and colorful meal set on a tray, appetizing food photography",
+      "keywords": ["季節限定メニュー", "充実っぷり"]
+    },
+    {
+      "id": 5,
+      "narration": "2つ目は、噂の「専用ショップ」。パークで実際に売られているカチューシャやグッズが、なんと「社割」で購入できちゃうんです。",
+      "image_query": "colorful headband souvenir merchandise shop",
+      "image_prompt": "colorful headband souvenirs displayed in a merchandise shop, cheerful retail atmosphere",
+      "keywords": ["専用ショップ", "社割"]
+    },
+    {
+      "id": 6,
+      "narration": "さらに、ここでしか買えない限定の激レアオリジナルグッズもあるんだとか。ずるいですよね。",
+      "image_query": "exclusive rare merchandise display shelf",
+      "image_prompt": "exclusive rare merchandise displayed on a shelf, special collectible atmosphere",
+      "keywords": ["激レアオリジナルグッズ", "ずるい"]
+    },
+    {
+      "id": 7,
+      "narration": "そして3つ目、極めつけは年に1回のキャストのためだけの特別イベント。閉園後のパークを貸し切って開催されるんです。",
+      "image_query": "empty amusement park night lights nobody",
+      "image_prompt": "an empty amusement park at night with lights on and nobody around, dreamlike atmosphere",
+      "keywords": ["年に1回のキャストのためだけの特別イベント", "貸し切って開催"]
+    },
+    {
+      "id": 8,
+      "narration": "この日はなんと、運営会社の社長や役員たちがキャスト役になって、日頃働いている彼らを全力でおもてなししてくれるんです!",
+      "image_query": "formal executive serving guests hospitality",
+      "image_prompt": "a formal executive in a suit warmly serving guests, hospitality concept",
+      "keywords": ["社長や役員たちがキャスト役", "全力でおもてなし"]
+    },
+    {
+      "id": 9,
+      "narration": "激安の社食に、グッズの社割、さらに夜のパーク貸し切り。もし皆さんがキャストになるなら、どのアトラクションで働きたいですか?コメントで教えてくださいね。",
+      "image_query": "friendly staff waving smiling theme park",
+      "image_prompt": "a friendly theme park staff member smiling and waving, cheerful atmosphere",
+      "keywords": ["夜のパーク貸し切り", "コメントで教えてください"]
+    }
+  ]
+}

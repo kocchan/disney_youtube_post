@@ -1,0 +1,68 @@
+{
+  "title": "ディズニーの闇?ピザ屋の宇宙人店長が抱える「リアルすぎる」悩み",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーランドにあるピザレストラン。レジの上で宇宙人がバタバタしている映像、見たことありませんか?",
+      "image_query": "retro futuristic space diner restaurant interior neon",
+      "image_prompt": "a retro-futuristic space diner interior with neon lights, whimsical sci-fi atmosphere",
+      "scrape_query": "パンギャラクティックピザポート",
+      "keywords": ["宇宙人がバタバタしている"]
+    },
+    {
+      "id": 2,
+      "narration": "実はあれ、ただの飾りじゃなくて「宇宙規模のリアルな社畜ドラマ」が放送されているんです。",
+      "image_query": "cartoon alien character screen monitor animation",
+      "image_prompt": "an animated alien character on a retro monitor screen, comedic sci-fi style",
+      "keywords": ["宇宙規模のリアルな社畜ドラマ"]
+    },
+    {
+      "id": 3,
+      "narration": "そもそもこのお店は、銀河系規模で展開するピザチェーンの「太陽系第1号店」という壮大な設定。店長は、この地球店の経営を任されているんですが、実はこれ彼にとって後がない「背水の陣」の一大プロジェクトなんです。",
+      "image_query": "space station logo galaxy chain franchise sign",
+      "image_prompt": "a glowing sci-fi franchise sign with galaxy motifs, retro futuristic style",
+      "keywords": ["太陽系第1号店", "背水の陣"]
+    },
+    {
+      "id": 4,
+      "narration": "もし地球で失敗したら、過酷な労働環境の鉱山へ左遷されるというブラックすぎる契約なんです。だから店長は必死!",
+      "image_query": "harsh mining environment sparks fire dramatic",
+      "image_prompt": "a harsh sci-fi mining environment with sparks and fire, dramatic lighting",
+      "keywords": ["鉱山へ左遷", "ブラックすぎる契約"]
+    },
+    {
+      "id": 5,
+      "narration": "店内の放送をよく見ていると、本部の怖いボスから「配達が遅いぞ!」と怒鳴られ、遠い星に住む奥さんからは「いつ宇宙に帰ってくるの?」と小言を言われ、板挟み状態なんです。",
+      "image_query": "stressed cartoon character phone call two screens",
+      "image_prompt": "a stressed animated character caught between two calls on retro screens, comedic tension",
+      "keywords": ["配達が遅いぞ", "板挟み状態"]
+    },
+    {
+      "id": 6,
+      "narration": "さらに、全自動で動くはずの最新式ピザ製造機は頻繁にエラーを起こしてしまい、結局店長がひとりで走り回ってワンオペ対応する羽目になっているんです。",
+      "image_query": "malfunctioning automated pizza machine sparks error",
+      "image_prompt": "a retro automated pizza-making machine malfunctioning with sparks, comedic sci-fi style",
+      "keywords": ["ピザ製造機", "ワンオペ対応"]
+    },
+    {
+      "id": 7,
+      "narration": "どんなに未来になっても、どれだけ宇宙規模のスケールになっても、「中間管理職の悩み」だけは変わらないものなんですね。妙な親近感が湧いてきませんか。",
+      "image_query": "exhausted cartoon character sitting down break room",
+      "image_prompt": "an exhausted animated character sitting in a retro futuristic break room, sympathetic mood",
+      "keywords": ["中間管理職の悩み"]
+    },
+    {
+      "id": 8,
+      "narration": "次回このお店でピザを食べるときは、ぜひモニターを見上げて店長を応援してあげてくださいね。あなたはこの裏設定、知っていましたか?",
+      "image_query": "delicious pizza slice close up warm lighting",
+      "image_prompt": "a delicious pizza slice close-up with warm inviting lighting",
+      "keywords": ["モニターを見上げて", "裏設定"]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "待ち列の「壊れたロボット」の正体が切なすぎた…",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーランドの人気アトラクション。待ち列の途中でピピピ、とバグっているこのロボット、見たことありますか?",
+      "image_query": "sci-fi queue line futuristic corridor lights",
+      "image_prompt": "a futuristic sci-fi queue line corridor with glowing lights, cinematic",
+      "scrape_query": "スター・ツアーズ 待ち列",
+      "keywords": ["バグっているこのロボット"]
+    },
+    {
+      "id": 2,
+      "narration": "これ、ただの「壊れたロボットの飾り」じゃなくて、昔からのファンにはたまらない超エモい正体があるんです。",
+      "image_query": "malfunctioning robot droid sparks queue line",
+      "image_prompt": "a malfunctioning robot droid sparking in a sci-fi queue line, dramatic lighting",
+      "keywords": ["壊れたロボットの飾り", "超エモい正体"]
+    },
+    {
+      "id": 3,
+      "narration": "彼の名前は「キャプテン・レックス」。実は彼、アトラクションが大規模リニューアルされる前まで、長年にわたって活躍していた「初代の操縦士ロボット」なんです!",
+      "image_query": "vintage pilot robot cockpit control panel",
+      "image_prompt": "a vintage pilot robot sitting at a retro cockpit control panel, nostalgic sci-fi style",
+      "scrape_query": "スター・ツアーズ レックス",
+      "keywords": ["キャプテン・レックス", "初代の操縦士ロボット"]
+    },
+    {
+      "id": 4,
+      "narration": "耳を澄ますと「初めてのフライトで緊張してます…」と、昔パイロット時代に喋っていたお馴染みのセリフを、バグりながら呟いているんです。",
+      "image_query": "close up robot head speaker glowing eyes",
+      "image_prompt": "a close-up of a robot head with glowing eyes, retro sci-fi design",
+      "keywords": ["緊張してます", "バグりながら呟いている"]
+    },
+    {
+      "id": 5,
+      "narration": "今は別の金色のロボットが新しいパイロットを務めているので、「リニューアルでクビにされて、不良品として隅っこに追いやられてしまった」…そう思ってしまいませんか?",
+      "image_query": "golden protocol robot cockpit pilot seat",
+      "image_prompt": "a shiny golden protocol robot sitting in a spaceship pilot seat, sci-fi cinematic",
+      "keywords": ["クビにされて", "隅っこに追いやられて"]
+    },
+    {
+      "id": 6,
+      "narration": "でも実はこれ、大きな勘違いなんです!彼はクビになったわけじゃありません。",
+      "image_query": "dramatic reveal moment lights shifting",
+      "image_prompt": "a dramatic lighting shift suggesting a plot twist reveal, cinematic",
+      "keywords": ["大きな勘違い", "クビになったわけじゃありません"]
+    },
+    {
+      "id": 7,
+      "narration": "ここには、映画の世界観とアトラクションの設定をリンクさせた、「ヤバすぎる時系列のトリック」が巧妙に隠されているんです。",
+      "image_query": "timeline clock gears mysterious concept",
+      "image_prompt": "an abstract timeline concept with glowing gears and clocks, mysterious sci-fi atmosphere",
+      "keywords": ["ヤバすぎる時系列のトリック"]
+    },
+    {
+      "id": 8,
+      "narration": "彼の本当の姿と、衝撃の結末は次の動画で明かします。あなたは待ち列でこのロボット、気づいたことありますか?",
+      "image_query": "spaceship queue line futuristic entrance",
+      "image_prompt": "a futuristic spaceship queue line entrance, sci-fi cinematic atmosphere",
+      "keywords": ["衝撃の結末", "気づいたことありますか"]
+    }
+  ]
+}

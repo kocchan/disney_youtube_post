@@ -1,0 +1,59 @@
+{
+  "title": "【トイ・ストーリー5】バズの「新バッジ」に隠されたピクサーの神演出",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "トイ・ストーリー5で、あえてバズ・ライトイヤーに副保安官バッジを付けた理由、気づいていましたか。実はこれ、ピクサーが仕込んだ細かすぎる演出なんです。",
+      "image_query": "movie theater screen close up astronaut toy badge",
+      "image_prompt": "a movie theater screen showing a close-up of a space ranger toy figure with an unusual badge pinned to the chest, cinematic",
+      "scrape_query": "Toy Story 5 Buzz badge",
+      "keywords": ["副保安官バッジ", "細かすぎる演出"]
+    },
+    {
+      "id": 2,
+      "narration": "よく考えてみてください。完璧に作り込まれたSFデザインの宇宙服に、アナログな西部劇風のバッジ。この組み合わせ、本当に必要だったと思いますか。",
+      "image_query": "futuristic spacesuit contrast vintage star badge closeup",
+      "image_prompt": "close-up contrast shot: a sleek futuristic spacesuit chest plate next to a worn vintage star-shaped badge",
+      "scrape_query": "Toy Story 5 Buzz badge",
+      "keywords": ["西部劇風のバッジ", "本当に必要だった"]
+    },
+    {
+      "id": 3,
+      "narration": "新しい保安官になったジェシーを支える相棒の証、そう受け取ることもできます。でも実は、そこにはもっと深いピクサーの計算が隠れているんです。",
+      "image_query": "cowgirl toy figure standing confidently beside supportive partner",
+      "image_prompt": "a cowgirl toy figure standing confidently, with a supportive space ranger toy figure beside her",
+      "scrape_query": "Toy Story Jessie Buzz Lightyear",
+      "keywords": ["相棒の証", "ピクサーの計算"]
+    },
+    {
+      "id": 4,
+      "narration": "注目すべきは、まったく世界観の違うアイテムの組み合わせです。自分はスペースレンジャーだと信じ込んでいた初期のバズなら、カウボーイ風のバッジなんて絶対に許せなかったはずなんです。",
+      "image_query": "toy space ranger figure standing confidently proud pose",
+      "image_prompt": "a proud space ranger action figure standing rigidly at attention, confident pose, retro toy animation style",
+      "scrape_query": "Toy Story Buzz Woody",
+      "keywords": ["世界観の違うアイテム", "絶対に許せなかった"]
+    },
+    {
+      "id": 5,
+      "narration": "最新作に登場する50体のハイテク版バズは、本物の宇宙兵士という設定に縛られたままの存在です。彼らとの対比として、あえて世界観が合わないバッジを付けさせることで、プログラムを超越した圧倒的な成長を視覚的に表現しているんです。",
+      "image_query": "rows of identical robotic action figures cold blue light warehouse",
+      "image_prompt": "rows of identical futuristic robotic action figures standing in cold blue light, uniform and lifeless, sci-fi warehouse",
+      "scrape_query": "Toy Story 5 Buzz army",
+      "keywords": ["50体のハイテク版バズ", "圧倒的な成長"]
+    },
+    {
+      "id": 6,
+      "narration": "初期設定へのプライドを捨てて、子供のおもちゃであることを完全に受け入れた今のバズにとって、これ以上なくぴったりの神演出なんです。もう一度劇場で確かめたい人は、忘れないように今のうちにいいねしてください。",
+      "image_query": "toy figure badge glowing proud close up warm light",
+      "image_prompt": "a proud close-up of a toy figure's chest badge glowing warmly, heartfelt cinematic lighting",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["神演出", "いいねしてください"]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "知ってる?99%が見落としている「有名隠れミッキー」{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーの定番、隠れミッキー。今回は、パークに数ある中でも、見つけたらマジで自慢できる「超有名な隠れミッキー{count}選」を紹介します!数えながら見てくださいね。",
+      "image_query": "colorful cartoon town buildings whimsical daytime",
+      "image_prompt": "a colorful whimsical cartoon town with playful buildings, daytime atmosphere",
+      "scrape_query": "ディズニーランド 隠れミッキー",
+      "keywords": ["超有名な隠れミッキー", "数えながら見てください"]
+    },
+    {
+      "id": 2,
+      "narration": "1つ目は、カラフルな街並みエリアにある「カギ穴のミッキー」。人気キャラクターの家の待ち列にある、とあるカギ穴です。",
+      "image_query": "vintage keyhole door closeup brass",
+      "image_prompt": "a vintage brass keyhole on an old door, closeup detail shot",
+      "keywords": ["カギ穴のミッキー"]
+    },
+    {
+      "id": 3,
+      "narration": "よーく見ると、カギを差し込む穴自体がミッキーの形になっているんです!ここはまだ見つけやすいレベルです。",
+      "image_query": "vintage keyhole door closeup brass",
+      "image_prompt": "a vintage brass keyhole on an old door, closeup detail shot",
+      "keywords": ["カギを差し込む穴自体", "見つけやすいレベル"]
+    },
+    {
+      "id": 4,
+      "narration": "2つ目は、同じエリアにあるコースター系アトラクションの待ち列にある星座表です。カエルの足跡で作られた星座表が飾られています。",
+      "image_query": "roller coaster ride track colorful whimsical",
+      "image_prompt": "a colorful whimsical roller coaster ride track, playful cartoon style",
+      "keywords": ["星座表", "カエルの足跡"]
+    },
+    {
+      "id": 5,
+      "narration": "その中に、なんと「宇宙人の格好をしたミッキーの星座」が描かれているんです!通り過ぎがちなので要チェックです。",
+      "image_query": "constellation stars chart night sky drawing",
+      "image_prompt": "a hand-drawn constellation chart with stars, whimsical night sky theme",
+      "keywords": ["宇宙人の格好をしたミッキーの星座", "通り過ぎがちなので要チェック"]
+    },
+    {
+      "id": 6,
+      "narration": "そしてラスト3つ目。大人気アトラクションのお城にある、難易度MAXの隠れミッキーです。",
+      "image_query": "fairytale castle wall stone texture vines",
+      "image_prompt": "a fairytale castle wall with stone texture and climbing vines, romantic atmosphere",
+      "keywords": ["難易度MAXの隠れミッキー"]
+    },
+    {
+      "id": 7,
+      "narration": "お城の外壁に生えている「緑の植物」の模様。これが、特定の場所だけ綺麗なミッキーの形をしています!造形が美しすぎて鳥肌モノです。",
+      "image_query": "green vines climbing stone wall pattern",
+      "image_prompt": "green climbing vines forming a pattern on a stone wall, elegant natural texture",
+      "keywords": ["緑の植物", "造形が美しすぎて鳥肌モノ"]
+    },
+    {
+      "id": 8,
+      "narration": "どれも適当に歩いているだけじゃ、100%見落とす場所ばかり。次回パークに行く時は、ぜひスマホ片手に探してみてください。",
+      "image_query": "person holding smartphone searching looking around",
+      "image_prompt": "a person holding a smartphone and looking around curiously, exploring atmosphere",
+      "keywords": ["100%見落とす場所", "スマホ片手に探してみてください"]
+    },
+    {
+      "id": 9,
+      "narration": "ちなみに、みんなが知っている「一番マニアックな隠れミッキー」はどこですか?コメント欄で教えてね!",
+      "image_query": "colorful cartoon town buildings whimsical daytime",
+      "image_prompt": "a colorful whimsical cartoon town with playful buildings, daytime atmosphere",
+      "keywords": ["一番マニアックな隠れミッキー", "コメント欄で教えてね"]
+    }
+  ]
+}

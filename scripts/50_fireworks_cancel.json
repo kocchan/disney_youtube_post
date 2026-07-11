@@ -1,0 +1,67 @@
+{
+  "title": "ケチってるだけ?花火が「地上は無風なのに中止」になる本当の理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "「上空の気流の影響により、中止します。」ディズニーの夜の花火、あまりにも中止になりすぎて、「予算をケチってるんじゃないの?」って疑ったことありませんか?",
+      "image_query": "fireworks night sky castle celebration",
+      "image_prompt": "beautiful fireworks exploding over a night sky near a castle, celebration atmosphere",
+      "keywords": ["中止になりすぎて", "予算をケチってるんじゃないの"]
+    },
+    {
+      "id": 2,
+      "narration": "実はこれ、経費削減ではありません。むしろ中止にする裏には、「1発でも失敗したら夢の国が完全終了する」という、大人の限界すぎる事情が隠されているんです。",
+      "image_query": "warning sign caution serious concept",
+      "image_prompt": "a serious warning caution concept scene, dramatic lighting",
+      "keywords": ["経費削減ではありません", "夢の国が完全終了する"]
+    },
+    {
+      "id": 3,
+      "narration": "理由の1つ目は「上空の嵐」。私たちがいる地上は無風でも、花火が上がる上空100メートル以上は、強い海風が吹き荒れていることがよくあるんです。",
+      "image_query": "strong wind clouds stormy sky above",
+      "image_prompt": "strong wind blowing through dramatic stormy clouds high in the sky",
+      "keywords": ["上空の嵐", "強い海風が吹き荒れている"]
+    },
+    {
+      "id": 4,
+      "narration": "そしてここからが本題。花火の打ち上げ場所のすぐ裏側には、高速道路や一般の住宅街が、信じられない近さで隣接しているんです。",
+      "image_query": "highway road residential neighborhood aerial",
+      "image_prompt": "an aerial view of a highway road next to a residential neighborhood, urban landscape",
+      "keywords": ["すぐ裏側", "信じられない近さで隣接"]
+    },
+    {
+      "id": 5,
+      "narration": "もし強い風が吹いている時に無理やり花火を上げたら、燃えカスや未破裂の弾が、高速道路を走る車や民家に直撃して大惨事になってしまいます。",
+      "image_query": "sparks embers falling dark dramatic",
+      "image_prompt": "dramatic falling sparks and embers against a dark background, tense atmosphere",
+      "keywords": ["燃えカスや未破裂の弾", "大惨事"]
+    },
+    {
+      "id": 6,
+      "narration": "理由の3つ目。もし1回でも近隣に火災や事故を起こせば、大ニュースになり、今後二度と花火の許可が下りなくなってしまうんです。",
+      "image_query": "news breaking alert screen concept",
+      "image_prompt": "a breaking news alert screen concept, urgent atmosphere",
+      "keywords": ["大ニュースになり", "二度と花火の許可が下りなく"]
+    },
+    {
+      "id": 7,
+      "narration": "だからディズニーは、ゲストをがっかりさせてでも、周辺住民の安全と「夢の国の存続」のために、1ミリの妥協もせず秒速で中止の判断を下すんです。",
+      "image_query": "disappointed crowd looking up sky",
+      "image_prompt": "a crowd looking up at the sky with disappointed expressions, evening atmosphere",
+      "keywords": ["夢の国の存続", "秒速で中止の判断"]
+    },
+    {
+      "id": 8,
+      "narration": "あの融通の利かない中止アナウンスは、実は私たちが明日からもパークを楽しむための「鉄の掟」だったんですね。次に見られた時は、奇跡だと思って全力で感動しちゃいましょう。",
+      "image_query": "fireworks night sky castle celebration",
+      "image_prompt": "beautiful fireworks exploding over a night sky near a castle, celebration atmosphere",
+      "keywords": ["鉄の掟", "奇跡だと思って"]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "【後編】みんな勘違いしてる!待ち列ロボットの時系列トリックがヤバい",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "前回の続きです。スター・ツアーズの待ち列にいる元パイロットのロボット「レックス」。クビにされて壊れたと思われがちですが、実はこれ大きな勘違いなんです。",
+      "image_query": "malfunctioning robot droid sparks queue line",
+      "image_prompt": "a malfunctioning robot droid sparking in a sci-fi queue line, dramatic lighting",
+      "scrape_query": "スター・ツアーズ レックス",
+      "keywords": ["クビにされて壊れた", "大きな勘違い"]
+    },
+    {
+      "id": 2,
+      "narration": "大前提として、現在のアトラクションは、昔の初代アトラクションよりも「過去の時代」のお話という公式設定があるんです。",
+      "image_query": "timeline clock gears mysterious concept",
+      "image_prompt": "an abstract timeline concept with glowing gears and clocks, mysterious sci-fi atmosphere",
+      "keywords": ["過去の時代", "公式設定"]
+    },
+    {
+      "id": 3,
+      "narration": "つまり!いま待ち列にいる彼は、クビになった後ではなく「工場から出荷されたばかりの初期不良品」。これからパイロットになる前の姿だったんです。",
+      "image_query": "factory assembly line robot production sci-fi",
+      "image_prompt": "a sci-fi factory assembly line producing robots, industrial atmosphere",
+      "keywords": ["工場から出荷されたばかり", "初期不良品"]
+    },
+    {
+      "id": 4,
+      "narration": "その後、無事に修理された彼は、数十年越しにパイロットデビューを果たします。それが、かつてのアトラクションで見られた彼の姿というわけです。",
+      "image_query": "vintage pilot robot cockpit control panel",
+      "image_prompt": "a vintage pilot robot sitting at a retro cockpit control panel, nostalgic sci-fi style",
+      "keywords": ["パイロットデビュー", "かつてのアトラクション"]
+    },
+    {
+      "id": 5,
+      "narration": "しかも、彼の物語はここで終わりません。さらに時が経ち、引退した彼は遠い星に墜落してしまうんです。",
+      "image_query": "crashed robot spaceship wreckage alien planet",
+      "image_prompt": "a crashed robot near spaceship wreckage on a distant alien planet, dramatic sci-fi scene",
+      "keywords": ["物語はここで終わりません", "遠い星に墜落"]
+    },
+    {
+      "id": 6,
+      "narration": "ですが現地の修理屋に拾われ、なんと今は遠い星の酒場で「大人気クラブDJ」として第二の人生を歩んでいるという設定なんです。",
+      "image_query": "alien cantina bar neon lights nightclub scene",
+      "image_prompt": "a vibrant alien cantina with neon lights and a lively nightclub atmosphere, sci-fi style",
+      "keywords": ["大人気クラブDJ", "第二の人生"]
+    },
+    {
+      "id": 7,
+      "narration": "不良品から始まり、伝説のパイロットになり、最後はDJに。ロボット一体分の壮大すぎる人生ですよね。",
+      "image_query": "dramatic robot silhouette starry night sky",
+      "image_prompt": "a dramatic robot silhouette against a starry night sky, epic cinematic mood",
+      "keywords": ["不良品から始まり", "壮大すぎる人生"]
+    },
+    {
+      "id": 8,
+      "narration": "次にパークで彼を見かけたら、「これから大出世するんだぞ」と、ぜひ心の中で応援してあげてくださいね。あなたはこの時系列トリック、気づいていましたか?",
+      "image_query": "sci-fi queue line futuristic corridor lights",
+      "image_prompt": "a futuristic sci-fi queue line corridor with glowing lights, cinematic",
+      "keywords": ["大出世するんだぞ", "気づいていましたか"]
+    }
+  ]
+}

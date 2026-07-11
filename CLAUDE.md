@@ -35,6 +35,7 @@
 | ダッシュボードで画像選択が完了した（`image_selections.json` 生成） | 対象行の ① 列を ✅ にする |
 | X版動画を生成した（`final_output_x*.mp4` 生成） | 対象行の ② 列を ✅ にする |
 | TikTok版動画を生成した（`final_output_tiktok*.mp4` 生成） | 対象行の ③ 列を ✅ にする |
+| ユーザーがTikTokに**手動投稿**した後、投稿完了のスクリーンショットを見せてくれた | 対象行の 📱 TikTok投稿 列を `📱 MM/DD 投稿済み` に更新（TikTok本番審査が通り自動投稿に切り替わるまでは手動運用） |
 | YouTube版動画を生成した（`final_output_youtube*.mp4` 生成） | 対象行の ④ 列を ✅ にする |
 | `upload.py` で YouTube 予約投稿した | 対象行の 📅 列を `📅 MM/DD HH:MM 予約` に更新（**自動**: `upload.py` が実行）、状態列を `📅 YT予約済` にする |
 | 全列が ✅（または 📅）になった | 状態列を `✅` に変更し、残タスクセクションから削除する |
@@ -55,8 +56,9 @@
 
 - **インデックス**: `.claude/memory/MEMORY.md`（何があるかの一覧）
 - **フィードバック**: `.claude/memory/feedback_video_design.md`（デザイン・動画・**画像選定**に関するユーザー指摘まとめ）
+- **パフォーマンス分析**: `.claude/memory/analytics_insights.md`（YouTube Analytics APIから自動集計した視聴率・タイトル型・カテゴリ別成績。`python src/analyze_performance.py`／`analytics-insights` スキルで更新）
 
-**台本生成・scrape_query 設計・ダッシュボード画像選定を行う前に必ず `feedback_video_design.md` の画像選定セクションを参照すること。**
+**台本生成・scrape_query 設計・ダッシュボード画像選定を行う前に必ず `feedback_video_design.md` の画像選定セクションと `analytics_insights.md` の「台本生成への提言」セクションを参照すること。**
 
 ユーザーから初めて指摘・修正を受けたときは、**同じミスを繰り返さないために必ずメモリに記録する**。
 
@@ -125,7 +127,7 @@
 - **同一テーマの派生ファイル**: メインを `NN_xxx_main.json`、派生を `NN+1_xxx_yt1.json` のように連続した番号で並べる。
 - 番号なしファイルは作らない。スクリプト生成後、必ず `ls scripts/` で確認する。
 
-現在の最終番号: **33**（次は `34_...`）
+現在の最終番号: **55**（次は `56_...`）
 
 ---
 

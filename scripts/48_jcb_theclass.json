@@ -1,0 +1,74 @@
+{
+  "title": "【後編】秘密の部屋に入れる唯一のカード「JCBザ・クラス」の作り方",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "前回の続きです。テーマパークの秘密のラウンジに、唯一入れる最強のカード「JCBザ・クラス」。",
+      "image_query": "black premium credit card luxury closeup",
+      "image_prompt": "a premium black credit card closeup, luxury financial concept",
+      "keywords": ["秘密のラウンジ", "JCBザ・クラス"]
+    },
+    {
+      "id": 2,
+      "narration": "JCB最高峰のブラックカードですが、なんと年会費は「55,000円」。意外と現実的な金額ですよね。でも、ここからが本当の絶望なんです。",
+      "image_query": "credit card statement fee closeup document",
+      "image_prompt": "a credit card fee statement document closeup, financial concept",
+      "keywords": ["55,000円", "本当の絶望"]
+    },
+    {
+      "id": 3,
+      "narration": "このカード、お金を払えば誰でも作れるわけじゃないんです。カード会社から「あなたに持ってほしい」と招待状が届いた人しか作れない、完全招待制なんです。",
+      "image_query": "invitation letter envelope elegant mail",
+      "image_prompt": "an elegant invitation letter and envelope, luxury mail concept",
+      "keywords": ["お金を払えば誰でも作れるわけじゃない", "完全招待制"]
+    },
+    {
+      "id": 4,
+      "narration": "じゃあどうやって招待されるの?ステップ1、まずは下位の上級カードを作り、全ての決済をこのカードに集中させます。",
+      "image_query": "gold platinum credit cards stack comparison",
+      "image_prompt": "a stack of gold and platinum credit cards, comparison concept, luxury style",
+      "keywords": ["ステップ1", "決済をこのカードに集中"]
+    },
+    {
+      "id": 5,
+      "narration": "ステップ2、ここから過酷な修行の始まりです。年間300万円以上の決済を、なんと「3年から5年連続」で続ける必要があります。",
+      "image_query": "calendar years passing time concept business",
+      "image_prompt": "a calendar showing years passing, business time concept",
+      "keywords": ["年間300万円以上", "3年から5年連続"]
+    },
+    {
+      "id": 6,
+      "narration": "噂では、通算1,000万から1,500万円以上使って、ようやく招待状が届くと言われています。",
+      "image_query": "stack of cash money bills closeup",
+      "image_prompt": "a large stack of cash bills closeup, wealth concept",
+      "keywords": ["1,000万から1,500万円以上"]
+    },
+    {
+      "id": 7,
+      "narration": "こうして修行を乗り越えた選ばれし者だけが、年に1回、秘密の部屋に招待され、待ち時間ゼロの特権を手に入れられるんです。",
+      "image_query": "hidden luxury lounge door exclusive entrance",
+      "image_prompt": "a hidden luxury lounge entrance with an exclusive door, elegant atmosphere",
+      "keywords": ["修行を乗り越えた選ばれし者", "待ち時間ゼロの特権"]
+    },
+    {
+      "id": 8,
+      "narration": "人気アトラクションに並ばず乗るために、1,500万使う男のロマン。あなたは、この厳しい修行に耐えられますか?",
+      "image_query": "person determined focused looking forward",
+      "image_prompt": "a determined person with a focused expression, motivational atmosphere",
+      "keywords": ["1,500万使う男のロマン", "厳しい修行に耐えられます"]
+    },
+    {
+      "id": 9,
+      "narration": "ちなみに私は、そのカードすら持ってないので、次回も大人しく120分並びます。あなたはこのカード、目指しますか?",
+      "image_query": "crowded theme park queue line long wait",
+      "image_prompt": "a long crowded queue line at a theme park attraction, hot sunny day",
+      "keywords": ["120分並びます", "目指しますか"]
+    }
+  ]
+}

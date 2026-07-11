@@ -1,0 +1,69 @@
+{
+  "title": "【天才の誤算】監督が自分で書いた脚本が面白すぎて我慢できなくなった話",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "前作のラストを見て、「これが本当に観たかった終わり方なの?」とモヤモヤしたファンは多いですよね。そんな人にこそ、今作『5』の爆笑モノの制作過程を知ってほしいんです。",
+      "image_query": "toy figures farewell emotional scene warm light",
+      "image_prompt": "toy figures in an emotional farewell scene, warm nostalgic lighting",
+      "keywords": ["モヤモヤしたファン", "爆笑モノの制作過程"]
+    },
+    {
+      "id": 2,
+      "narration": "今作の監督は、ピクサーを創り上げた伝説の4人「ビッグ4」のひとり。ずっとこの物語を生み出してきた本当の親です。",
+      "image_query": "film director portrait thoughtful studio lighting",
+      "image_prompt": "a thoughtful film director portrait in studio lighting, cinematic mood",
+      "keywords": ["伝説の4人", "本当の親"]
+    },
+    {
+      "id": 3,
+      "narration": "だからこそ、シリーズの重みを誰よりも知る彼は、オファーに対し最初は「絶対に嫌だ。これ以上シリーズを汚したくない」と頑なに拒否したそうです。",
+      "image_query": "person shaking head refusing gesture office",
+      "image_prompt": "a person shaking their head in refusal during an office meeting, tense atmosphere",
+      "keywords": ["絶対に嫌だ", "頑なに拒否"]
+    },
+    {
+      "id": 4,
+      "narration": "「アドバイザーとして台本を書くだけなら」と、渋々引き受けたところから、天才の誤算が始まります。",
+      "image_query": "person writing script notebook desk lamp",
+      "image_prompt": "a person writing a script in a notebook under a desk lamp, focused atmosphere",
+      "keywords": ["渋々引き受けた", "天才の誤算"]
+    },
+    {
+      "id": 5,
+      "narration": "現代の子供たちがスマホばかり見ておもちゃで遊ばない、というプロットを自分で書いているうちに、ストーリーが面白くなりすぎてしまったんです。",
+      "image_query": "person writing excitedly notebook ideas desk",
+      "image_prompt": "a person writing excitedly in a notebook, full of creative energy, warm lighting",
+      "keywords": ["面白くなりすぎてしまった"]
+    },
+    {
+      "id": 6,
+      "narration": "クリエイター魂に完全に火がついた彼は、気づけば幹部にこう言っていました。「すまない、前言撤回だ。この台本、面白すぎるから他の誰にも撮らせたくない。俺が監督をやる!」",
+      "image_query": "excited person passionate speech gesture office",
+      "image_prompt": "an excited person making a passionate declaration in an office, dramatic lighting",
+      "keywords": ["クリエイター魂に完全に火がついた", "俺が監督をやる"]
+    },
+    {
+      "id": 7,
+      "narration": "最初は嫌がっていた生みの親が、我慢できずに自らメガホンをとった渾身の『5』。4の結末にモヤモヤしたファンを、彼がどんな最高の物語で救ってくれるのか。",
+      "image_query": "movie theater screen animation premiere",
+      "image_prompt": "a movie theater screen showing an animated film premiere, cinematic warm lighting",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["自らメガホンをとった", "最高の物語"]
+    },
+    {
+      "id": 8,
+      "narration": "この熱すぎる舞台裏を知った上で、ぜひ劇場で見届けてみませんか?あなたの熱い思いや期待も、コメント欄で教えてください!",
+      "image_query": "cowgirl toy figure standing confident dramatic lighting",
+      "image_prompt": "a confident cowgirl toy figure standing tall, dramatic warm lighting, storytelling atmosphere",
+      "scrape_query": "Toy Story 5 Jessie",
+      "keywords": ["熱すぎる舞台裏", "コメント欄で教えてください"]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "【トイ・ストーリー5】全人類が泣く。テイラー・スウィフトが新曲を「8時間」で書いた本当の理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "トイ・ストーリー5の新曲を、なんと8時間足らずで書き上げたテイラー・スウィフト。彼女がGMAのインタビューで語った真相、知ったら全人類泣きます。",
+      "image_query": "movie premiere red carpet interview microphone",
+      "image_prompt": "a glamorous movie premiere red carpet with a singer being interviewed, warm flashing lights, cinematic",
+      "scrape_query": "Taylor Swift Toy Story 5",
+      "keywords": ["8時間足らず", "全人類泣きます"]
+    },
+    {
+      "id": 2,
+      "narration": "彼女はGMAのインタビューで、早朝の試写でこの映画を観た直後、いわゆる作曲家のゾクゾク感に襲われたと明かしています。家に帰ってその日のうちに、新曲を書き上げてしまったそうです。",
+      "image_query": "acoustic guitar songwriting home late night notebook",
+      "image_prompt": "an acoustic guitar and a notebook on a table, warm lamp light, late night songwriting atmosphere",
+      "scrape_query": "Taylor Swift Toy Story 5 interview",
+      "keywords": ["ゾクゾク感", "その日のうちに"]
+    },
+    {
+      "id": 3,
+      "narration": "曲のインスピレーションは、1999年公開のトイ・ストーリー2から登場するカウガール、ジェシー。今回描かれた彼女の成長や経験に、自分自身を重ねられたと語っています。",
+      "image_query": "cowgirl toy figure standing confident dramatic lighting",
+      "image_prompt": "a confident cowgirl toy figure standing tall, dramatic warm lighting, storytelling atmosphere",
+      "scrape_query": "Toy Story 5 Jessie",
+      "keywords": ["カウガール、ジェシー", "自分自身を重ねられた"]
+    },
+    {
+      "id": 4,
+      "narration": "この曲が描くのは、人生の中で生まれる友情や記憶、そして違う道を歩むことになった相手との再会。テイラー自身の経験とも重なる普遍的なテーマなんです。",
+      "image_query": "old photographs memories nostalgia warm light hands",
+      "image_prompt": "a hand sorting through old photographs on a table, warm nostalgic lighting, memories theme",
+      "keywords": ["友情や記憶", "違う道を歩む"]
+    },
+    {
+      "id": 5,
+      "narration": "共同プロデューサーは長年の盟友ジャック・アントノフ。彼女の原点でもあるカントリー調のバラードとして仕上げられ、ジェシーの物語に寄り添う一曲になっています。",
+      "image_query": "recording studio mixing console warm light two people",
+      "image_prompt": "a cozy recording studio with a mixing console, warm ambient lighting, collaborative atmosphere",
+      "scrape_query": "Taylor Swift Toy Story 5",
+      "keywords": ["ジャック・アントノフ", "カントリー調のバラード"]
+    },
+    {
+      "id": 6,
+      "narration": "天才だから一瞬で書けたわけじゃない。ジェシーというキャラクターに本気で心を動かされたから生まれた曲なんです。劇場でこの曲を聴いて号泣したい人は、忘れないように今のうちに保存してください。",
+      "image_query": "bookmark save icon glowing dark screen animation",
+      "image_prompt": "a glowing bookmark save icon animating on a dark screen background, social media style",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["本気で心を動かされた", "今のうちに保存"]
+    }
+  ]
+}

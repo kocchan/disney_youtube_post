@@ -1,0 +1,68 @@
+{
+  "title": "適当に撃つのはもったいない!射的の隠しギミック{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーランドのシューティングギャラリー。とりあえず適当に光っている的を撃っていませんか?実は62個ある的の中に、今から紹介する{count}つのヤバい隠しギミックが隠されているんです。",
+      "image_query": "western saloon shooting gallery targets vintage",
+      "image_prompt": "a vintage western-style shooting gallery with rows of targets, warm nostalgic lighting",
+      "scrape_query": "ディズニーランド シューティングギャラリー",
+      "keywords": ["適当に光っている的", "隠しギミック"]
+    },
+    {
+      "id": 2,
+      "narration": "1つ目。壁に掛けられた「留置場・酒場・銀行」が描かれた平和な町の絵。この絵の的を撃ち抜くと、一瞬で「町が強盗に襲撃されている絵」に切り替わるんです。",
+      "image_query": "old western town painting wall frame saloon",
+      "image_prompt": "an old western town painting hanging on a saloon wall, vintage art style",
+      "keywords": ["平和な町の絵", "強盗に襲撃されている絵"]
+    },
+    {
+      "id": 3,
+      "narration": "実はこの酒場の壁に残っているリアルな弾痕は、その襲撃事件の時の流れ弾なんです。裏設定が深すぎますよね。",
+      "image_query": "bullet holes wooden wall texture western",
+      "image_prompt": "realistic bullet holes on an old wooden wall, western saloon texture",
+      "keywords": ["リアルな弾痕", "裏設定が深すぎます"]
+    },
+    {
+      "id": 4,
+      "narration": "2つ目。左側で居眠りしている保安官の後ろの壁。よく見ると「牢屋の鍵」が掛けっぱなしなんです。セキュリティがガバガバすぎますよね。",
+      "image_query": "sleeping sheriff figure jail cell keys wall",
+      "image_prompt": "a comedic sleeping sheriff figure near a jail cell wall with keys hanging, western style",
+      "keywords": ["牢屋の鍵", "ガバガバすぎます"]
+    },
+    {
+      "id": 5,
+      "narration": "この鍵の近くの的を撃つと、怠け者の保安官が面白いリアクションをしてくれるんです。",
+      "image_query": "animated character reaction surprised comedic",
+      "image_prompt": "a comedic animated figure with a surprised reaction, whimsical western style",
+      "keywords": ["面白いリアクション"]
+    },
+    {
+      "id": 6,
+      "narration": "3つ目。弾が飛び交う中でも爆睡しているバーテンダー。彼が持っているグラスの近くの的を狙って撃つと、驚いて帽子がポーンと上に飛び上がります。",
+      "image_query": "sleeping bartender figure saloon glass counter",
+      "image_prompt": "a comedic sleeping bartender figure behind a saloon counter with a glass, western style",
+      "keywords": ["爆睡しているバーテンダー", "帽子がポーンと上に飛び上がります"]
+    },
+    {
+      "id": 7,
+      "narration": "さらに、この62個の的のうちどれか1つは、当たれば一発で「金バッジ」がもらえるラッキーの的なんです。",
+      "image_query": "golden badge star shiny prize closeup",
+      "image_prompt": "a shiny golden star badge prize, sparkling closeup, western style",
+      "keywords": ["金バッジ", "ラッキーの的"]
+    },
+    {
+      "id": 8,
+      "narration": "紹介した{count}つの隠しギミック、次回はただ的を当てるだけじゃなく、ぜひ狙って撃ってみてくださいね。あなたはいくつ知っていましたか?",
+      "image_query": "rifle aiming shooting gallery vintage western",
+      "image_prompt": "a rifle aiming at a vintage western shooting gallery, dramatic lighting",
+      "keywords": ["狙って撃ってみてください", "いくつ知っていました"]
+    }
+  ]
+}

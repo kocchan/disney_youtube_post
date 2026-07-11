@@ -1,0 +1,67 @@
+{
+  "title": "ディズニーで一番悔しい…一般人は絶対入れない「秘密の部屋」の正体",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーファンが、最も「資本主義の敗北」を感じて悔し涙を流す場所。どこだか知ってますか?",
+      "image_query": "crowded theme park queue line long wait",
+      "image_prompt": "a long crowded queue line at a theme park attraction, hot sunny day",
+      "keywords": ["資本主義の敗北", "悔し涙"]
+    },
+    {
+      "id": 2,
+      "narration": "実は、人気アトラクションの建物の中には、一般人は絶対に入れない「スポンサー専用の秘密のラウンジ」が隠されているんです。",
+      "image_query": "hidden luxury lounge door exclusive entrance",
+      "image_prompt": "a hidden luxury lounge entrance with an exclusive door, elegant atmosphere",
+      "keywords": ["スポンサー専用の秘密のラウンジ"]
+    },
+    {
+      "id": 3,
+      "narration": "本当に悔しくないですか?僕たちが炎天下や極寒の中、100分以上並んでいるその真上で、特権階級の人たちは冷房の効いた部屋で優雅にドリンクを飲んでいるんです。",
+      "image_query": "luxury lounge people drinking relaxed indoor",
+      "image_prompt": "people relaxing and drinking in a luxury indoor lounge, comfortable elegant atmosphere",
+      "keywords": ["100分以上並んでいる", "優雅にドリンクを飲んでいる"]
+    },
+    {
+      "id": 4,
+      "narration": "時間になったら専用のエレベーターで、待ち時間ほぼゼロで最前列へ案内されているんです。まさに圧倒的格差社会です。",
+      "image_query": "private elevator exclusive access modern",
+      "image_prompt": "a sleek private elevator with exclusive access, modern luxury design",
+      "keywords": ["待ち時間ほぼゼロ", "圧倒的格差社会"]
+    },
+    {
+      "id": 5,
+      "narration": "「ずるい、私もそこに入りたい!」って思いますよね。じゃあ、一般の僕たちがこのラウンジに入るための現実的な手段を教えます。",
+      "image_query": "person looking envious through window glass",
+      "image_prompt": "a person looking through a window with an envious expression, warm lighting",
+      "keywords": ["現実的な手段"]
+    },
+    {
+      "id": 6,
+      "narration": "1つ目。一番現実的なのが、最高峰クレジットカードを手に入れること。これを持っていれば、年に1回、秘密のラウンジを利用する権利がもらえます。",
+      "image_query": "black premium credit card luxury closeup",
+      "image_prompt": "a premium black credit card closeup, luxury financial concept",
+      "keywords": ["最高峰クレジットカード", "利用する権利"]
+    },
+    {
+      "id": 7,
+      "narration": "2つ目。オフィシャルスポンサー企業に就職すること。社内抽選や福利厚生で、ラウンジの利用券が回ってくることがあります。3つ目は、自社でスポンサー権を買い取ること。",
+      "image_query": "office building corporate skyscraper business",
+      "image_prompt": "a modern corporate office skyscraper, business professional atmosphere",
+      "keywords": ["オフィシャルスポンサー企業に就職", "スポンサー権を買い取る"]
+    },
+    {
+      "id": 8,
+      "narration": "うん、やっぱり資本主義には勝てませんね。今日も大人しく並びましょう。この格差、あなたはどう思いますか?",
+      "image_query": "crowded theme park queue line long wait",
+      "image_prompt": "a long crowded queue line at a theme park attraction, hot sunny day",
+      "keywords": ["資本主義には勝てません", "どう思いますか"]
+    }
+  ]
+}

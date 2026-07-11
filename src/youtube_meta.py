@@ -69,6 +69,19 @@ def _make_description(script: dict, credits_path: Path | None = None) -> str:
     return "\n".join(lines)
 
 
+def read_resolved_title(meta_txt_path: Path) -> str | None:
+    """youtube_meta.txt から解決済み({count}置換済み)タイトルを読み取る。"""
+    if not meta_txt_path.exists():
+        return None
+    lines = meta_txt_path.read_text(encoding="utf-8").splitlines()
+    for i, line in enumerate(lines):
+        if "タイトル" in line and "━" in line:
+            for candidate in lines[i + 1:]:
+                if candidate.strip():
+                    return candidate.strip()
+    return None
+
+
 def write_youtube_meta(script: dict, out_path: Path, credits_path: Path | None = None) -> Path:
     """YouTube用メタ情報を out_path に書き出す。"""
     yt_title = _make_title(script.get("title", ""), script.get("scenes", []))

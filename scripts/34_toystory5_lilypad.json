@@ -1,0 +1,59 @@
+{
+  "title": "【トイ・ストーリー5】シリーズ史上最も残酷な「おもちゃの死」の本当の意味",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "トイ・ストーリー5が描いた最も残酷な絶望。実は2010年公開の3作目、あの焼却炉のシーンの比じゃないんです。今作の敵はカエル型タブレットのリリーパッド。この正体を知ったら、きっと怖くなります。",
+      "image_query": "child face lit by cold tablet screen glow dark room",
+      "image_prompt": "close-up of a child's wide eyes reflecting the cold blue light of a tablet screen in a dark room, cinematic moody lighting",
+      "scrape_query": "Toy Story 5 Bonnie tablet",
+      "keywords": ["最も残酷な絶望", "リリーパッド"]
+    },
+    {
+      "id": 2,
+      "narration": "過去作の恐怖は捨てられることや忘れられることでした。でも新たな敵、タブレット端末のリリーパッドがもたらすのは全く次元の違う恐怖。ボニーの視線を奪い、心そのものを乗っ取っていくんです。",
+      "image_query": "vintage toys in shadow box dim light contrast glowing screen",
+      "image_prompt": "vintage toys resting in a shadowy wooden box, a cold blue tablet glow washing over the scene, cinematic contrast",
+      "scrape_query": "Toy Story 5 Lilypad",
+      "keywords": ["次元の違う恐怖", "リリーパッド"]
+    },
+    {
+      "id": 3,
+      "narration": "それは目の前にいるのに透明人間になること。物理的にはすぐそばにいるのに、ボニーの視線は画面に釘付けのまま。想像力が死ねば、おもちゃの存在意義は完全に消滅してしまうんです。",
+      "image_query": "toys scattered on floor child ignoring staring at screen background",
+      "image_prompt": "toys scattered on the floor in the foreground, blurred, while a child in the background stares blankly at a glowing tablet screen",
+      "scrape_query": "Toy Story 5 Woody Jessie",
+      "keywords": ["透明人間", "想像力が死ねば"]
+    },
+    {
+      "id": 4,
+      "narration": "アナログなおもちゃは、子供が自分の声で物語を吹き込むことで初めて命が宿る仕組みです。でもAIやタブレットは全て自動再生。子供が想像する余白を根こそぎ奪う設計になっているんです。",
+      "image_query": "split screen child playing with toy imagination versus child watching tablet screen",
+      "image_prompt": "split screen composition: left side a child joyfully voicing and playing with a toy, right side a child passively watching an automated tablet screen",
+      "scrape_query": "Toy Story Andy playing Woody",
+      "keywords": ["余白", "自動再生"]
+    },
+    {
+      "id": 5,
+      "narration": "ピクサーが突きつけた現実は重いものでした。想像力の死は、ただの遊びの終わりじゃありません。身近にあるデジタル機器が、子供の心の成長そのものを止めているという痛烈な警告なんです。",
+      "image_query": "plush toys in shadow dim room lonely blue screen glow",
+      "image_prompt": "plush toys sitting in the shadows of a dim room, illuminated only by the distant cold blue glow of a tablet screen, melancholic mood",
+      "scrape_query": "Toy Story 5 Lilypad glow",
+      "keywords": ["痛烈な警告", "遊びの終わり"]
+    },
+    {
+      "id": 6,
+      "narration": "スマホ育児が当たり前になった今、この映画のメッセージをどう受け止めますか。忘れないようにいいねを押して、後でじっくりコメント欄で考えを教えてください。",
+      "image_query": "red heart like button glowing on dark screen social media animation",
+      "image_prompt": "a glowing red heart-shaped like button animating on a dark screen, warm red glow, social media style",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["スマホ育児", "いいね"]
+    }
+  ]
+}

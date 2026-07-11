@@ -155,6 +155,23 @@ def _build_tags(script: dict) -> list[str]:
     return tags[:500]
 
 
+def _detect_schedule_status_cols(lines: list[str]) -> tuple[int | None, int | None]:
+    """ヘッダー行から 📅 列と状態列のセル位置を動的に検出する。
+
+    列の追加・並び替えがあってもハードコードした index に依存しないようにする。
+    """
+    for line in lines:
+        if not line.startswith("|"):
+            continue
+        cells = line.split("|")
+        if len(cells) < 2 or cells[1].strip() != "#":
+            continue  # コンテンツ制作進捗テーブルのヘッダー行のみ対象（先頭列が "#"）
+        sched_idx  = next((i for i, c in enumerate(cells) if "📅" in c), None)
+        status_idx = next((i for i, c in enumerate(cells) if c.strip() == "状態"), None)
+        return sched_idx, status_idx
+    return None, None
+
+
 def _update_todo_row(script_path: Path, today: str, col7: str | None = None, col8: str | None = None) -> bool:
     """TODO.md の該当行を更新する汎用関数。col7=📅列、col8=状態列。"""
     import re
@@ -166,20 +183,20 @@ def _update_todo_row(script_path: Path, today: str, col7: str | None = None, col
     num_str = stem.split("_")[0].lstrip("0") or "0"
     pattern = re.compile(rf"^\|\s*0*{re.escape(num_str)}\s*\|")
 
-    lines     = todo_path.read_text(encoding="utf-8").splitlines(keepends=True)
+    lines = todo_path.read_text(encoding="utf-8").splitlines(keepends=True)
+    sched_idx, status_idx = _detect_schedule_status_cols(lines)
+
     new_lines = []
     updated   = False
 
     for line in lines:
-        if pattern.match(line):
+        if pattern.match(line) and sched_idx is not None and status_idx is not None:
             parts = line.split("|")
-            # | # | ネタ | ① | ② | ③ | ④ | 📅 YT予約投稿 | 状態 |
-            #  0   1      2   3   4   5   6    7              8    9
-            if len(parts) >= 9:
+            if len(parts) > max(sched_idx, status_idx):
                 if col7 is not None:
-                    parts[7] = f" {col7} "
+                    parts[sched_idx] = f" {col7} "
                 if col8 is not None:
-                    parts[8] = f" {col8} "
+                    parts[status_idx] = f" {col8} "
                 line = "|".join(parts)
                 updated = True
         if line.startswith("> 最終更新:"):
@@ -313,6 +330,7 @@ def upload(script_path: Path, schedule: str, video_path: Path | None = None) -> 
     print()
     video_id = response["id"]
     url      = f"https://www.youtube.com/watch?v={video_id}"
+    (video_path.parent / "youtube_video_id.txt").write_text(video_id, encoding="utf-8")
     print(f"✅ アップロード完了！下書き保存されました。")
     print(f"   URL: {url}")
     print(f"   タイトル: {title}")

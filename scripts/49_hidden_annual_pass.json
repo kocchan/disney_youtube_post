@@ -1,0 +1,74 @@
+{
+  "title": "ファン激怒。消えたはずの年パスが今も裏で存在すると言われる理由",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "完全に資本主義の敗北です。ディズニーから2020年に消えたはずの年間パスポート。",
+      "image_query": "ticket booth entrance gate theme park",
+      "image_prompt": "a ticket booth entrance gate at a theme park, daytime atmosphere",
+      "keywords": ["資本主義の敗北", "2020年に消えたはずの年間パスポート"]
+    },
+    {
+      "id": 2,
+      "narration": "私たちが毎回1万円近く払って通う中、実は今でも「特別な年パス」が裏で存在していると言われているの、本当に悔しくないですか?",
+      "image_query": "person paying money ticket counter",
+      "image_prompt": "a person paying at a ticket counter, everyday transaction scene",
+      "keywords": ["1万円近く払って", "特別な年パス"]
+    },
+    {
+      "id": 3,
+      "narration": "1つ目は、運営会社の「役員や超VIP専用の年間パスポート」があると噂されています。",
+      "image_query": "corporate executive office building formal",
+      "image_prompt": "a formal corporate executive office building, professional atmosphere",
+      "keywords": ["役員や超VIP専用の年間パスポート"]
+    },
+    {
+      "id": 4,
+      "narration": "一般人が何日も前から予約枠を奪い合っている横で、彼らは「いつでも、事前予約なし」でふらっと入れる特権があるとも言われています。格差えぐすぎでしょ!",
+      "image_query": "reservation app calendar booking screen",
+      "image_prompt": "a smartphone reservation booking app calendar screen, modern digital concept",
+      "keywords": ["事前予約なし", "格差えぐすぎ"]
+    },
+    {
+      "id": 5,
+      "narration": "2つ目は、「オフィシャルスポンサー企業の役員枠」。年間数億円規模の協賛金を払っている企業のお偉いさん向けに、招待用の特別なフリーパスが融通されているという噂もあります。",
+      "image_query": "corporate logo banner sponsor event",
+      "image_prompt": "a corporate sponsor banner at an event, professional business atmosphere",
+      "keywords": ["オフィシャルスポンサー企業の役員枠", "特別なフリーパス"]
+    },
+    {
+      "id": 6,
+      "narration": "じゃあ、なんで私たち一般向けの年パスは復活しないのか?理由はシンプルで、「復活させなくても儲かるから」だと考えられています。",
+      "image_query": "business chart profit growth arrow",
+      "image_prompt": "a business chart showing profit growth with an upward arrow, corporate concept",
+      "keywords": ["一般向けの年パスは復活しない", "復活させなくても儲かるから"]
+    },
+    {
+      "id": 7,
+      "narration": "チケット代を値上げしてもゲストは減らず、むしろ「たまに来てお金をドバドバ使う遠方からのゲスト」が増えたため、企業として年パスを復活させるメリットが1ミリもないんです。",
+      "image_query": "tourist shopping souvenirs happy spending",
+      "image_prompt": "a happy tourist shopping for souvenirs, spending money joyfully",
+      "keywords": ["メリットが1ミリもない"]
+    },
+    {
+      "id": 8,
+      "narration": "だから、今でも毎週のように通っている人たちは、毎回チケットを都度課金している財力バグったツワモノたちだけなんです。",
+      "image_query": "wallet empty money spent concept",
+      "image_prompt": "an empty wallet concept, money spent theme, humorous tone",
+      "keywords": ["財力バグったツワモノ"]
+    },
+    {
+      "id": 9,
+      "narration": "悔しいけど、これが資本主義の現実。私は役員でも社長でもないので、次回も大人しく1万円払って、一般の列に並びます。年パス、復活してほしいですか?",
+      "image_query": "crowded theme park queue line long wait",
+      "image_prompt": "a long crowded queue line at a theme park attraction, hot sunny day",
+      "keywords": ["資本主義の現実", "復活してほしいですか"]
+    }
+  ]
+}

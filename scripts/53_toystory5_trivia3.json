@@ -1,0 +1,72 @@
+{
+  "title": "【衝撃】知ってた?トイ・ストーリー5の隠された裏設定・小ネタ{count}選",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ついに公開された『トイ・ストーリー5』!実は、1作目からのファンが鳥肌モノの、とんでもない制作秘話や小ネタが隠されているのを知っていますか?今回は厳選して{count}つ紹介します!",
+      "image_query": "movie theater screen animation premiere",
+      "image_prompt": "a movie theater screen showing an animated film premiere, cinematic warm lighting",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["制作秘話や小ネタ"]
+    },
+    {
+      "id": 2,
+      "narration": "1つ目は、今作の敵とも言えるカエル型のタブレット。名前は「リリーパッド」と言いますが、これ実は物凄い言葉遊びなんです。",
+      "image_query": "frog shaped tablet device toy glowing screen",
+      "image_prompt": "a frog-shaped tablet device toy with a glowing screen, playful animation style",
+      "scrape_query": "Toy Story 5 Bonnie tablet",
+      "keywords": ["リリーパッド", "物凄い言葉遊び"]
+    },
+    {
+      "id": 3,
+      "narration": "英語でカエルが乗る「スイレンの葉」を意味する言葉と、あの人気タブレット端末の名前を掛け合わせているんです。友達が持っている端末には、テントウムシやビーバーなど、違う動物のデザインもあるので探してみてね。",
+      "image_query": "various animal shaped toy tablets colorful",
+      "image_prompt": "various animal-shaped toy tablets in colorful designs, playful animation style",
+      "scrape_query": "Toy Story 5 Lilypad",
+      "keywords": ["スイレンの葉", "違う動物のデザイン"]
+    },
+    {
+      "id": 4,
+      "narration": "2つ目は、1作目に登場した運送会社。なんと今作では、先ほどのタブレットを製造する大手テック企業に出世しているんです!",
+      "image_query": "moving truck company logo vintage cardboard",
+      "image_prompt": "a vintage moving truck with a company logo, nostalgic animation style",
+      "scrape_query": "Toy Story moving truck Andy",
+      "keywords": ["運送会社", "大手テック企業に出世"]
+    },
+    {
+      "id": 5,
+      "narration": "この会社名、実は2022年に亡くなった天才アートディレクターへのオマージュだと言われています。運送会社からテック企業への変化に、ピクサーの世界の時代の流れを感じますよね。",
+      "image_query": "tech company office modern building glass",
+      "image_prompt": "a modern glass tech company office building, sleek corporate atmosphere",
+      "keywords": ["天才アートディレクターへのオマージュ", "時代の流れ"]
+    },
+    {
+      "id": 6,
+      "narration": "最後の3つ目は、持ち主エミリーの回想シーンに登場する美しい「木」のデザインです。",
+      "image_query": "beautiful tree hill sunset nostalgic",
+      "image_prompt": "a beautiful tree on a hill at sunset, nostalgic warm lighting",
+      "keywords": ["エミリーの回想シーン", "回想シーンに登場する美しい"]
+    },
+    {
+      "id": 7,
+      "narration": "実はこれ、ピクサーの別の名作映画の冒頭で、主人公夫婦が過ごした思い出の木と全く同じデザインなんです!大切な愛を象徴するロケーションが引き継がれているなんて、エモすぎませんか。",
+      "image_query": "beautiful tree hill sunset nostalgic",
+      "image_prompt": "a beautiful tree on a hill at sunset, nostalgic warm lighting",
+      "keywords": ["全く同じデザイン", "エモすぎませんか"]
+    },
+    {
+      "id": 8,
+      "narration": "さらに今作では、今まで謎だったエミリーの顔もバッチリ描かれています。あなたはいくつ気づけましたか?他にも見つけた小ネタがあれば、コメント欄で教えてね!",
+      "image_query": "cowgirl toy figure standing confident dramatic lighting",
+      "image_prompt": "a confident cowgirl toy figure standing tall, dramatic warm lighting, storytelling atmosphere",
+      "scrape_query": "Toy Story 5 Jessie",
+      "keywords": ["いくつ気づけました", "コメント欄で教えてね"]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "【トイ・ストーリー5】新キャラ「リリーパッド」は悪役じゃない！監督が隠した本当の絶望",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "トイ・ストーリー5、ただの感動作だと思って観るとマジで絶望します。7月3日に公開されたばかりのこの新作、新キャラに隠された本当の恐怖に気づいていますか。",
+      "image_query": "movie poster theater zoom tablet screen glow",
+      "image_prompt": "a movie poster in a dark theater, camera zooming into a glowing tablet screen for dramatic effect",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["本当の恐怖", "新キャラ"]
+    },
+    {
+      "id": 2,
+      "narration": "公開直後の7月3日から国内外のレビューサイトでは現代のテーマが深すぎると大絶賛の声が続出しています。ボニーが夢中になるタブレット、その名もリリーパッドが今回の敵として描かれているんです。",
+      "image_query": "smartphone screen social media reviews scrolling text",
+      "image_prompt": "close-up of a smartphone screen with movie review comments scrolling by, warm cinematic lighting",
+      "scrape_query": "Toy Story 5 Bonnie tablet",
+      "keywords": ["現代のテーマ", "リリーパッド"]
+    },
+    {
+      "id": 3,
+      "narration": "でも実はこのタブレット、単純な悪役ではありません。目的はウッディたちと全く同じ、ボニーを助けること。ただそのアプローチが、完全にデジタルなだけなんです。",
+      "image_query": "child face soft warm glow tablet screen friendly",
+      "image_prompt": "a child's face softly lit by a warm friendly glow from a tablet screen, gentle expression, not threatening",
+      "scrape_query": "Toy Story 5 Lilypad",
+      "keywords": ["悪役ではありません", "ボニーを助けること"]
+    },
+    {
+      "id": 4,
+      "narration": "監督のアンドリュー・スタントンが本当に描きたかった絶望、それは想像力の死です。おもちゃは子供が想像して初めて命が宿る仕組みになっています。でも画面は全てを自動で説明してしまい、子供が想像する余白を根こそぎ奪ってしまうんです。",
+      "image_query": "split screen child imaginative play toy versus child watching screen passively",
+      "image_prompt": "split screen composition: left a child animatedly playing pretend with a toy, right a child passively staring at a glowing screen",
+      "scrape_query": "Toy Story Andy playing Woody",
+      "keywords": ["想像力の死", "想像する余白"]
+    },
+    {
+      "id": 5,
+      "narration": "だからこそ今回の主人公はジェシーなんです。過去に捨てられ、忘れられる痛みを誰よりも知る彼女だからこそ、ボニーの想像力を取り戻すために立ち向かう。この構図がたまらなく熱いんです。",
+      "image_query": "determined cowgirl toy figure close up dramatic lighting silhouettes background",
+      "image_prompt": "a determined cowgirl toy figure in close-up dramatic lighting, with rows of futuristic robotic toy silhouettes looming in the background",
+      "scrape_query": "Toy Story 5 Jessie",
+      "keywords": ["ジェシーなんです", "想像力を取り戻す"]
+    },
+    {
+      "id": 6,
+      "narration": "テクノロジーそのものは悪じゃない、でも私たちが知らないうちに失っているものへの強烈な警告なんです。この映画を観てどう感じたか、ぜひコメントで語り合いましょう。",
+      "image_query": "comment bubble icon popup dark screen social media",
+      "image_prompt": "a comment bubble icon popping up on a dark screen background, social media style animation",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["強烈な警告", "コメントで語り合い"]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "大富豪ならできる?テーマパークを貸し切るための「絶対無理な条件」",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "「ディズニーランドを独り占めしてみたい!」誰もが一度は妄想したことがありますよね。結論から言うと、貸し切ることは可能です!",
+      "image_query": "empty amusement park night lights nobody",
+      "image_prompt": "an empty amusement park at night with lights on and nobody around, dreamlike atmosphere",
+      "keywords": ["独り占めしてみたい", "貸し切ることは可能"]
+    },
+    {
+      "id": 2,
+      "narration": "ただし!どれだけ大富豪であっても、「個人」で貸し切ることは絶対にできません。貸し切れるのは、オフィシャルスポンサーなどの「企業や団体」だけというルールがあるんです。",
+      "image_query": "corporate logo banner event sponsor",
+      "image_prompt": "a corporate sponsor banner at an event, professional business atmosphere",
+      "keywords": ["貸し切ることは絶対にできません", "企業や団体"]
+    },
+    {
+      "id": 3,
+      "narration": "では、もし企業として貸し切る場合、一体いくらかかって、どんな条件が必要なのでしょうか?",
+      "image_query": "calculator money counting business desk",
+      "image_prompt": "a calculator and money on a business desk, financial planning atmosphere",
+      "keywords": ["一体いくらかかって"]
+    },
+    {
+      "id": 4,
+      "narration": "条件の1つ目は「人数」。通常の閉園後に貸し切る場合、最低でも「4,000人以上」集める必要があるんです。",
+      "image_query": "large crowd gathering event outdoor",
+      "image_prompt": "a large crowd gathering at an outdoor event, energetic atmosphere",
+      "keywords": ["4,000人以上"]
+    },
+    {
+      "id": 5,
+      "narration": "そして2つ目は「費用」。チケット代だけで最低でも「約3,000万円」が必要になります!",
+      "image_query": "stack of cash money bills closeup",
+      "image_prompt": "a large stack of cash bills closeup, wealth concept",
+      "keywords": ["約3,000万円"]
+    },
+    {
+      "id": 6,
+      "narration": "しかもこれ、アトラクションに乗るための基本料金。もし「パレードやショーもやって」とお願いすると、オプションで数百万から数千万円がさらに上乗せされます!",
+      "image_query": "night parade lights festival celebration",
+      "image_prompt": "a colorful night parade with festive lights, celebration atmosphere",
+      "keywords": ["数百万から数千万円", "さらに上乗せ"]
+    },
+    {
+      "id": 7,
+      "narration": "つまり、総額で数千万円かかる計算になるんです。じゃあ、一般の僕たちが貸し切りを体験する方法は無いんでしょうか?",
+      "image_query": "person thinking question mark concept",
+      "image_prompt": "a person thinking with a question mark concept, curious atmosphere",
+      "keywords": ["総額で数千万円", "体験する方法は無い"]
+    },
+    {
+      "id": 8,
+      "narration": "あります!スポンサー企業が定期的にやっている「貸し切りイベントの懸賞」に当選すること。これが唯一のルートなんです。",
+      "image_query": "winning ticket lottery celebration confetti",
+      "image_prompt": "a winning lottery ticket with confetti celebration, joyful atmosphere",
+      "keywords": ["貸し切りイベントの懸賞", "唯一のルート"]
+    },
+    {
+      "id": 9,
+      "narration": "待ち時間ほぼゼロの夢の空間、いつか当選して行ってみたいですよね。あなたはこの貸し切りの仕組み、知っていましたか?",
+      "image_query": "empty amusement park night lights nobody",
+      "image_prompt": "an empty amusement park at night with lights on and nobody around, dreamlike atmosphere",
+      "keywords": ["待ち時間ほぼゼロ", "知っていましたか"]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "ディズニーに実在する「連続殺人鬼」…花嫁がヤバすぎる",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "ディズニーランドのホーンテッドマンション。実はこの中に「連続殺人鬼」が潜んでいるのを知っていますか?",
+      "image_query": "spooky gothic mansion exterior night fog",
+      "image_prompt": "a spooky gothic mansion exterior at night with fog, eerie cinematic lighting",
+      "scrape_query": "ホーンテッドマンション 花嫁",
+      "keywords": ["連続殺人鬼"]
+    },
+    {
+      "id": 2,
+      "narration": "アトラクション終盤、屋根裏部屋で心臓を赤く光らせているウェディングドレス姿の花嫁がいます。",
+      "image_query": "gothic wedding dress ghost bride dark attic",
+      "image_prompt": "a ghostly figure in a gothic wedding dress standing in a dark attic, eerie glowing light",
+      "keywords": ["心臓を赤く光らせている", "ウェディングドレス姿の花嫁"]
+    },
+    {
+      "id": 3,
+      "narration": "実は彼女、ただの幽霊ではなく、財産目当てで5人もの夫を次々と手にかけてきた、恐ろしすぎる連続殺人犯という裏設定があるんです。",
+      "image_query": "dark victorian portrait mysterious woman candlelight",
+      "image_prompt": "a dark victorian-style portrait of a mysterious woman lit by candlelight, gothic atmosphere",
+      "keywords": ["5人もの夫を次々と手にかけて", "連続殺人犯"]
+    },
+    {
+      "id": 4,
+      "narration": "彼女の周りには5枚の結婚写真が飾られています。通り過ぎる瞬間に写真をよーく見てください。なんと、夫の「首から上」だけがフッと消えるんです。",
+      "image_query": "old wedding photographs frames wall vintage",
+      "image_prompt": "old vintage wedding photographs in frames on a dark wall, mysterious atmosphere",
+      "keywords": ["5枚の結婚写真", "首から上"]
+    },
+    {
+      "id": 5,
+      "narration": "さらに恐ろしい証拠が、彼女が身につけている「真珠のネックレス」。1人目の夫の写真では1連、2人目では2連と、夫が変わるたびに真珠の数が増えているんです。",
+      "image_query": "pearl necklace closeup elegant vintage jewelry",
+      "image_prompt": "an elegant pearl necklace closeup, vintage gothic jewelry style",
+      "keywords": ["真珠のネックレス", "真珠の数が増えている"]
+    },
+    {
+      "id": 6,
+      "narration": "前の夫たちが残した遺産のおかげで、どんどん裕福になっている証拠なんです。そして極めつけは、屋根裏部屋の最後に待ち構えている彼女の手元に注目です。",
+      "image_query": "wealthy victorian mansion room decoration ornate",
+      "image_prompt": "an ornate wealthy victorian room decoration, gothic elegant atmosphere",
+      "keywords": ["どんどん裕福になっている", "彼女の手元"]
+    },
+    {
+      "id": 7,
+      "narration": "花束の中に、時々鋭く光る「手斧」が現れるんです。そう、これで夫たちの首を…。",
+      "image_query": "wilted flower bouquet dark gothic dramatic",
+      "image_prompt": "a wilted flower bouquet in dark dramatic gothic lighting, sinister mood",
+      "keywords": ["手斧", "夫たちの首"]
+    },
+    {
+      "id": 8,
+      "narration": "次回乗る時は、写真の新郎の首と、彼女の真珠の数にぜひ注目してみてくださいね。あなたはこの裏設定、知っていましたか?",
+      "image_query": "spooky gothic mansion exterior night fog",
+      "image_prompt": "a spooky gothic mansion exterior at night with fog, eerie cinematic lighting",
+      "keywords": ["新郎の首", "真珠の数"]
+    }
+  ]
+}

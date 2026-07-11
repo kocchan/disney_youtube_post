@@ -280,7 +280,7 @@ class WebScrapeProvider(ImageProvider):
         query = scene.get("scrape_query") or scene.get("image_query") or "background"
         candidates: list[dict] = []
         try:
-            results = list(DDGS().images(query, max_results=n * 3, type_image="photo"))
+            results = list(DDGS().images(query, max_results=n * 3, type_image="photo", safesearch="strict"))
             for item in results:
                 if len(candidates) >= n:
                     break
@@ -316,7 +316,7 @@ class WebScrapeProvider(ImageProvider):
     def _download(self, query: str, raw_path: Path) -> tuple[Path, dict]:
         from ddgs import DDGS
 
-        results = list(DDGS().images(query, max_results=10, type_image="photo"))
+        results = list(DDGS().images(query, max_results=10, type_image="photo", safesearch="strict"))
         if not results:
             raise RuntimeError(f"検索結果なし: '{query}'")
 

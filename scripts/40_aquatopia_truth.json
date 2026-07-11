@@ -1,0 +1,70 @@
+{
+  "title": "アクアトピア終了は悲報じゃない?隠されたエモすぎる設定",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "前回の続きです。2026年9月にクローズが発表された、ディズニーシーの「アクアトピア」。実はこれ、悲しいニュースじゃないんです。",
+      "image_query": "water attraction vehicles floating calm lake daytime",
+      "image_prompt": "small water attraction vehicles floating on a calm lake in daylight, cheerful atmosphere",
+      "scrape_query": "ディズニーシー アクアトピア",
+      "keywords": ["2026年9月", "悲しいニュースじゃない"]
+    },
+    {
+      "id": 2,
+      "narration": "そこには、最高に「前向きな理由」が隠されています。そもそもポートディスカバリーは、気象コントロールセンターが嵐を消し去るミッションを成功させた「お祝いのフェスティバル」の真っ最中という設定なんです。",
+      "image_query": "festive celebration lights harbor decoration night",
+      "image_prompt": "a harbor area decorated for a festive celebration with warm string lights, cheerful atmosphere",
+      "scrape_query": "ディズニーシー ポートディスカバリー",
+      "keywords": ["前向きな理由", "お祝いのフェスティバル"]
+    },
+    {
+      "id": 3,
+      "narration": "そのお祭りに合わせて、普段は研究用の施設をゲストに特別公開しているのが、この「アクアトピア」なんです。",
+      "image_query": "research laboratory facility open to public tour",
+      "image_prompt": "a research facility building opened up for a public tour, bright and welcoming",
+      "keywords": ["研究用の施設", "特別公開"]
+    },
+    {
+      "id": 4,
+      "narration": "アクアトピアの本来の目的は「新しい水上交通システムの実証実験」。つまり、この施設がクローズするということは…そう!",
+      "image_query": "water vehicle prototype testing calm water",
+      "image_prompt": "a prototype water vehicle being tested on calm water, experimental atmosphere",
+      "keywords": ["実証実験", "クローズするということは"]
+    },
+    {
+      "id": 5,
+      "narration": "「約25年間続いた実証実験が、ついに大成功して完了した」ということなんです!実験段階を終えて、未来へ進むためのクローズなんです。",
+      "image_query": "success celebration bright light triumphant moment",
+      "image_prompt": "a bright triumphant celebration moment with warm golden light, success atmosphere",
+      "keywords": ["約25年間", "大成功して完了した"]
+    },
+    {
+      "id": 6,
+      "narration": "過去の人々が思い描いた「希望に満ちた未来」そのものですよね。実験を見届けたゲストとして、これほどエモい話はないと思いませんか。",
+      "image_query": "beautiful harbor sunset dusk hopeful scenery",
+      "image_prompt": "a beautiful harbor at sunset with warm hopeful lighting, nostalgic cinematic mood",
+      "scrape_query": "ディズニーシー ポートディスカバリー 夕景",
+      "keywords": ["希望に満ちた未来", "エモい話"]
+    },
+    {
+      "id": 7,
+      "narration": "2026年9月にクローズする前に、ぜひこの「大成功した実験」を体験しに行ってみてください。誘導灯も、実証実験も、全部繋がった裏設定でしたね。",
+      "image_query": "guests enjoying water attraction daytime fun",
+      "image_prompt": "guests happily enjoying a water attraction ride in bright daylight",
+      "keywords": ["大成功した実験", "全部繋がった裏設定"]
+    },
+    {
+      "id": 8,
+      "narration": "ストームライダーの誘導灯とアクアトピアの実証実験、この2つの設定、あなたは知っていましたか?コメントで教えてください。",
+      "image_query": "night harbor cityscape lights reflection water",
+      "image_prompt": "a beautiful night harbor cityscape with light reflections on water, cinematic",
+      "keywords": ["知っていましたか", "コメントで教えてください"]
+    }
+  ]
+}

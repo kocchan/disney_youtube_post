@@ -1,0 +1,59 @@
+{
+  "title": "【7月行く人注意】モンスターズ・インクに呼ばれた「本当の理由」がヤバい",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "知ってた？私たちがモンスターズ・インクに呼ばれた本当の理由。これはディズニーランド屈指の都市伝説、ただの遊びだと思ったら大間違いなんです。",
+      "image_query": "dark eerie theme park ride exterior at night guests tram",
+      "image_prompt": "a dark eerie theme park ride exterior at night with a tram full of excited guests, cinematic mood lighting",
+      "scrape_query": "モンスターズインク アトラクション 外観",
+      "keywords": ["本当の理由", "都市伝説"]
+    },
+    {
+      "id": 2,
+      "narration": "実は今、2026年7月31日まで完全休止中のこのアトラクション。約束された8月の再開前に、乗る人全員が絶対に知っておくべき、私たちの本当の立場があるんです。",
+      "image_query": "hand holding smartphone app screen close up notification",
+      "image_prompt": "close-up of a hand holding a smartphone showing a ride closure notice on a theme park app, warm indoor lighting",
+      "scrape_query": "モンスターズインク メンテナンス休止",
+      "keywords": ["完全休止中", "本当の立場"]
+    },
+    {
+      "id": 3,
+      "narration": "表向きは、マイクとサリーが人間の女の子ブーを楽しませるために企画したかくれんぼゲーム。私たち人間はそのゲストとして招待された設定になっています。",
+      "image_query": "children playing hide and seek poster amusement park colorful",
+      "image_prompt": "a cheerful hide-and-seek themed poster at an amusement park entrance, colorful playful design",
+      "scrape_query": "モンスターズインク ハイドアンドシーク",
+      "keywords": ["かくれんぼゲーム", "招待された設定"]
+    },
+    {
+      "id": 4,
+      "narration": "でも思い出してみてください。明るい円形ロビーを通った後、なぜか裏側の薄暗い業務エリアに案内されますよね。しかも乗り物についているライトは、太いコードに繋がれた、いかにも業務用のゴツいデザインをしているんです。普通の遊園地のアトラクションなら、こんな無骨な装備は使いません。",
+      "image_query": "dark industrial corridor behind bright lobby work light thick cable",
+      "image_prompt": "transition from a bright round lobby into a dim industrial back corridor of a theme park ride, contrast lighting, heavy work light fixture close-up with thick cable",
+      "scrape_query": "モンスターズインク 待機列",
+      "keywords": ["薄暗い業務エリア", "ゴツいデザイン"]
+    },
+    {
+      "id": 5,
+      "narration": "実はあの乗り物、遊園地のカートではなく社内を見回るための警備用トラムなんです。工場から追放されたはずの悪役ランドールがこっそり潜入したため、私たちはかくれんぼの鬼という名目で、実は彼を探し出す臨時警備員として利用されているんです。",
+      "image_query": "security guard flashlight dark warehouse patrol night",
+      "image_prompt": "a security guard patrolling a dark industrial warehouse at night with a flashlight, tense atmosphere",
+      "scrape_query": "モンスターズインク CDA隊員",
+      "keywords": ["警備用トラム", "臨時警備員"]
+    },
+    {
+      "id": 6,
+      "narration": "だから待機列に貼られたポスターに安全・警備は笑いごとではないと書かれているのは、運営が仕込んだ緻密な伏線なんです。休止明けの8月、再開したらただのゲームじゃない本当のミッションに挑んでみて。忘れないように今のうちに保存しておいてください。",
+      "image_query": "bold warning safety poster amusement park queue line dramatic",
+      "image_prompt": "a bold safety warning poster hanging in an amusement park queue line, dramatic zoom-out framing",
+      "scrape_query": "モンスターズインク ロズ ポスター",
+      "keywords": ["緻密な伏線", "本当のミッション"]
+    }
+  ]
+}

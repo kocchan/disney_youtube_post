@@ -1,0 +1,68 @@
+{
+  "title": "【大人の事情?】トイ・ストーリー5を作った本当の理由が深すぎた",
+  "meta": {
+    "lang": "ja",
+    "tts_provider": "gtts",
+    "image_provider": "stock",
+    "bgm": "rotate"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "前作で、ウッディが仲間たちと別れて完璧な結末を迎えたはずのトイ・ストーリー。正直、「なぜ5を作るの?」って思ったファンも多いですよね。",
+      "image_query": "toy figures farewell emotional scene warm light",
+      "image_prompt": "toy figures in an emotional farewell scene, warm nostalgic lighting",
+      "keywords": ["完璧な結末", "なぜ5を作るの"]
+    },
+    {
+      "id": 2,
+      "narration": "でも、監督が語った「本当の理由」が、あまりにも深すぎたんです。監督は、現代の子供たちが直面しているリアルな問題を描きたかったと言います。",
+      "image_query": "director interview microphone film set",
+      "image_prompt": "a film director being interviewed with a microphone on a movie set, cinematic",
+      "keywords": ["本当の理由", "リアルな問題"]
+    },
+    {
+      "id": 3,
+      "narration": "それが、スマホやタブレットの普及。いま、子供たちの関心は画面の中に吸い込まれ、本当におもちゃで遊ぶ時間が激減しているんです。",
+      "image_query": "child staring at tablet screen glowing dark room",
+      "image_prompt": "a child staring intently at a glowing tablet screen in a dim room, modern life concept",
+      "keywords": ["スマホやタブレットの普及", "おもちゃで遊ぶ時間が激減"]
+    },
+    {
+      "id": 4,
+      "narration": "これって、おもちゃたちにとって過去最大の「存在の危機」なんです。監督いわく、前作はあくまでウッディ個人の物語の区切りだったと言います。",
+      "image_query": "toy figures alone shelf dusty forgotten",
+      "image_prompt": "toy figures sitting alone on a dusty forgotten shelf, melancholic lighting",
+      "keywords": ["存在の危機", "個人の物語の区切り"]
+    },
+    {
+      "id": 5,
+      "narration": "でも、このシリーズの本質は「子供たちの人生のサイクル」そのものなんです。1人目の持ち主の時代が終わり、いまは2人目の時代。",
+      "image_query": "toy figures passed hand to hand generation",
+      "image_prompt": "toy figures being passed from one child to another, symbolic generational scene",
+      "keywords": ["子供たちの人生のサイクル"]
+    },
+    {
+      "id": 6,
+      "narration": "現代の子供たちのリアルな変化を描くことこそが、トイ・ストーリーが今作られるべき意味だったんです。",
+      "image_query": "toy figures alone shelf dusty forgotten",
+      "image_prompt": "toy figures sitting alone on a dusty forgotten shelf, melancholic lighting",
+      "keywords": ["今作られるべき意味"]
+    },
+    {
+      "id": 7,
+      "narration": "おもちゃが必要とされなくなる時代の中で、彼らはどう生きるのか。自由な旅に出た主人公が、わざわざ家に戻ってまで伝えたかったメッセージが、今作には詰まっています。",
+      "image_query": "toy figure standing determined warm sunset",
+      "image_prompt": "a toy figure standing determined against a warm sunset, hopeful atmosphere",
+      "keywords": ["どう生きるのか", "伝えたかったメッセージ"]
+    },
+    {
+      "id": 8,
+      "narration": "単なる続編じゃない、ピクサーの覚悟。あなたはこの「5」のテーマ、どう思いますか?ぜひコメントで教えてください!",
+      "image_query": "movie theater screen animation premiere",
+      "image_prompt": "a movie theater screen showing an animated film premiere, cinematic warm lighting",
+      "scrape_query": "Toy Story 5 poster",
+      "keywords": ["ピクサーの覚悟", "コメントで教えてください"]
+    }
+  ]
+}
