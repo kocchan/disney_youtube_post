@@ -170,14 +170,7 @@ bgm:
 
 ## 動画素材（ローカル映像）
 
-`assets/video/tokyo_disney_resort_intro.mp4` に東京ディズニーリゾートの紹介映像を収録。  
-シーン別の使用方法は [`assets/video/tokyo_disney_resort_intro_scenes.md`](assets/video/tokyo_disney_resort_intro_scenes.md) を参照。
-
-```bash
-# シーン#49（プロジェクションマッピング）を切り出す例
-ffmpeg -i assets/video/tokyo_disney_resort_intro.mp4 \
-       -ss 3300 -t 30 -c copy output/clip_celebrate.mp4
-```
+`assets/materials/<subject>/` に、ユーザー本人が撮影/適法に入手した動画クリップを置く（著作権クリアな自前素材のみ）。詳細は `CLAUDE.md` の「assets/materials/」セクションを参照。
 
 ---
 

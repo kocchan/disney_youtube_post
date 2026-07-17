@@ -1,7 +1,7 @@
 """TODO.md のコンテンツ制作進捗表を自動更新するユーティリティ。
 
 スクリプト stem（例: "21_summer_survival"）から行番号を特定し、
-指定列（画像/X版/TikTok/YouTube）を ✅ に書き換える。
+指定列（画像/TikTok/YouTube）を ✅ に書き換える。
 """
 from __future__ import annotations
 import re
@@ -13,9 +13,8 @@ TODO_PATH = ROOT / "TODO.md"
 # 列を判定するための見出しセル内の目印文字（ヘッダー行から動的に列位置を検出する）
 _COL_MARKERS = {
     "image":   "①",
-    "x":       "②",
-    "tiktok":  "③",
-    "youtube": "④",
+    "tiktok":  "②",
+    "youtube": "③",
 }
 
 
@@ -53,7 +52,7 @@ def update_todo(stem: str, column: str) -> bool:
     Parameters
     ----------
     stem   : スクリプトファイルの stem (例: "21_summer_survival")
-    column : "image" / "x" / "tiktok" / "youtube"
+    column : "image" / "tiktok" / "youtube"
 
     Returns
     -------

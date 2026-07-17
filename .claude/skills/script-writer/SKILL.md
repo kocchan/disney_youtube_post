@@ -51,34 +51,20 @@ description: ディズニー雑学YouTubeショート用の台本JSON(script.jso
       "narration": "今日は裏設定を{count}個一気に紹介します。",
       "image_query": "english keywords for stock photo",
       "image_prompt": "english prompt for future AI image gen",
-      "keywords": ["強調語1", "強調語2"],
-      // local_clip: ローカル動画から背景クリップを切り出す（任意）
-      // source は assets/video/ 以下のパス、start は開始秒、duration は切り出し秒数
-      // シーンの内容に合うクリップを assets/video/tokyo_disney_resort_intro_scenes.md で探して指定する
-      "local_clip": {
-        "source": "assets/video/tokyo_disney_resort_intro.mp4",
-        "start": 2806,
-        "duration": 12
-      }
+      "keywords": ["強調語1", "強調語2"]
     }
   ]
 }
 ```
 
-### local_clip フィールドの使い方
+### 画像・動画は台本では指定しない（2026-07-11〜）
 
-`assets/video/tokyo_disney_resort_intro_scenes.md` にシーン一覧があるので、台本の内容に合うシーンを探して `local_clip` に指定する。
-
-```
-# シーン仕様書の読み方
-| 35 | 2806 | 0:46:46 | TDL | 空撮 | シンデレラ城空撮（朝・全景） |
-       ↑ start(秒)
-→ "local_clip": {"source": "assets/video/tokyo_disney_resort_intro.mp4", "start": 2806, "duration": 12}
-```
-
-- `duration` は narration 尺 + 2〜3秒の余裕を見て設定する（パイプラインが自動ループするので短すぎても問題なし）。
-- `local_clip` を指定しない場合は従来通りフリー素材（Pexels/DuckDuckGo）を使う。
-- `image_query` は `local_clip` を指定しても省略不可（サムネイル生成にフォールバック画像が必要）。
+`local_clip` フィールドは廃止した。パイプラインは各シーンの画像・動画を一切自動取得せず、
+`assets/materials/` の素材ライブラリから `image_dashboard.py` でマッチング・選定したものだけを使う
+（`video-maker` スキルの STEP 2.5、`material-collector` スキル参照）。台本ではシーンごとに
+`image_query`（英語・素材マッチング用の補助キーワード）・`scrape_query`（日本語・具体的な固有名詞）・
+`keywords` を書けば十分で、実ファイルの指定は不要。素材ライブラリに合う素材がなければ
+`material-collector` スキルで事前に集めてから動画生成に進む。
 
 ### {count} プレースホルダーについて（必須）
 

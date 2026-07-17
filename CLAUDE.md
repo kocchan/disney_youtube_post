@@ -33,10 +33,9 @@
 | **コンテンツ制作に着手する（画像選択・pipeline実行・upload実行のいずれかを開始する）** | **対象行の状態列を `🔄 作業中` にする（最優先・必ず最初に行う）** |
 | `scripts/NN_*.json` を新規作成した | 対象行を追加し、全列を ❌、状態を `❌ 未着手` にする |
 | ダッシュボードで画像選択が完了した（`image_selections.json` 生成） | 対象行の ① 列を ✅ にする |
-| X版動画を生成した（`final_output_x*.mp4` 生成） | 対象行の ② 列を ✅ にする |
-| TikTok版動画を生成した（`final_output_tiktok*.mp4` 生成） | 対象行の ③ 列を ✅ にする |
+| TikTok版動画を生成した（`final_output_tiktok*.mp4` 生成。メイン・サムネ/メタ情報もここで生成） | 対象行の ② 列を ✅ にする |
 | ユーザーがTikTokに**手動投稿**した後、投稿完了のスクリーンショットを見せてくれた | 対象行の 📱 TikTok投稿 列を `📱 MM/DD 投稿済み` に更新（TikTok本番審査が通り自動投稿に切り替わるまでは手動運用） |
-| YouTube版動画を生成した（`final_output_youtube*.mp4` 生成） | 対象行の ④ 列を ✅ にする |
+| YouTube版動画を生成した（`final_output_youtube*.mp4` 生成） | 対象行の ③ 列を ✅ にする |
 | `upload.py` で YouTube 予約投稿した | 対象行の 📅 列を `📅 MM/DD HH:MM 予約` に更新（**自動**: `upload.py` が実行）、状態列を `📅 YT予約済` にする |
 | 全列が ✅（または 📅）になった | 状態列を `✅` に変更し、残タスクセクションから削除する |
 
@@ -57,8 +56,11 @@
 - **インデックス**: `.claude/memory/MEMORY.md`（何があるかの一覧）
 - **フィードバック**: `.claude/memory/feedback_video_design.md`（デザイン・動画・**画像選定**に関するユーザー指摘まとめ）
 - **パフォーマンス分析**: `.claude/memory/analytics_insights.md`（YouTube Analytics APIから自動集計した視聴率・タイトル型・カテゴリ別成績。`python src/analyze_performance.py`／`analytics-insights` スキルで更新）
+- **画像選定ナレッジ**: `.claude/memory/image_selection_knowledge.md`（Claudeの自動選定とユーザーの最終選択が異なった事例の分析結果。`assets/work/image_selection_diffs.jsonl` を元にClaudeが分析して蓄積する）
 
-**台本生成・scrape_query 設計・ダッシュボード画像選定を行う前に必ず `feedback_video_design.md` の画像選定セクションと `analytics_insights.md` の「台本生成への提言」セクションを参照すること。**
+**台本生成・scrape_query 設計・ダッシュボード画像選定を行う前に必ず `feedback_video_design.md` の画像選定セクション・`analytics_insights.md` の「台本生成への提言」セクション・`image_selection_knowledge.md` を参照すること。**
+
+**ダッシュボードでの画像選択完了後は、`assets/work/image_selection_diffs.jsonl` にこの台本の未分析(`analyzed: false`)エントリがないか必ず確認する。** あれば自動選定画像とユーザー選択画像を見比べて理由を分析し、`image_selection_knowledge.md` にルール化して追記する（手順は同ファイル参照）。
 
 ユーザーから初めて指摘・修正を受けたときは、**同じミスを繰り返さないために必ずメモリに記録する**。
 
@@ -84,20 +86,22 @@
 ## アーキテクチャ方針
 
 - **疎結合**: 台本生成（Claudeスキル）と動画化パイプラインは分離。パイプラインは `script.json` を消費するだけ。
-- **プロバイダ抽象（Strategy）**: TTS と画像はインターフェースで差し替え可能にする。
+- **画像選定はライブラリ＋ライブWeb検索のハイブリッド（2026-07-12〜）**: `image_dashboard.py` の候補取得は毎回 (1) `assets/materials/` の素材ライブラリ（`src/materials.py` の `index.json` 経由）と (2) その場でのWeb検索（DuckDuckGo、`scrape_query`使用）の両方を行い、両方を候補として並べる。ライブラリは高速・再利用可能な供給源、Web検索はそのシーン特有の意図を汲み取るための供給源として役割分担する（ライブラリだけでは「シーンの意図を汲み取れない」画像しか出せないことがあるため）。`pipeline.py` 自体は取得を行わず、`--selections`（必須）で確定した画像/動画をコピーするだけ。
+  - ライブラリの充実（再利用に足る良質な素材の恒久登録）は専用スキル `material-collector` が担当（Pexels/Web検索 → Claude Visionが採否判断 → 説明・タグを付けて登録）。
   - `TTSProvider`: `GTTSProvider`(既定) / `OpenAITTSProvider` / `ElevenLabsProvider`
-  - `ImageProvider`: `StockImageProvider`(既定/Pexels) / `WebScrapeProvider`(`--allow-scrape`時のみ)
+  - `src/images.py` の `WebScrapeProvider` は `image_dashboard.py`（毎回のライブ検索）と `material-collector` スキル（`src/collect_materials.py`、恒久登録用の収集）の両方から使われる。`pipeline.py` からは呼ばない。
 - **設定の外出し**: APIキーは `.env`、調整値は `config.yaml`。コードに秘密情報を直書きしない。
-- **冪等性**: 音声・画像はキャッシュし再生成を避ける。
-- **失敗耐性**: 1シーンの画像取得失敗で全体を止めず、プレースホルダにフォールバック。
+- **冪等性**: 音声はキャッシュし再生成を避ける。
+- **失敗耐性**: 選択されたシーン1件の処理失敗で全体を止めず、そのシーンをスキップする。
 
 ---
 
 ## ⚠️ 著作権の鉄則
 
-- ディズニー固有の被写体（キャラクター・城・パーク写真）は権利が極めて強い。**既定はフリー素材API（雰囲気カット）**。
-- Webスクレイピング画像は収益化動画でBANリスクがあるため、`--allow-scrape` の明示指定時のみ有効化する自己責任オプションとして分離。
-- 取得画像のライセンス／クレジットは `credits.json` に記録する。
+- ディズニー固有の被写体（キャラクター・城・パーク写真）は権利が極めて強い。動画生成の候補取得は **`assets/materials/` の素材ライブラリ＋その場のWeb検索（DuckDuckGo）** のハイブリッドで行う。Web検索由来の画像は著作権が元作者に帰属し使用は自己責任（`image_dashboard.py` のUIにも「※著作権注意」と明示）。
+- 素材ライブラリへの**恒久的な追加**（次回以降も使い回す素材）は `material-collector` スキル経由のみ。Pexels（商用利用可）とWeb検索の双方を使うが、Claudeが内容をVisionで確認し、映画ポスター等の二次的著作物や無関係なものは弾いてから登録する。一方、`image_dashboard.py` のその場のWeb検索候補は当該動画の1シーン限りの使用で、ライブラリには自動登録されない。
+- `assets/materials/` に置く動画クリップは**ユーザー本人が権利者から適法に入手/撮影したもの**に限る（ディズニー公式YouTube等の無断ダウンロードは不可。詳細は `.claude/memory/feedback_video_design.md`）。
+- 取得画像のライセンス／クレジットは素材ライブラリの `meta.json`（`credit`フィールド）と動画ごとの `credits.json` に記録する。
 
 ---
 
@@ -111,12 +115,32 @@
 ├── .env                 # APIキー（gitignore）
 ├── requirements.txt
 ├── scripts/             # 台本JSON — 必ず {連番:02d}_{スラッグ}.json で命名
-├── assets/{bgm,fonts,work}/
+├── assets/{bgm,fonts,work,materials}/
 ├── output/              # final_output.mp4
-├── src/                 # pipeline.py / tts.py / images.py / subtitles.py / video.py / config.py
-├── .claude/skills/script-writer/
+├── src/                 # pipeline.py / tts.py / images.py / materials.py / collect_materials.py / subtitles.py / video.py / config.py
+├── .claude/skills/{script-writer,material-collector,video-maker}/
 └── .claude/memory/          # セッション間メモリ（MEMORY.md + feedback_*.md）
 ```
+
+### assets/materials/ — 動画生成が使う唯一の画像・動画ソース（2026-07-11〜）
+
+- `assets/materials/<category>/<subject>/` に画像（縦型変換済み）・動画クリップ（トリミング済みmp4）を置く。`<category>` は大分類（`attractions`＝アトラクション別 / `movies`＝映画・キャラクター別 / `generic`＝汎用の雰囲気カット・CTA用等）、`<subject>` は自由な英語スラッグ（例: `attractions/tower_of_terror`）。カテゴリ分けせず `assets/materials/<subject>/` の1階層でも動く（`meta.json` を直接持つフォルダを深さ問わず自動検出する）。
+- 各サブフォルダの **`meta.json`** がファイル名ごとの索引（`src/materials.py` が管理）:
+  ```json
+  {
+    "elevator_dark_interior.jpg": {
+      "type": "image",
+      "description": "タワー・オブ・テラーのエレベーター内部、暗闇に浮かぶ非常灯",
+      "tags": ["タワー・オブ・テラー", "エレベーター", "暗闇"],
+      "source": "Pexels",
+      "credit": {"photographer": "...", "photographer_url": "...", "photo_url": "..."}
+    }
+  }
+  ```
+- `description`/`tags` は**Claudeが内容を見て書いたもの**。動画生成時のシーン⇔素材マッチング（`image_dashboard.py`）と、次回以降の検索精度の両方に使われる。
+- **ライブラリへの追加は `material-collector` スキルのみが行う**（Pexels/Web検索 → Claude Visionが採否判断 → 説明・タグを付けて登録）。`pipeline.py`・`image_dashboard.py` 自体はWeb検索・APIを一切呼ばない。
+- **`assets/materials/index.json`** は全サブフォルダの `meta.json` を1ファイルに集約した索引（`src/materials.py` の `rebuild_index()`/`load_index()` が管理）。`image_dashboard.py` の候補マッチングは毎回全フォルダを走査せず、この `index.json` を参照する（`fetch_all_candidates()` 実行時に自動再生成されるため常に最新）。ライブラリ全体を素早く見渡したい時（例: 台本を書く前に「このアトラクションの素材は既にあるか」を確認する時）は `python src/materials.py` で再生成 + カテゴリ別件数を表示できるほか、`index.json` を直接読めば `category`/`subject`/`description`/`tags` 一覧が得られる。
+- `assets/materials/` は容量が大きく著作権上リポジトリにコミットしないため `.gitignore` 対象。ローカル保管のみ。
 
 ---
 

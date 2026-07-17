@@ -1,12 +1,16 @@
 """パイプライン本体(オーケストレータ / エントリポイント)。
 
-script.json を読み込み、TTS音声生成 → 画像取得 → 字幕付き動画合成 → BGM合成を実行して
+script.json と image_selections.json（assets/materials/ の素材ライブラリから
+選んだもの）を読み込み、TTS音声生成 → 字幕付き動画合成 → BGM合成を実行して
 output/final_output.mp4 を書き出す。
 
+画像・動画はすべて --selections で渡された素材ライブラリの選択結果のみを使う。
+Web検索・API取得はこのパイプラインでは行わない（material-collector スキル参照）。
+
 使い方:
-    python src/pipeline.py [--script scripts/sample.json] [--out output/final_output.mp4]
-                           [--tts gtts] [--bgm rotate|random|none|<path>]
-                           [--allow-scrape] [--no-cache] [--no-ken-burns]
+    python src/pipeline.py --script scripts/sample.json \\
+        --selections output/sample/image_selections.json \\
+        [--tts gtts] [--bgm rotate|random|none|<path>] [--no-cache] [--no-ken-burns]
 """
 from __future__ import annotations
 
@@ -16,8 +20,7 @@ import time
 from pathlib import Path
 
 from bgm import build_bgm_bed
-from config import AUDIO_DIR, CLIPS_DIR, IMAGES_DIR, OUTPUT_DIR, ROOT, load_config
-from images import get_image_provider
+from config import AUDIO_DIR, IMAGES_DIR, OUTPUT_DIR, ROOT, load_config
 from sfx import get_caption_sfx_paths, get_sfx_path
 from thumbnail import generate_thumbnail
 from todo_updater import update_todo
@@ -27,13 +30,19 @@ from util import is_cached, key_of, mark_cached
 from video import build_video
 
 
+class _CreditSink:
+    """選択済み素材のクレジット(Pexels帰属表示等)を蓄積するだけの軽量オブジェクト。"""
+
+    def __init__(self) -> None:
+        self.credits: list[dict] = []
+
+
 _PLATFORM_DEFAULTS = {
     # platform: (bgm_enabled, max_duration_sec, suffix, speed_factor)
     # max_duration_sec=None → フル尺
     # speed_factor=1.0 → 速度変更なし(プラットフォームで速度を変えることは禁止)
-    "x":       (True,  None, "_x",       1.0),
-    "youtube": (True,  60.0, "_youtube", 1.0),
     "tiktok":  (True,  None, "_tiktok",  1.0),
+    "youtube": (True,  60.0, "_youtube", 1.0),
 }
 
 
@@ -95,11 +104,10 @@ def run(
     *,
     tts_override: str | None = None,
     bgm_override: str | None = None,
-    allow_scrape: bool = False,
     use_cache: bool = True,
     ken_burns: bool | None = None,
     platform: str | None = None,
-    selections_path: str | Path | None = None,
+    selections_path: str | Path,
 ) -> Path:
     cfg = load_config()
     script = json.loads(Path(script_path).read_text(encoding="utf-8"))
@@ -113,19 +121,24 @@ def run(
     lang = meta.get("lang", cfg["tts"]["lang"])
     voice = meta.get("voice", cfg["tts"].get("voice"))
     speed = float(meta.get("speed", cfg["tts"].get("speed", 1.0)))
-    img_name = meta.get("image_provider", cfg["image"]["provider"])
 
     tts = get_tts_provider(tts_name, lang=lang, voice=voice, speed=speed)
-    img = get_image_provider(img_name, w, h, allow_scrape=allow_scrape)
+    img = _CreditSink()
 
-    # 画像選択JSONを読み込む (--selections 指定時)
-    selections: dict = {}
-    if selections_path:
-        try:
-            selections = json.loads(Path(selections_path).read_text(encoding="utf-8"))
-            print(f"▶ 画像選択: {selections_path} ({len(selections)}シーン選択済)")
-        except Exception as e:
-            print(f"  [warn] selections 読み込み失敗: {e}")
+    # 画像選択JSON（素材ライブラリからの選択結果）を読み込む。全シーン分揃っている必要がある。
+    selections: dict = json.loads(Path(selections_path).read_text(encoding="utf-8"))
+    missing = [
+        str(scene["id"]) for scene in script["scenes"]
+        if str(scene["id"]) not in selections
+    ]
+    if missing:
+        raise RuntimeError(
+            f"image_selections.json にシーン {', '.join(missing)} の選択がありません。"
+            "assets/materials/ の素材ライブラリに候補がない可能性があります。"
+            "image_dashboard.py --fetch-only で確認し、不足していれば material-collector "
+            "スキルで素材を追加してから選定し直してください。"
+        )
+    print(f"▶ 画像選択: {selections_path} ({len(selections)}シーン選択済)")
 
     print(f"▶ 台本: {script.get('title', '(無題)')} / {len(script['scenes'])} シーン"
           f"  (tts={tts_name}, voice={voice}, speed={speed}x)")
@@ -157,77 +170,33 @@ def run(
                 cached_a = False
             dur = get_duration(ap)
 
-            # M2: 画像(キャッシュ対応)。クレジットはサイドカーに保存し、キャッシュ時も復元する
+            # M2: 画像/動画（素材ライブラリからの選択を使う。全シーン必須）
             ip = IMAGES_DIR / f"scene_{sid:02d}.jpg"
-            ikey = key_of("img", img_name, f"{w}x{h}", scene.get("image_query", ""))
-            credit_side = ip.with_suffix(".credit.json")
-            sel = selections.get(str(sid))
-            sel_variant = sel.get("variant", "base") if sel else None
-            sel_is_video = sel_variant == "video"
+            sel = selections[str(sid)]
+            sel_variant = sel.get("variant", "materials")
+            # variant名に依らず拡張子で動画判定
+            sel_is_video = (
+                sel_variant in ("video", "materials_video")
+                or str(sel.get("image_path", "")).lower().endswith(".mp4")
+            )
+            sel_path = Path(sel["image_path"])
+            if not sel_path.exists():
+                raise RuntimeError(
+                    f"scene {sid}: 選択された素材が見つかりません ({sel_path})。"
+                    "assets/materials/ から移動・削除された可能性があります。"
+                )
 
-            if sel and not sel_is_video and Path(sel["image_path"]).exists():
-                # 静止画選択: ip にコピー。local_clip より優先する
-                import shutil
-                shutil.copy2(sel["image_path"], ip)
-                if sel.get("credit"):
-                    _add_credit(img, {**sel["credit"], "scene_id": sid})
-                    credit_side.write_text(json.dumps(sel["credit"], ensure_ascii=False), encoding="utf-8")
-                mark_cached(ip, ikey)
-                print(f"  scene {sid}: 選択済み画像を使用 ({Path(sel['image_path']).name})")
-            elif sel and sel_is_video:
-                # 動画選択: image_path はフォールバック用にキャッシュから取得するだけ
-                if not (use_cache and is_cached(ip, ikey)):
-                    try:
-                        img.fetch(scene, ip)
-                        mark_cached(ip, ikey)
-                    except Exception:
-                        pass
-                print(f"  scene {sid}: 選択済みビデオを使用 ({Path(sel['image_path']).name})")
-            elif use_cache and is_cached(ip, ikey):
-                if credit_side.exists():  # キャッシュ画像のクレジットを復元
-                    _add_credit(img, json.loads(credit_side.read_text(encoding="utf-8")))
+            clip_path: Path | None = None
+            if sel_is_video:
+                clip_path = sel_path
+                print(f"  scene {sid}: 選択済みビデオを使用 ({sel_path.name})")
             else:
-                img.fetch(scene, ip)
-                mark_cached(ip, ikey)
-                last = getattr(img, "credits", [])
-                if last:  # 取得したクレジットをサイドカーに保存
-                    credit_side.write_text(json.dumps(last[-1], ensure_ascii=False), encoding="utf-8")
+                import shutil
+                shutil.copy2(sel_path, ip)
+                print(f"  scene {sid}: 選択済み画像を使用 ({sel_path.name})")
 
-            # M2-B: ローカル動画クリップ
-            # - ユーザーが動画バリアントを選択 → 選択ファイルをそのまま使う
-            # - ユーザーが静止画バリアントを選択 → local_clip を無視（選択を優先）
-            # - 未選択 → local_clip があれば抽出
-            clip_path = None
-            if sel and sel_is_video and Path(sel["image_path"]).exists():
-                clip_path = Path(sel["image_path"])
-            elif not (sel and not sel_is_video):
-                local_clip_cfg = scene.get("local_clip")
-                if local_clip_cfg:
-                    src = ROOT / local_clip_cfg["source"]
-                    start = float(local_clip_cfg.get("start", 0))
-                    clip_dur = float(local_clip_cfg.get("duration", dur + 3))
-                    cp = CLIPS_DIR / f"scene_{sid:02d}.mp4"
-                    ckey = key_of("clip", str(src), str(start), f"{clip_dur:.1f}")
-                    if use_cache and is_cached(cp, ckey):
-                        pass
-                    else:
-                        import subprocess
-                        result = subprocess.run(
-                            ["ffmpeg", "-y",
-                             "-ss", str(start), "-i", str(src),
-                             "-t", str(clip_dur), "-an",
-                             "-vf", "setpts=PTS-STARTPTS",
-                             "-c:v", "libx264", "-preset", "ultrafast", "-crf", "23",
-                             str(cp)],
-                            capture_output=True,
-                        )
-                        if result.returncode != 0:
-                            print(f"  [warn] scene {sid} clip 切り出し失敗、静止画にフォールバック")
-                        else:
-                            mark_cached(cp, ckey)
-                            clip_path = cp
-                    if clip_path is None and is_cached(cp, ckey):
-                        clip_path = cp
+            if sel.get("credit"):
+                _add_credit(img, {**sel["credit"], "scene_id": sid})
 
         except Exception as e:  # noqa: BLE001 - 1シーン失敗で全体を止めない
             print(f"  [error] scene {sid} スキップ: {e}")
@@ -263,28 +232,7 @@ def run(
     print(f"▶ SFX: {'あり' if sfx_path else 'なし'} / テロップ音: {'あり' if caption_sfx[0] else 'なし'}")
 
     # プラットフォーム設定を適用
-    plat = (platform or "x").lower()
-
-    # 出力フォルダを事前に確定（TikTok early-exit で使うため）
-    _folder = Path(script_path).stem if script_path else (meta.get("theme") or "output")
-    out_dir = Path(out_path).parent if out_path else OUTPUT_DIR / _folder
-
-    # TikTok版 = X版と同一のため、X版が存在する場合はコピーして終了
-    if plat == "tiktok":
-        import shutil as _shutil
-        x_out = out_dir / "final_output_x.mp4"
-        tiktok_out = out_dir / "final_output_tiktok.mp4"
-        if x_out.exists():
-            _shutil.copy2(x_out, tiktok_out)
-            x_credits = out_dir / "final_output_x.credits.json"
-            if x_credits.exists():
-                _shutil.copy2(x_credits, out_dir / "final_output_tiktok.credits.json")
-            update_todo(Path(script_path).stem, "tiktok")
-            print(f"📋 TikTok版: X版からコピー → {tiktok_out.name}")
-            return tiktok_out
-        else:
-            print("  [warn] X版が未生成のためTikTokをX設定で通常生成します")
-            plat = "x"
+    plat = (platform or "tiktok").lower()
 
     plat_bgm, plat_max_dur, plat_suffix, plat_speed_factor = _PLATFORM_DEFAULTS.get(plat, (True, None, "", 1.0))
     if abs(plat_speed_factor - 1.0) > 1e-3:
@@ -383,19 +331,8 @@ def run(
     # クレジット記録(Pexels帰属義務)
     write_credits(script, img, out_path)
 
-    # TikTok版 = X版と同一なのでコピーのみ
-    if plat == "x":
-        import shutil as _shutil
-        tiktok_out = out_path.with_name("final_output_tiktok.mp4")
-        _shutil.copy2(out_path, tiktok_out)
-        credits_src = out_path.with_name(out_path.stem + ".credits.json")
-        if credits_src.exists():
-            _shutil.copy2(credits_src, out_path.with_name("final_output_tiktok.credits.json"))
-        update_todo(Path(script_path).stem, "tiktok")
-        print(f"📋 TikTok版: X版からコピー → {tiktok_out.name}")
-
-    # サムネイル・メタ情報はX用(メイン)のみ生成
-    if prepared and plat == "x":
+    # サムネイル・メタ情報はTikTok用(メイン)のみ生成
+    if prepared and plat == "tiktok":
         try:
             thumb_path = out_path.with_name("thumbnail.jpg")
             # ダッシュボードで選択済みのサムネがあれば優先
@@ -417,8 +354,8 @@ def run(
         except Exception as e:  # noqa: BLE001
             print(f"  [warn] サムネイル生成失敗: {e}")
 
-    # YouTube用メタ情報生成(X用のみ)
-    if plat == "x":
+    # YouTube用メタ情報生成(TikTok用のみ)
+    if plat == "tiktok":
         try:
             meta_path = out_path.with_name("youtube_meta.txt")
             credits_path = out_path.with_name(out_path.stem + ".credits.json")
@@ -461,20 +398,18 @@ def main():
     p.add_argument("--out", default=None, help="出力MP4のパス")
     p.add_argument("--tts", default=None, help="TTSプロバイダ上書き (gtts|openai|elevenlabs)")
     p.add_argument("--bgm", default=None, help="BGM上書き (rotate|random|none|<path>)")
-    p.add_argument("--allow-scrape", action="store_true", help="スクレイピング画像を許可(自己責任)")
     p.add_argument("--no-cache", action="store_true", help="キャッシュを使わず再生成する")
     p.add_argument("--no-ken-burns", action="store_true", help="Ken Burnsズームを無効化(高速)")
-    p.add_argument("--platform", default="x", choices=["x", "youtube", "tiktok"],
-                   help="出力プラットフォーム: x(BGMあり・フル尺) / youtube(BGMなし・60秒) / tiktok(BGMなし・フル尺)")
-    p.add_argument("--selections", default=None, metavar="PATH",
-                   help="image_dashboard.py が生成した image_selections.json のパス")
+    p.add_argument("--platform", default="tiktok", choices=["tiktok", "youtube"],
+                   help="出力プラットフォーム: tiktok(BGMあり・フル尺・メイン) / youtube(BGMあり・60秒以下)")
+    p.add_argument("--selections", required=True, metavar="PATH",
+                   help="image_dashboard.py が生成した image_selections.json のパス（素材ライブラリからの選択、必須）")
     args = p.parse_args()
     run(
         args.script,
         args.out,
         tts_override=args.tts,
         bgm_override=args.bgm,
-        allow_scrape=args.allow_scrape,
         use_cache=not args.no_cache,
         ken_burns=False if args.no_ken_burns else None,
         platform=args.platform,

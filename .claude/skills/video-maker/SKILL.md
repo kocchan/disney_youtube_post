@@ -1,6 +1,6 @@
 ---
 name: video-maker
-description: ディズニー雑学YouTubeショート動画を一気通貫で作成するスキル。テーマを受け取り、台本生成→ユーザーレビュー→X用動画生成→ユーザーレビュー→YouTube用・TikTok用生成の順で進める。ユーザーが「動画を作って」「一気に作って」「video-maker」等と言ったら使う。
+description: ディズニー雑学YouTubeショート動画を一気通貫で作成するスキル。テーマを受け取り、台本生成→ユーザーレビュー→素材ライブラリからのVision自動選定・確認→TikTok用動画生成(メイン)→ユーザーレビュー→YouTube用生成の順で進める。ユーザーが「動画を作って」「一気に作って」「video-maker」等と言ったら使う。
 ---
 
 # video-maker — 一気通貫動画生成スキル
@@ -52,69 +52,117 @@ IDEで scripts/<ファイル名>.json を開いて内容を確認してくださ
 - 内容に応じてJSONを編集し、再度レビューを求める。
 - 「OK」が出るまでこのループを繰り返す。
 
-### STEP 3 — X用動画生成（メイン）
+### STEP 2.5 — 画像選定（素材ライブラリからVision自動選定＋確認ダッシュボード）
 
-「OK」を受け取ったら **X用（BGMあり・フル尺）** を生成する。
+台本がOKになったら、動画生成の前に画像を選定する。**候補は毎回 (1) `assets/materials/` の素材ライブラリ と (2) その場のWeb検索（DuckDuckGo）の両方から取得する。** ライブラリはシーン意図にぴったり合うとは限らないため、Web検索でシーン特有の候補を補う。
+
+0. （任意・台本執筆段階で素材の有無を先に確認したい場合）`assets/materials/index.json` を読むと、既存ライブラリの `category`/`subject`/`description`/`tags` を一括で見渡せる。台本の `image_query`/`scrape_query` を書く前にこれを参照すると、既存素材にマッチしやすいキーワードを選びやすい。
+
+1. **候補取得のみ実行**（ブラウザは開かない。素材ライブラリのマッチング＋Web検索のライブ取得を行うためネットワークアクセスあり）:
+
+```bash
+source venv/bin/activate && python src/image_dashboard.py \
+  --script scripts/<ファイル名>.json \
+  --fetch-only
+```
+
+完了すると `assets/work/candidates/<ファイル名>/` に `manifest.json`（素材ライブラリ・Web検索双方の候補のパス・説明・出典）と、シーンごとの `contact_s{NN}.jpg`（候補を1枚のグリッド画像にまとめたコンタクトシート）が生成される。
+
+**候補が0件のシーンがあれば（ライブラリ・Web検索とも失敗した場合のみ）、ターミナルに `⚠️ 候補が0件のシーン: 3, 5` のように表示される。** その場合はここで止まり、`scrape_query` を見直すか `material-collector` スキルで素材を集めてから再度この手順1をやり直す。
+
+2. **各シーンのコンタクトシートをReadツールで確認し、1枚選ぶ。** 選定基準は `.claude/memory/feedback_video_design.md` の画像選定セクションと `.claude/memory/image_selection_knowledge.md`（過去の自動選定ミスから学んだナレッジ）に従う。特に:
+   - ナレーションの「行為・状態・感情」を映しているか、構図が破綻していないかを見る
+   - `materials`（ライブラリ）候補は `manifest.json` の `description` フィールド（登録時にClaudeが書いた説明文）も判断材料にする
+   - `web`（Web検索）候補はそのシーンの意図に最も忠実な傾向があるが、映画ポスター等の二次的著作物・無関係な画像が混ざることがあるので内容をよく見て選ぶ
+   - `materials_video`（動画クリップ）候補は、コンタクトシートの先頭フレームだけで判断しない。`ffmpeg -y -i <mp4> -ss 3 -vframes 1 -q:v 3 /tmp/check.jpg` で中間フレームを抽出しReadで内容確認してから採否を決める（先頭フレームは暗転/不鮮明なことがある）
+   - 気に入ったWeb検索候補を今後も使い回したい場合は、選定後に `material-collector` スキルでライブラリに登録することを検討する（このステップ自体はライブラリに自動登録しない）
+
+3. 選んだ候補を `manifest.json` の該当エントリから引き、`output/<ファイル名>/image_selections.json` を書き出す（Writeツール）。スキーマ:
+
+```json
+{
+  "1": {"image_path": "<manifestのpath>", "variant": "materials", "credit": {<manifestのcandidateそのもの>}},
+  "2": {"image_path": "...", "variant": "web", "credit": {...}}
+}
+```
+
+サムネイル用の画像も選べる場合は `"thumbnail": {"image_path": "..."}` を追加する（任意）。
+
+4. **確認ダッシュボードを開く**（事前選定済みの状態でハイライトされる）:
+
+```bash
+source venv/bin/activate && python src/image_dashboard.py \
+  --script scripts/<ファイル名>.json \
+  --preselect output/<ファイル名>/image_selections.json
+```
+
+ユーザーに次のように伝えて待つ:
+
+```
+🖼 各シーンの画像を素材ライブラリからClaudeが自動選定しました（🤖マーク）。
+ブラウザで内容を確認し、問題なければそのまま「✅ この画像で動画生成する」を、
+変更したい場合は該当シーンをクリックし直してから送信してください。
+```
+
+**ここで必ず止まり、ダッシュボードでの送信完了（ターミナルに `✅ 選択完了` が出力される）を待つ。**
+
+5. **送信完了後、`assets/work/image_selection_diffs.jsonl` にこの台本の未分析(`"analyzed": false`)エントリがないか確認する。** ユーザーがClaudeの自動選定と違う画像を選んだシーンがあれば、`auto_pick.path`（Claudeが選んだ画像）と `user_pick.path`（ユーザーが選んだ画像）を両方Readして見比べ、「何が違ったか」「なぜユーザーはこちらを選んだと考えられるか」を分析し、`.claude/memory/image_selection_knowledge.md` の「蓄積されたナレッジ」に一般化したルール（Why/How to apply形式）として追記する。分析済みのエントリは `"analyzed": true` に書き換える。差分がなければ何もしない。
+
+### STEP 3 — TikTok用動画生成（メイン）
+
+画像選定が完了したら **TikTok用（BGMあり・フル尺）** を生成する。TikTokがメインプラットフォームで、サムネイル・YouTube用メタ情報もここで生成される。`--selections` に STEP 2.5 で確定した `image_selections.json` を渡す。
 
 ```bash
 source venv/bin/activate && python src/pipeline.py \
   --script scripts/<ファイル名>.json \
-  --allow-scrape \
   --tts gtts \
-  --platform x
+  --platform tiktok \
+  --selections output/<ファイル名>/image_selections.json
 ```
 
 完了したら以下を伝える:
 
 ```
-🎬 X用動画を生成しました！
+🎬 TikTok用動画を生成しました！
 
 出力ファイル:
-  動画: output/final_output_x.mp4
-  サムネイル: output/thumbnail.jpg
-  メタ情報: output/youtube_meta.txt
+  動画: output/<ファイル名>/final_output_tiktok.mp4
+  サムネイル: output/<ファイル名>/thumbnail.jpg
+  メタ情報: output/<ファイル名>/youtube_meta.txt
 
-! open output/final_output_x.mp4    ← 動画確認
-! open output/thumbnail.jpg         ← サムネイル確認
+! open output/<ファイル名>/final_output_tiktok.mp4    ← 動画確認
+! open output/<ファイル名>/thumbnail.jpg               ← サムネイル確認
 
 動画とサムネイルを確認していただき、OKであれば「OK」と教えてください。
 修正があればお知らせください（音量・速度・字幕位置・効果音など）。
-OKが出たらYouTube用・TikTok用も続けて生成します。
+OKが出たらYouTube用も続けて生成します。
 ```
 
 **ここで必ず止まり、ユーザーの返答を待つ。**
 
-### STEP 4 — X用修正対応
+### STEP 4 — TikTok用修正対応
 
 ユーザーのフィードバックに応じて修正を行う:
 
 | フィードバック | 対応 |
 |---------------|------|
 | 「OK」「問題ない」 | STEP 5 へ進む |
-| 音量・速度の調整 | config.yaml を更新して `--platform x` で再生成 |
-| 台本の一部修正 | JSONを編集して `--no-cache --platform x` で再生成 |
+| 音量・速度の調整 | config.yaml を更新して `--platform tiktok` で再生成 |
+| 台本の一部修正 | JSONを編集して `--no-cache --platform tiktok` で再生成 |
 | 画像が合わない | scrape_query を修正して再生成 |
 
 修正後は再度「確認してください」と伝え、OKが出るまでループする。
 
-### STEP 5 — YouTube用・TikTok用を生成
+### STEP 5 — YouTube用を生成
 
-X用のOKが出たら **YouTube用（BGMなし・60秒以下）** と **TikTok用（BGMなし・フル尺）** を続けて生成する。
+TikTok用のOKが出たら **YouTube用（60秒以下）** を生成する。
 
 ```bash
-# YouTube用
 source venv/bin/activate && python src/pipeline.py \
   --script scripts/<ファイル名>.json \
-  --allow-scrape \
   --tts gtts \
-  --platform youtube
-
-# TikTok用
-source venv/bin/activate && python src/pipeline.py \
-  --script scripts/<ファイル名>.json \
-  --allow-scrape \
-  --tts gtts \
-  --platform tiktok
+  --platform youtube \
+  --selections output/<ファイル名>/image_selections.json
 ```
 
 完了したら以下を伝えて終了:
@@ -122,10 +170,9 @@ source venv/bin/activate && python src/pipeline.py \
 ```
 ✅ 全プラットフォーム用の動画が完成しました！
 
-📁 output/ フォルダの内容:
-  final_output_x.mp4       ← X投稿用（BGMあり・フル尺）
-  final_output_youtube.mp4 ← YouTube Shorts用（BGMなし・60秒以下）
-  final_output_tiktok.mp4  ← TikTok用（BGMなし・フル尺）
+📁 output/<ファイル名>/ フォルダの内容:
+  final_output_tiktok.mp4  ← TikTok投稿用（BGMあり・フル尺）
+  final_output_youtube.mp4 ← YouTube Shorts用（60秒以下）
   thumbnail.jpg            ← サムネイル
   youtube_meta.txt         ← タイトル・説明文・ハッシュタグ
 ```
@@ -134,8 +181,10 @@ source venv/bin/activate && python src/pipeline.py \
 
 ## 注意事項
 
-- **レビューポイント(STEP 2・STEP 4)では絶対に次へ進まない。**
+- **レビューポイント(STEP 2・STEP 2.5・STEP 4)では絶対に次へ進まない。**
 - 動画生成はバックグラウンドで実行し、完了通知を待ってからユーザーに報告する。
 - JSONのバリデーション(`python -c "import json;json.load(open('scripts/xxx.json'))"`)は生成後に必ず行う。
 - 台本生成のルールは `script-writer` スキルの SKILL.md に従う（フック・深さ・CTA等）。
+- 画像選定のルールは `.claude/memory/feedback_video_design.md` の画像選定セクションに従う（`image_dashboard.py --fetch-only`/`--preselect` の使い方は STEP 2.5 参照）。
+- **画像はすべて `assets/materials/` の素材ライブラリからのみ選ぶ。** STEP 2.5 で候補が0件のシーンがあれば `material-collector` スキルで素材を追加してから進める。`pipeline.py` はWeb検索・APIを一切呼ばず、`--selections` の指定が必須。
 - スラッグは英数字とアンダースコアのみ（例: `disney_secrets_7`）。

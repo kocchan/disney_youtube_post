@@ -15,6 +15,7 @@ assets/work/
 
 # 大容量素材（ローカル保管）
 assets/video/
+assets/materials/
 
 # Python
 __pycache__/
