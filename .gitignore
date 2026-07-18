@@ -17,6 +17,9 @@ assets/work/
 assets/video/
 assets/materials/
 
+# ComfyUI（AI画像生成、モデル・venv込みで数GB規模のためローカル保管のみ）
+ComfyUI/
+
 # Python
 __pycache__/
 *.pyc

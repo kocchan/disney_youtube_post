@@ -32,7 +32,7 @@
 |----------|----------|
 | **コンテンツ制作に着手する（画像選択・pipeline実行・upload実行のいずれかを開始する）** | **対象行の状態列を `🔄 作業中` にする（最優先・必ず最初に行う）** |
 | `scripts/NN_*.json` を新規作成した | 対象行を追加し、全列を ❌、状態を `❌ 未着手` にする |
-| ダッシュボードで画像選択が完了した（`image_selections.json` 生成） | 対象行の ① 列を ✅ にする |
+| 画像の自動選定が完了した（`image_selections.json` 生成） | 対象行の ① 列を ✅ にする |
 | TikTok版動画を生成した（`final_output_tiktok*.mp4` 生成。メイン・サムネ/メタ情報もここで生成） | 対象行の ② 列を ✅ にする |
 | ユーザーがTikTokに**手動投稿**した後、投稿完了のスクリーンショットを見せてくれた | 対象行の 📱 TikTok投稿 列を `📱 MM/DD 投稿済み` に更新（TikTok本番審査が通り自動投稿に切り替わるまでは手動運用） |
 | YouTube版動画を生成した（`final_output_youtube*.mp4` 生成） | 対象行の ③ 列を ✅ にする |
@@ -56,11 +56,11 @@
 - **インデックス**: `.claude/memory/MEMORY.md`（何があるかの一覧）
 - **フィードバック**: `.claude/memory/feedback_video_design.md`（デザイン・動画・**画像選定**に関するユーザー指摘まとめ）
 - **パフォーマンス分析**: `.claude/memory/analytics_insights.md`（YouTube Analytics APIから自動集計した視聴率・タイトル型・カテゴリ別成績。`python src/analyze_performance.py`／`analytics-insights` スキルで更新）
-- **画像選定ナレッジ**: `.claude/memory/image_selection_knowledge.md`（Claudeの自動選定とユーザーの最終選択が異なった事例の分析結果。`assets/work/image_selection_diffs.jsonl` を元にClaudeが分析して蓄積する）
+- **画像選定ナレッジ**: `.claude/memory/image_selection_knowledge.md`（Claudeの自動選定と、ユーザーが完成動画を見て差し替えを指摘した画像が異なった事例の分析結果。差し替えループでの指摘を元にClaudeが分析して蓄積する）
 
-**台本生成・scrape_query 設計・ダッシュボード画像選定を行う前に必ず `feedback_video_design.md` の画像選定セクション・`analytics_insights.md` の「台本生成への提言」セクション・`image_selection_knowledge.md` を参照すること。**
+**台本生成・scrape_query 設計・画像自動選定を行う前に必ず `feedback_video_design.md` の画像選定セクション・`analytics_insights.md` の「台本生成への提言」セクション・`image_selection_knowledge.md` を参照すること。**
 
-**ダッシュボードでの画像選択完了後は、`assets/work/image_selection_diffs.jsonl` にこの台本の未分析(`analyzed: false`)エントリがないか必ず確認する。** あれば自動選定画像とユーザー選択画像を見比べて理由を分析し、`image_selection_knowledge.md` にルール化して追記する（手順は同ファイル参照）。
+**画像選定は確認ダッシュボード（`--preselect`）を使わず、Claudeが自動選定→そのまま動画生成→完成動画レビューで差し替える運用（2026-07-18〜）。** ユーザーが完成動画を見てシーンの画像差し替えを指摘したら、元の自動選定と差し替え後の画像を見比べて理由を分析し、`image_selection_knowledge.md` にルール化して追記する（手順は同ファイル参照）。フロー詳細は `.claude/skills/video-maker/SKILL.md` STEP 2.5・STEP 4。
 
 ユーザーから初めて指摘・修正を受けたときは、**同じミスを繰り返さないために必ずメモリに記録する**。
 
