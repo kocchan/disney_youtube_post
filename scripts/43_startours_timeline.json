@@ -34,6 +34,7 @@
       "narration": "その後、無事に修理された彼は、数十年越しにパイロットデビューを果たします。それが、かつてのアトラクションで見られた彼の姿というわけです。",
       "image_query": "vintage pilot robot cockpit control panel",
       "image_prompt": "a vintage pilot robot sitting at a retro cockpit control panel, nostalgic sci-fi style",
+      "scrape_query": "スター・ツアーズ レックス RX-24",
       "keywords": ["パイロットデビュー", "かつてのアトラクション"]
     },
     {
@@ -48,6 +49,7 @@
       "narration": "ですが現地の修理屋に拾われ、なんと今は遠い星の酒場で「大人気クラブDJ」として第二の人生を歩んでいるという設定なんです。",
       "image_query": "alien cantina bar neon lights nightclub scene",
       "image_prompt": "a vibrant alien cantina with neon lights and a lively nightclub atmosphere, sci-fi style",
+      "scrape_query": "オーガのカンティーナ DJ R-3X スター・ウォーズ",
       "keywords": ["大人気クラブDJ", "第二の人生"]
     },
     {
@@ -62,6 +64,7 @@
       "narration": "次にパークで彼を見かけたら、「これから大出世するんだぞ」と、ぜひ心の中で応援してあげてくださいね。あなたはこの時系列トリック、気づいていましたか?",
       "image_query": "sci-fi queue line futuristic corridor lights",
       "image_prompt": "a futuristic sci-fi queue line corridor with glowing lights, cinematic",
+      "scrape_query": "スター・ツアーズ 待ち列",
       "keywords": ["大出世するんだぞ", "気づいていましたか"]
     }
   ]

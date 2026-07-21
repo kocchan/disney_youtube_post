@@ -20,6 +20,7 @@
       "narration": "実はあれ、ただの飾りじゃなくて「宇宙規模のリアルな社畜ドラマ」が放送されているんです。",
       "image_query": "cartoon alien character screen monitor animation",
       "image_prompt": "an animated alien character on a retro monitor screen, comedic sci-fi style",
+      "scrape_query": "パンギャラクティックピザポート トニーソラローニ 宇宙人",
       "keywords": ["宇宙規模のリアルな社畜ドラマ"]
     },
     {
@@ -27,6 +28,7 @@
       "narration": "そもそもこのお店は、銀河系規模で展開するピザチェーンの「太陽系第1号店」という壮大な設定。店長は、この地球店の経営を任されているんですが、実はこれ彼にとって後がない「背水の陣」の一大プロジェクトなんです。",
       "image_query": "space station logo galaxy chain franchise sign",
       "image_prompt": "a glowing sci-fi franchise sign with galaxy motifs, retro futuristic style",
+      "scrape_query": "パンギャラクティックピザポート 店内 内装 宇宙",
       "keywords": ["太陽系第1号店", "背水の陣"]
     },
     {
@@ -41,6 +43,7 @@
       "narration": "店内の放送をよく見ていると、本部の怖いボスから「配達が遅いぞ!」と怒鳴られ、遠い星に住む奥さんからは「いつ宇宙に帰ってくるの?」と小言を言われ、板挟み状態なんです。",
       "image_query": "stressed cartoon character phone call two screens",
       "image_prompt": "a stressed animated character caught between two calls on retro screens, comedic tension",
+      "scrape_query": "パンギャラクティックピザポート モニター 画面",
       "keywords": ["配達が遅いぞ", "板挟み状態"]
     },
     {
@@ -48,6 +51,7 @@
       "narration": "さらに、全自動で動くはずの最新式ピザ製造機は頻繁にエラーを起こしてしまい、結局店長がひとりで走り回ってワンオペ対応する羽目になっているんです。",
       "image_query": "malfunctioning automated pizza machine sparks error",
       "image_prompt": "a retro automated pizza-making machine malfunctioning with sparks, comedic sci-fi style",
+      "scrape_query": "パンギャラクティックピザポート ピザ 厨房 機械",
       "keywords": ["ピザ製造機", "ワンオペ対応"]
     },
     {
@@ -55,6 +59,7 @@
       "narration": "どんなに未来になっても、どれだけ宇宙規模のスケールになっても、「中間管理職の悩み」だけは変わらないものなんですね。妙な親近感が湧いてきませんか。",
       "image_query": "exhausted cartoon character sitting down break room",
       "image_prompt": "an exhausted animated character sitting in a retro futuristic break room, sympathetic mood",
+      "scrape_query": "パンギャラクティックピザポート 内装 雰囲気",
       "keywords": ["中間管理職の悩み"]
     },
     {

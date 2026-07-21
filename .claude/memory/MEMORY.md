@@ -6,4 +6,3 @@
 - [TikTok API連携の状態](project_tiktok_api.md) — Sandbox稼働中・本番審査提出済み（審査待ち）。PKCE実装の注意点あり
 - [YouTube動画パフォーマンス分析ナレッジ](analytics_insights.md) — 視聴率・タイトル型・カテゴリ別の成績を自動集計。台本生成前に必ず参照する
 - [画像選定ナレッジ](image_selection_knowledge.md) — Claudeの自動選定と、完成動画レビューでユーザーが差し替えを指摘した画像が異なった事例の分析結果。画像選定前に必ず参照する
-- [ComfyUI環境構築の状態](comfyui_setup.md) — `~/ComfyUI`(ポート8189・SDXL Lightning)。別プロジェクト用ComfyUI(ポート8188)と混同しないこと。パイプライン統合は未着手

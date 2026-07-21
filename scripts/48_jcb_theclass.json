@@ -26,6 +26,7 @@
       "narration": "このカード、お金を払えば誰でも作れるわけじゃないんです。カード会社から「あなたに持ってほしい」と招待状が届いた人しか作れない、完全招待制なんです。",
       "image_query": "invitation letter envelope elegant mail",
       "image_prompt": "an elegant invitation letter and envelope, luxury mail concept",
+      "scrape_query": "高級 招待状 封筒 エレガント",
       "keywords": ["お金を払えば誰でも作れるわけじゃない", "完全招待制"]
     },
     {

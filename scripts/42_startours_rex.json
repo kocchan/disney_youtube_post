@@ -20,6 +20,7 @@
       "narration": "これ、ただの「壊れたロボットの飾り」じゃなくて、昔からのファンにはたまらない超エモい正体があるんです。",
       "image_query": "malfunctioning robot droid sparks queue line",
       "image_prompt": "a malfunctioning robot droid sparking in a sci-fi queue line, dramatic lighting",
+      "scrape_query": "スター・ツアーズ レックス RX-24",
       "keywords": ["壊れたロボットの飾り", "超エモい正体"]
     },
     {
@@ -35,6 +36,7 @@
       "narration": "耳を澄ますと「初めてのフライトで緊張してます…」と、昔パイロット時代に喋っていたお馴染みのセリフを、バグりながら呟いているんです。",
       "image_query": "close up robot head speaker glowing eyes",
       "image_prompt": "a close-up of a robot head with glowing eyes, retro sci-fi design",
+      "scrape_query": "スター・ツアーズ レックス RX-24",
       "keywords": ["緊張してます", "バグりながら呟いている"]
     },
     {
@@ -63,6 +65,7 @@
       "narration": "彼の本当の姿と、衝撃の結末は次の動画で明かします。あなたは待ち列でこのロボット、気づいたことありますか?",
       "image_query": "spaceship queue line futuristic entrance",
       "image_prompt": "a futuristic spaceship queue line entrance, sci-fi cinematic atmosphere",
+      "scrape_query": "スター・ツアーズ 外観 入口",
       "keywords": ["衝撃の結末", "気づいたことありますか"]
     }
   ]

@@ -1,8 +1,9 @@
 """画像取得モジュール。
 
 ImageProvider 抽象を介して実装を差し替えられる(Strategy パターン)。
-- StockImageProvider : フリー素材API(Pexels)。既定。商用利用可・安全。
-- WebScrapeProvider  : Web検索スクレイピング。--allow-scrape 指定時のみ(自己責任)。
+- StockImageProvider : フリー素材API(Pexels)。material-collector スキルの恒久登録で使用。
+- WebScrapeProvider  : Web検索(DuckDuckGo)スクレイピング。image_dashboard.py の毎回のライブ
+                       候補取得と material-collector スキルの両方から使用。著作権は自己責任。
 
 取得した画像は to_vertical() で縦型(1080x1920)にリサイズ＋センタークロップする。
 取得失敗時は make_placeholder() の単色画像にフォールバックして全体を止めない。
@@ -18,7 +19,6 @@ from PIL import Image, ImageDraw, ImageFont
 from config import env
 
 PEXELS_SEARCH_URL = "https://api.pexels.com/v1/search"
-PINTEREST_SEARCH_URL = "https://api.pinterest.com/v5/search/pins"
 
 
 def to_vertical(src: str | Path, dst: str | Path, width: int = 1080, height: int = 1920) -> Path:
@@ -160,77 +160,6 @@ class StockImageProvider(ImageProvider):
         return raw_path, credit
 
 
-class PinterestImageProvider(ImageProvider):
-    """Pinterest API v5 から画像を取得する。
-
-    .env に PINTEREST_ACCESS_TOKEN が必要。
-    Pinterest の画像は各オリジナル作者に著作権があるため使用は自己責任。
-    """
-
-    _SIZE_KEYS = ("originals", "1200x", "736x", "600x", "400x")
-
-    def __init__(self, width: int = 1080, height: int = 1920):
-        self.access_token = env("PINTEREST_ACCESS_TOKEN", "")
-        self.width = width
-        self.height = height
-        self.credits: list[dict] = []
-
-    def fetch(self, scene: dict, out_path: str | Path) -> Path:
-        out_path = Path(out_path)
-        query = scene.get("image_query") or scene.get("title") or "background"
-        try:
-            if not self.access_token:
-                raise RuntimeError("PINTEREST_ACCESS_TOKEN が未設定(.env に追加してください)")
-            raw, credit = self._download(query, out_path.with_suffix(".raw.jpg"))
-            result = to_vertical(raw, out_path, self.width, self.height)
-            raw.unlink(missing_ok=True)
-            credit["scene_id"] = scene.get("id")
-            self.credits.append(credit)
-            return result
-        except Exception as e:  # noqa: BLE001
-            print(f"  [warn] Pinterest 画像取得失敗(scene {scene.get('id')}): {e} → プレースホルダ使用")
-            self.credits.append({"scene_id": scene.get("id"), "source": "placeholder", "note": str(e)})
-            return make_placeholder(out_path, text=str(scene.get("id", "")), width=self.width, height=self.height)
-
-    def _download(self, query: str, raw_path: Path) -> tuple[Path, dict]:
-        headers = {"Authorization": f"Bearer {self.access_token}"}
-        params = {"query": query, "page_size": 5}
-        resp = requests.get(PINTEREST_SEARCH_URL, headers=headers, params=params, timeout=30)
-        resp.raise_for_status()
-        items = resp.json().get("items", [])
-        if not items:
-            raise RuntimeError(f"検索結果なし: '{query}'")
-
-        # 最初に画像URLが取れるピンを選ぶ
-        img_url, pin = None, None
-        for item in items:
-            images = (item.get("media") or {}).get("images", {})
-            for key in self._SIZE_KEYS:
-                candidate = images.get(key, {}).get("url")
-                if candidate:
-                    img_url, pin = candidate, item
-                    break
-            if img_url:
-                break
-
-        if not img_url:
-            raise RuntimeError(f"有効な画像URLが取得できません: '{query}'")
-
-        img_resp = requests.get(img_url, timeout=60, headers={"Referer": "https://www.pinterest.com/"})
-        img_resp.raise_for_status()
-        raw_path.parent.mkdir(parents=True, exist_ok=True)
-        raw_path.write_bytes(img_resp.content)
-        credit = {
-            "source": "Pinterest",
-            "query": query,
-            "pin_id": pin.get("id"),
-            "pin_url": f"https://www.pinterest.com/pin/{pin.get('id')}/",
-            "description": (pin.get("description") or "")[:80],
-            "note": "Pinterest画像の著作権は各オリジナル作者に帰属。使用は自己責任。",
-        }
-        return raw_path, credit
-
-
 class WebScrapeProvider(ImageProvider):
     """DuckDuckGo 画像検索から画像を取得する(--allow-scrape 時のみ・著作権自己責任)。
 
@@ -344,24 +273,3 @@ class WebScrapeProvider(ImageProvider):
                 continue
 
         raise RuntimeError(f"ダウンロード可能な画像が見つかりません: '{query}'")
-
-
-def get_image_provider(name: str, width: int = 1080, height: int = 1920, allow_scrape: bool = False) -> ImageProvider:
-    """プロバイダ名から実装インスタンスを返すファクトリ。
-
-    scrape は allow_scrape=True(=CLI --allow-scrape)のときのみ有効。
-    許可が無い場合は安全側に倒して stock にフォールバックする。
-    """
-    name = (name or "stock").lower()
-    if name == "scrape":
-        if not allow_scrape:
-            print("  [warn] image_provider=scrape だが --allow-scrape 未指定 → stock を使用(著作権安全)")
-            name = "stock"
-    if name == "stock":
-        return StockImageProvider(width=width, height=height)
-    if name == "pinterest":
-        print("  [info] image_provider=pinterest: 画像の著作権は各作者に帰属。使用は自己責任。")
-        return PinterestImageProvider(width=width, height=height)
-    if name == "scrape":
-        return WebScrapeProvider(width=width, height=height)
-    raise ValueError(f"未知の image provider: {name}")

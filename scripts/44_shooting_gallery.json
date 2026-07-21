@@ -20,6 +20,7 @@
       "narration": "1つ目。壁に掛けられた「留置場・酒場・銀行」が描かれた平和な町の絵。この絵の的を撃ち抜くと、一瞬で「町が強盗に襲撃されている絵」に切り替わるんです。",
       "image_query": "old western town painting wall frame saloon",
       "image_prompt": "an old western town painting hanging on a saloon wall, vintage art style",
+      "scrape_query": "ウエスタンランド シューティングギャラリー 標的 壁 絵",
       "keywords": ["平和な町の絵", "強盗に襲撃されている絵"]
     },
     {
@@ -27,6 +28,7 @@
       "narration": "実はこの酒場の壁に残っているリアルな弾痕は、その襲撃事件の時の流れ弾なんです。裏設定が深すぎますよね。",
       "image_query": "bullet holes wooden wall texture western",
       "image_prompt": "realistic bullet holes on an old wooden wall, western saloon texture",
+      "scrape_query": "ウエスタンランド シューティングギャラリー 木の壁 古びた",
       "keywords": ["リアルな弾痕", "裏設定が深すぎます"]
     },
     {
@@ -34,6 +36,7 @@
       "narration": "2つ目。左側で居眠りしている保安官の後ろの壁。よく見ると「牢屋の鍵」が掛けっぱなしなんです。セキュリティがガバガバすぎますよね。",
       "image_query": "sleeping sheriff figure jail cell keys wall",
       "image_prompt": "a comedic sleeping sheriff figure near a jail cell wall with keys hanging, western style",
+      "scrape_query": "ウエスタンランド シューティングギャラリー 保安官 人形",
       "keywords": ["牢屋の鍵", "ガバガバすぎます"]
     },
     {
@@ -41,6 +44,7 @@
       "narration": "この鍵の近くの的を撃つと、怠け者の保安官が面白いリアクションをしてくれるんです。",
       "image_query": "animated character reaction surprised comedic",
       "image_prompt": "a comedic animated figure with a surprised reaction, whimsical western style",
+      "scrape_query": "ウエスタンランド シューティングギャラリー 標的 動く仕掛け",
       "keywords": ["面白いリアクション"]
     },
     {
@@ -55,6 +59,7 @@
       "narration": "さらに、この62個の的のうちどれか1つは、当たれば一発で「金バッジ」がもらえるラッキーの的なんです。",
       "image_query": "golden badge star shiny prize closeup",
       "image_prompt": "a shiny golden star badge prize, sparkling closeup, western style",
+      "scrape_query": "保安官 バッジ 星 金 アンティーク",
       "keywords": ["金バッジ", "ラッキーの的"]
     },
     {
@@ -62,6 +67,7 @@
       "narration": "紹介した{count}つの隠しギミック、次回はただ的を当てるだけじゃなく、ぜひ狙って撃ってみてくださいね。あなたはいくつ知っていましたか?",
       "image_query": "rifle aiming shooting gallery vintage western",
       "image_prompt": "a rifle aiming at a vintage western shooting gallery, dramatic lighting",
+      "scrape_query": "ウエスタンランド シューティングギャラリー 射的 体験",
       "keywords": ["狙って撃ってみてください", "いくつ知っていました"]
     }
   ]

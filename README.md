@@ -51,27 +51,34 @@ assets/bgm/bgm2.mp3
 
 → `scripts/` フォルダに JSON が生成される。
 
-### 2. 動画を生成する（X 用から作る）
+### 2. 画像候補を取得し、選定結果を書き出す
 
 ```bash
 source venv/bin/activate
+python src/image_dashboard.py --script scripts/disney_urabanashi10.json --fetch-only
+```
+
+→ `assets/materials/`（素材ライブラリ）とWeb検索(DuckDuckGo)の両方から候補を取得し、
+シーンごとのコンタクトシートを生成する。Claude がこれを見て1シーン1枚選び、
+`output/{スクリプト名}/image_selections.json` を書き出す（詳細は `video-maker` スキル参照）。
+
+### 3. 動画を生成する（TikTok 用から作る・メイン）
+
+```bash
 python src/pipeline.py \
   --script scripts/disney_urabanashi10.json \
   --tts gtts \
-  --platform x \
-  --allow-scrape
+  --platform tiktok \
+  --selections output/disney_urabanashi10/image_selections.json
 ```
 
-出力先: `output/{スクリプト名}/final_output_x.mp4`
+出力先: `output/{スクリプト名}/final_output_tiktok.mp4`（サムネイル・YouTube用メタ情報もここで生成）
 
-### 3. レビュー後に YouTube / TikTok 用を生成
+### 4. レビュー後に YouTube 用を生成
 
 ```bash
-# YouTube用（BGMなし・60秒以下に自動カット）
-python src/pipeline.py --script scripts/disney_urabanashi10.json --tts gtts --platform youtube
-
-# TikTok用（BGMなし・フル尺）
-python src/pipeline.py --script scripts/disney_urabanashi10.json --tts gtts --platform tiktok
+# YouTube用（BGMあり・60秒以下に自動カット）
+python src/pipeline.py --script scripts/disney_urabanashi10.json --tts gtts --platform youtube --selections output/disney_urabanashi10/image_selections.json
 ```
 
 ---
@@ -84,8 +91,8 @@ python src/pipeline.py --script scripts/disney_urabanashi10.json --tts gtts --pl
 | `--out` | 出力MP4のパス（省略時は自動） | — |
 | `--tts` | TTSプロバイダ: `gtts` / `say` | configの値 |
 | `--bgm` | BGM選択: `rotate` / `random` / `none` / ファイルパス | `rotate` |
-| `--platform` | 出力先: `x` / `youtube` / `tiktok` | `x` |
-| `--allow-scrape` | DuckDuckGoスクレイピング画像を許可（自己責任） | off |
+| `--platform` | 出力先: `tiktok`（メイン・フル尺） / `youtube`（60秒以下） | `tiktok` |
+| `--selections` | `image_dashboard.py --fetch-only` の選定結果 JSON（必須） | — |
 | `--no-cache` | キャッシュを使わず全シーン再生成 | off |
 | `--no-ken-burns` | Ken Burnsズームを無効化（高速書き出し） | off |
 
@@ -95,9 +102,8 @@ python src/pipeline.py --script scripts/disney_urabanashi10.json --tts gtts --pl
 
 | プラットフォーム | BGM | 最大尺 | サフィックス |
 |----------------|-----|--------|------------|
-| `x` | あり | フル尺 | `_x` |
-| `youtube` | なし | 60秒（自動カット） | `_youtube` |
-| `tiktok` | なし | フル尺 | `_tiktok` |
+| `tiktok`（メイン） | あり | フル尺（60秒以上を推奨） | `_tiktok` |
+| `youtube` | あり | 60秒（自動カット） | `_youtube` |
 
 ---
 
@@ -107,10 +113,10 @@ python src/pipeline.py --script scripts/disney_urabanashi10.json --tts gtts --pl
 
 | ファイル | 内容 |
 |---------|------|
-| `final_output_x.mp4` | X向け動画 |
+| `image_selections.json` | 画像選定結果（`--selections` に渡すもの） |
+| `final_output_tiktok.mp4` | TikTok向け動画（メイン） |
 | `final_output_youtube.mp4` | YouTube向け動画 |
-| `final_output_tiktok.mp4` | TikTok向け動画 |
-| `thumbnail.jpg` | サムネイル（X向け生成時に作成） |
+| `thumbnail.jpg` | サムネイル（TikTok用生成時に作成） |
 | `youtube_meta.txt` | タイトル・説明文・ハッシュタグ |
 | `*.credits.json` | 画像クレジット（Pexels帰属義務）|
 

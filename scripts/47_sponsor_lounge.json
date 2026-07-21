@@ -40,6 +40,7 @@
       "narration": "「ずるい、私もそこに入りたい!」って思いますよね。じゃあ、一般の僕たちがこのラウンジに入るための現実的な手段を教えます。",
       "image_query": "person looking envious through window glass",
       "image_prompt": "a person looking through a window with an envious expression, warm lighting",
+      "scrape_query": "羨ましい 気持ち 窓の外を見る 人物",
       "keywords": ["現実的な手段"]
     },
     {
@@ -47,6 +48,7 @@
       "narration": "1つ目。一番現実的なのが、最高峰クレジットカードを手に入れること。これを持っていれば、年に1回、秘密のラウンジを利用する権利がもらえます。",
       "image_query": "black premium credit card luxury closeup",
       "image_prompt": "a premium black credit card closeup, luxury financial concept",
+      "scrape_query": "ブラックカード 富裕層 プレミアムカード 財布",
       "keywords": ["最高峰クレジットカード", "利用する権利"]
     },
     {

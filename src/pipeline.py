@@ -335,7 +335,7 @@ def run(
     if prepared and plat == "tiktok":
         try:
             thumb_path = out_path.with_name("thumbnail.jpg")
-            # ダッシュボードで選択済みのサムネがあれば優先
+            # 選択済みのサムネがあれば優先
             sel_thumb = selections.get("thumbnail", {})
             if sel_thumb and Path(sel_thumb.get("image_path", "")).exists():
                 thumb_img = Path(sel_thumb["image_path"])
